@@ -2,7 +2,7 @@
 
 **CSC575 project design and requirements specification**  
 **Team:** Smit Amin, Taimoor Shahzad, Vinay Kumar Devarakonda, and Abdullah Shah  
-**Date:** October 2026
+**Date:** 23 October 2026
 
 ## Project description
 
