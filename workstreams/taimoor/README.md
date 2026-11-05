@@ -108,6 +108,8 @@ The Python entry point is `arrange(song, target_style, method, weights)`, return
 - Four fixtures and 16 method runs establish reproducible execution and invariant checks only. They do not replace the planned 60-composition collection, held-out evaluation, or listening study.
 - The arrangement library contains no GMD or Lakh data yet. No classifier, pretrained model, learned reranker, or text-to-audio generation has been trained or run.
 - Transition cost is a hand-designed proxy. A lower cost is not evidence that listeners prefer an arrangement. All genre/coherence claims remain untested.
-- Results were produced in the recorded Linux/Python environment with coding assistance. Taimoor's own local reproduction and musical review remain to be recorded.
+- Recorded repository results were produced in the listed Linux/Python environment with coding assistance. Taimoor subsequently reported a successful local run and preliminary listening, and supplied a plot and summary. A structured external listening comparison remains pending.
 
 The authoritative design specification remains the repository's root README. Detailed status, observed evidence, proposed advanced-objective refinements, and report text are in `docs/taimoor_progress.md`.
+
+The [verification protocol](../../docs/taimoor_verification.md) adds a separate raw-MIDI audit and a concrete blinded listening plan. Run the audit on local outputs with `python -m workstreams.taimoor.independent_audit --results results/local/taimoor`.

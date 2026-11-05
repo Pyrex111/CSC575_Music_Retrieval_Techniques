@@ -31,7 +31,9 @@ See `results/taimoor_progress/summary.md` and `results.json` for the saved run. 
 - The continuity ablation changed the final phrase's selected plan in the recorded examples. This confirms that the continuity term affects selection; listener preference remains unknown.
 - The automated suite contains 35 passing cases, including a brute-force comparison of the optimization objective, deliberately corrupted melody detection, selection of a melody outside the first track, unsupported-input rejection, repeated-phrase consistency, and reproducibility checks.
 
-Tests and outputs were generated in the environment recorded in `results.json`. They are not represented as Taimoor's personal Windows testing or as human evaluation. No WAV rendering or listening results are included in this checkpoint.
+Recorded repository tests and outputs were generated in the environment listed in `results.json`. Taimoor subsequently reported successful local execution, supplied his plot and summary (all 16 rows passed the reported constraints), and auditioned the outputs, describing them as sounding fine. This is preliminary developer feedback. No blinded listener results or WAV render-quality audit are claimed.
+
+A [separate raw-MIDI audit and listening protocol](taimoor_verification.md) now supplement the original checks. The saved repository outputs pass 16/16 independent event-level audits, and a temporary deliberately corrupted melody was correctly rejected. Reports are saved as `results/taimoor_progress/independent_audit.json` and `independent_audit.md`.
 
 ## Addressing the independence feedback
 
@@ -55,7 +57,7 @@ The prototype exports actual MIDI and is ready for Abdullah's synthesis componen
 
 ## Immediate next actions
 
-1. Taimoor reproduces the commands locally, opens the generated MIDI, and records observations and limitations in his own words. This remains separate from the automated execution evidence.
+1. Local execution and preliminary listening have been reported. Next, record specific recognizability, style, and transition observations and carry out the blinded pilot in the verification protocol.
 2. Agree the provisional annotation/pattern interface with Smit and obtain at least two reviewed real MIDI excerpts, ideally one per transfer direction, with provenance and permitted use.
 3. Apply the existing runner to those development examples and inspect failures before freezing the larger evaluation protocol. Such a small check is a pilot, not the planned held-out study.
 4. Agree the descriptor/ranking handoff with Vinay and provide exported conditions to Abdullah for consistent audio rendering.
