@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "case_id": "verification_rock",
+  "source_style": "rock",
+  "split": "verification",
+  "provenance": "Original, programmatically authored engineering fixture; not a real song or genre label benchmark.",
+  "midi_path": "verification_rock.mid",
+  "melody_track": 0,
+  "tempo_bpm": 80,
+  "time_signature": [
+    4,
+    4
+  ],
+  "bars": 16,
+  "chords": [
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "label": "A",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "B",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "A",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "C",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ]
+}

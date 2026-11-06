@@ -204,6 +204,14 @@ Each member has two objectives and five indicators per objective: two basic, two
 - **PI4 (expected):** Run ablations removing adaptive selection and continuity constraints, analyze per-composition results, and relate findings to the observed musical outputs.
 - **PI5 (advanced):** Conduct a sensitivity study of style-distance and continuity weights, using validation data for selection and reporting the trade-offs on the frozen final configuration.
 
+### Progress checkpoint: 3 November 2026
+
+A standalone arrangement prototype is available in [Taimoor's workstream](workstreams/taimoor/README.md). It implements a reviewed MIDI/annotation contract, chord-aware pattern adaptation, phrase-level dynamic programming, repeated-phrase constraints, and an experiment runner with fixed-pattern and continuity-ablation comparisons.
+
+Initial verification used four original synthetic excerpts lasting 32 or 48 seconds. All 16 exported conditions passed the implemented melody, tempo, duration, metre, and phrase-marker checks. The automated suite contains 35 passing cases, including an independent brute-force check of the selection objective. These are engineering results, not evidence of perceptual genre quality or a completed real-song held-out evaluation.
+
+The [detailed progress record](docs/taimoor_progress.md) maps evidence to each indicator and proposes stronger advanced indicators for review. Real-music integration, validation-based parameter selection, listening evaluation, learned ranking, and the advanced robustness study remain pending. The existing design objectives above remain the approved specification.
+
 ## Vinay Kumar Devarakonda
 
 ### Objective 1: Develop and critically validate a symbolic style representation
