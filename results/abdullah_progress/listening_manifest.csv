@@ -1,0 +1,13 @@
+composition_id,target_genre,method,audio_path,source_audio_path
+development_jazz,rock,B0,audio/development_jazz/B0.wav,audio/development_jazz/source.wav
+development_jazz,rock,B1,audio/development_jazz/B1.wav,audio/development_jazz/source.wav
+development_jazz,rock,M,audio/development_jazz/M.wav,audio/development_jazz/source.wav
+development_rock,jazz,B0,audio/development_rock/B0.wav,audio/development_rock/source.wav
+development_rock,jazz,B1,audio/development_rock/B1.wav,audio/development_rock/source.wav
+development_rock,jazz,M,audio/development_rock/M.wav,audio/development_rock/source.wav
+verification_jazz,rock,B0,audio/verification_jazz/B0.wav,audio/verification_jazz/source.wav
+verification_jazz,rock,B1,audio/verification_jazz/B1.wav,audio/verification_jazz/source.wav
+verification_jazz,rock,M,audio/verification_jazz/M.wav,audio/verification_jazz/source.wav
+verification_rock,jazz,B0,audio/verification_rock/B0.wav,audio/verification_rock/source.wav
+verification_rock,jazz,B1,audio/verification_rock/B1.wav,audio/verification_rock/source.wav
+verification_rock,jazz,M,audio/verification_rock/M.wav,audio/verification_rock/source.wav

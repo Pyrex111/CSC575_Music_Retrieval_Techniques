@@ -240,6 +240,10 @@ Each member has two objectives and five indicators per objective: two basic, two
 - **PI4 (expected):** Verify the workflow on the agreed demonstration examples in both directions, document setup and known limitations, and prepare reproducible demonstration instructions.
 - **PI5 (advanced):** Add a phrase-aligned piano-roll comparison that highlights the preserved melody and changed accompaniment alongside audio playback.
 
+### Rendering progress checkpoint
+
+The [audio rendering workstream](workstreams/abdullah/README.md) implements Objective 1 through PI4 on the current demonstration fixtures. The recorded run produced five reference WAVs and 12 matched B0/B1/M WAVs across both transfer directions. All 17 passed audio validation. See the [progress record](docs/abdullah_progress.md) for the measurements, setup, and reproducible commands.
+
 ## Risks and contingencies
 
 | Risk | Response |

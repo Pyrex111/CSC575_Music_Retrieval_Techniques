@@ -1,0 +1,21 @@
+{
+  "ffprobe_and_sha256_verified": 17,
+  "matched_cases_with_equal_audio_length": 4,
+  "vinay_manifest_rows_accepted": 12,
+  "vinay_listening_loader_revision": "dcf7a4218243606e79055212830e08f4bfd9ff55",
+  "repeated_development_rock_source_sha256": "1d03adaf37a0b65d254a5439210c61e4b881d26f8d20935fc4d83701be9815f1",
+  "error_probes": {
+    "missing_input": "Expected an existing .mid or .midi file: <temporary directory>/missing.mid",
+    "truncated_midi": "Cannot read MIDI duration for bad.mid: ",
+    "silent_midi": "WAV contains only silence: synth.wav"
+  },
+  "tested_lufs_range": [
+    -23.01,
+    -22.99
+  ],
+  "max_true_peak_dbtp": -10.76,
+  "synthesis_seconds_range": [
+    0.21375663799972244,
+    0.715391255999748
+  ]
+}
