@@ -1,6 +1,0 @@
-bars_approx,constant_tempo,drum_tracks,duration_file_sec,duration_notes_sec,filename,only_4_4,pitched_tracks,raw_midi_tracks,status,tempo_bpm,tempo_changes,time_signatures,total_notes,tracks_with_notes,warnings
-6.0,True,0,21.43,16.07,Keys_06_90BPM_D#m_8.mid,True,1,3,Success,90.0,0,4/4,88,1,file length and last note time differ by >1 s (silence/padding at end)
-8.0,True,0,15.95,15.95,Keys_13_80BPM_Gm._15.mid,True,1,1,Success,120.0,0,4/4,159,1,no tempo event in midi;default 120 BPM assumed
-8.0,True,0,12.89,12.89,PJB_149BPM_New_Leaf_Keys_Piano_D#m_118.mid,True,1,2,Success,149.0,0,4/4,55,1,
-8.0,True,0,11.49,11.49,PJB_167BPM_Apologies_Guitar_Electric_Chords_Em_44.mid,True,1,2,Success,167.0,0,4/4,28,1,
-8.0,True,0,11.49,11.49,PJB_167BPM_Apologies_Keys_Piano_Em_47.mid,True,1,2,Success,167.0,0,4/4,52,1,
