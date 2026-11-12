@@ -1,82 +1,100 @@
-import os
+import numpy as np
+import csv
+import sys
+from pathlib import Path
+import mido
 import pretty_midi
 
 def inspect_midi_file(file_path):
-    """
-    Load a single MIDI file and extracts tracks, note counts, tempo, meter, and duration.
-    """
+    path = Path(file_path)
+    info = {"filename": path.name, "status": "Success", "warnings": []}
     try:
-        midi_data = pretty_midi.PrettyMIDI(file_path)
-        
-        num_tracks = len(midi_data.instruments)
-        
-        # extract total note count
-        total_notes = 0
-        for instrument in midi_data.instruments:
-            total_notes += len(instrument.notes)
-        
-        # extract duration
-        duration_seconds = midi_data.get_end_time()
-        
-        # extract temp
-        estimated_tempo = midi_data.estimate_tempo()
-        
-        # extract time signature
-        time_signatures = midi_data.time_signature_changes
-        if time_signatures:
-            ts = time_signatures[0]
-            time_signature = f"{ts.numerator}/{ts.denominator}"
-        else:
-            time_signature = "4/4 (Default)"  # default if not included
-            
-        return {
-            "filename": os.path.basename(file_path),
-            "status": "Success",
-            "tracks": num_tracks,
-            "total_notes": total_notes,
-            "duration_sec": round(duration_seconds, 2),
-            "tempo_bpm": round(estimated_tempo, 1),
-            "time_signature": time_signature
-        }
-        
+        raw = mido.MidiFile(str(path), clip=True)
+        pm = pretty_midi.PrettyMIDI(str(path))
     except Exception as e:
-        # Catch malformed or corrupted MIDI files gracefully
-        return {
-            "filename": os.path.basename(file_path),
-            "status": f"Error: {str(e)}"
-        }
+        info["status"] = f"Error: {type(e).__name__}: {e}"
+        return info
 
-def scan_midi_folder(folder_path):
-    """
-    Scans a folder for all .mid files and prints their summary.
-    """
-    print(f"Scanning {folder_path}\n")
-    results = []
     
-    
-    if not os.path.exists(folder_path):
-        print(f"Directory not found: {folder_path}.")
-        return results
+    pitched = [i for i in pm.instruments if not i.is_drum and i.notes]
+    drums = [i for i in pm.instruments if i.is_drum and i.notes]
+    info["raw_midi_tracks"] = len(raw.tracks)
+    info["tracks_with_notes"] = len(pitched)+len(drums)
+    info["pitched_tracks"] = len(pitched)
+    info["drum_tracks"] = len(drums)
+    info["total_notes"] = sum(len(i.notes) for i in pm.instruments)
 
-    for file in os.listdir(folder_path):
-        if file.lower().endswith(('.mid', '.midi')):
-            full_path = os.path.join(folder_path, file)
-            info = inspect_midi_file(full_path)
-            results.append(info)
-            
-            
-            print(f"File: {info['filename']}")
-            print(f"Status: {info['status']}")
-            if info['status'] == "Success":
-                print(f"  - Tracks: {info['tracks']}")
-                print(f"  - Total Notes: {info['total_notes']}")
-                print(f"  - Duration: {info['duration_sec']} seconds")
-                print(f"  - Tempo: {info['tempo_bpm']} BPM")
-                print(f"  - Time Signature: {info['time_signature']}")
-            print("-" * 40)
-            
+    # extracting tempo
+    tempo_events = [] # (tick,bpm)
+    for track in raw.tracks:
+        tick = 0
+        for msg in track:
+            tick += msg.time
+            if msg.type == "set_tempo":
+                tempo_events.append((tick, mido.tempo2bpm(msg.tempo)))
+    distinct = sorted({round(b, 2) for _, b in tempo_events})
+    info["tempo_changes"] = max(len(distinct)-1, 0)
+    if not tempo_events:
+        info["tempo_bpm"] = 120.0 #default
+        info["warnings"].append("no tempo event in midi;default 120 BPM assumed")
+    else:
+        first = min(tempo_events, key=lambda e: e[0]) #first tempo in midi file
+        info["tempo_bpm"] = round(first[1], 2)
+        if len(distinct) > 1:
+            info["warnings"].append(f"tempo changes within file: {distinct}")
+    info["constant_tempo"] = len(distinct) <= 1
+
+    # time signatures
+    sigs = sorted({(m.numerator, m.denominator) for t in raw.tracks for m in t if m.type == "time_signature"})
+    info["time_signatures"] = ", ".join(f"{a}/{b}" for a, b in sigs) or "4/4 (default, none stored)"
+    if len(sigs) > 1:
+        info["warnings"].append("multiple time signatures")
+    info["only_4_4"] = (not sigs) or sigs == [(4, 4)]
+
+    # duration
+    info["duration_notes_sec"] = round(pm.get_end_time(), 2) #last note
+    try:
+        info["duration_file_sec"] = round(raw.length, 2) #raw file length that could hv silence as well
+    except Exception:
+        info["duration_file_sec"] = None
+    if info["duration_file_sec"] and abs(info["duration_file_sec"] - info["duration_notes_sec"]) > 1.0:
+        info["warnings"].append("file length and last note time differ by >1 s (silence/padding at end)")
+
+    # bars
+    if info["constant_tempo"] and info["only_4_4"]:
+        info["bars_approx"] = round(info["duration_notes_sec"] / (240.0 / info["tempo_bpm"]), 1)
+    else:
+        info["bars_approx"] = None
+    return info
+
+
+def scan_midi_folder(folder_path, csv_out=None):
+    folder = Path(folder_path)
+    if not folder.is_dir():
+        print(f"Directory not found: {folder}")
+        return []
+    results = [inspect_midi_file(p) for p in sorted(folder.rglob("*"))
+               if p.suffix.lower() in (".mid", ".midi")]
+    for r in results:
+        print(f"\nFile: {r['filename']}   [{r['status']}]")
+        if r["status"] == "Success":
+            print(f"  tracks with notes : {r['tracks_with_notes']} ({r['pitched_tracks']} pitched, {r['drum_tracks']} drum)  | raw MIDI tracks: {r['raw_midi_tracks']}")
+            print(f"  total notes       : {r['total_notes']}")
+            print(f"  tempo             : {r['tempo_bpm']} BPM constant={r['constant_tempo']}")
+            print(f"  time signature    : {r['time_signatures']}")
+            print(f"  duration          : {r['duration_notes_sec']} s (last note) / {r['duration_file_sec']} s (file length)  ~{r['bars_approx']} bars")
+            for w in r["warnings"]:
+                print(f"  WARNING: {w}")
+    if csv_out and results:
+        keys = sorted({k for r in results for k in r})
+        with open(csv_out, "w", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=keys)
+            w.writeheader()
+            for r in results:
+                w.writerow({**r, "warnings": "; ".join(r["warnings"])})
+        print(f"\nSaved {csv_out}")
     return results
 
+
 if __name__ == "__main__":
-    sample_folder = "./sample_midis"
-    scan_midi_folder(sample_folder)
+    scan_midi_folder(sys.argv[1] if len(sys.argv) > 1 else "./sample_midis", csv_out="midi_inspection.csv")
