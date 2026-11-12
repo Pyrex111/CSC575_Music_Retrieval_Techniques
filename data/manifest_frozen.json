@@ -1,0 +1,6 @@
+{
+  "seed": 42,
+  "n_total": 60,
+  "per_genre_split": "{('jazz', 'test'): 10, ('jazz', 'train'): 15, ('jazz', 'val'): 5, ('rock', 'test'): 10, ('rock', 'train'): 15, ('rock', 'val'): 5}",
+  "manifest_sha256": "551c635382588b76dad18e01dd2a484b745c2975e9cdc99043b8e0226f16dc20"
+}

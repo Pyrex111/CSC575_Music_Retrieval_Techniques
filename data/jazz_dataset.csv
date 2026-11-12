@@ -1,11 +1,15 @@
 bars_approx,constant_tempo,drum_tracks,duration_file_sec,duration_notes_sec,filename,filepath,only_4_4,pitched_tracks,raw_midi_tracks,status,tempo_bpm,tempo_changes,time_signatures,total_notes,tracks_with_notes,warnings
 124.0,True,0,297.8,297.71,500_Miles_High.mid,data/jazz/500_Miles_High.mid,True,1,3,Success,100.0,0,4/4,2089,1,
+67.9,True,1,131.49,131.49,A_Banda.mid,data/jazz/A_Banda.mid,True,8,1,Success,124.0,0,"4/4 (default, none stored)",4527,9,
+96.2,True,7,546.13,153.93,A_Taste_of_Honey.mid,data/jazz/A_Taste_of_Honey.mid,True,8,17,Success,150.0,0,4/4,2714,15,file length and last note time differ by >1 s (silence/padding at end)
 ,False,1,201.86,201.86,After_the_Fall.mid,data/jazz/After_the_Fall.mid,True,11,8,Success,97.0,6,4/4,3276,12,"tempo changes within file: [75.0, 76.0, 80.0, 85.0, 90.0, 94.0, 97.0]"
+,False,1,127.2,125.66,Aint_No_Sunshine.mid,data/jazz/Aint_No_Sunshine.mid,True,7,1,Success,200.0,1,4/4,1638,8,"tempo changes within file: [80.0, 200.0]; file length and last note time differ by >1 s (silence/padding at end)"
 ,False,1,156.96,156.96,Anything_Goes.mid,data/jazz/Anything_Goes.mid,False,13,15,Success,122.0,4,2/4,2907,14,"tempo changes within file: [120.0, 121.0, 122.0, 124.0, 125.0]"
 88.8,True,1,184.14,183.78,Cest_si_bon.mid,data/jazz/Cest_si_bon.mid,True,9,12,Success,116.0,0,4/4,2771,10,
 37.4,True,1,94.02,92.65,Chameleon.mid,data/jazz/Chameleon.mid,True,5,7,Success,97.0,0,4/4,1856,6,file length and last note time differ by >1 s (silence/padding at end)
 56.0,True,6,201.08,200.63,Christmas_Song.mid,data/jazz/Christmas_Song.mid,True,8,16,Success,67.0,0,4/4,2584,14,
 147.0,True,2,339.23,339.23,Dont_Get_Around_Much_Anymore.mid,data/jazz/Dont_Get_Around_Much_Anymore.mid,True,17,31,Success,104.0,0,4/4,6326,19,
+89.8,True,1,179.68,179.68,Dont_Worry_Be_Happy.mid,data/jazz/Dont_Worry_Be_Happy.mid,True,10,11,Success,120.0,0,4/4,4018,11,
 ,False,1,256.19,254.0,Dont_You_Worry_Bout_a_Thing.mid,data/jazz/Dont_You_Worry_Bout_a_Thing.mid,True,15,1,Success,200.0,1,4/4,9884,16,"tempo changes within file: [112.0, 200.0]; file length and last note time differ by >1 s (silence/padding at end)"
 91.7,True,0,220.51,220.14,Eternal_Child.mid,data/jazz/Eternal_Child.mid,True,1,3,Success,100.0,0,4/4,1336,1,
 ,False,1,287.42,285.22,Feel_Like_Making_Love.mid,data/jazz/Feel_Like_Making_Love.mid,True,10,1,Success,200.0,1,4/4,6220,11,"tempo changes within file: [109.01, 200.0]; file length and last note time differ by >1 s (silence/padding at end)"
@@ -13,6 +17,7 @@ bars_approx,constant_tempo,drum_tracks,duration_file_sec,duration_notes_sec,file
 62.3,True,1,128.0,124.59,Frankie_and_Johnny.mid,data/jazz/Frankie_and_Johnny.mid,True,8,1,Success,120.0,0,4/4,4332,9,file length and last note time differ by >1 s (silence/padding at end)
 136.1,True,1,291.63,291.63,Give_Me_the_Night.mid,data/jazz/Give_Me_the_Night.mid,True,13,16,Success,112.0,0,4/4,7082,14,
 109.3,True,1,136.08,135.19,"Hello,_Dolly.mid","data/jazz/Hello,_Dolly.mid",True,8,11,Success,194.01,0,4/4,3608,9,
+,False,1,184.43,180.68,I_Left_My_Heart_In_San_Francisco.mid,data/jazz/I_Left_My_Heart_In_San_Francisco.mid,False,8,11,Success,66.0,1,"3/4, 4/4, 5/4",1126,9,"tempo changes within file: [62.0, 66.0]; multiple time signatures; file length and last note time differ by >1 s (silence/padding at end)"
 53.8,True,1,145.62,145.03,I_Understand.mid,data/jazz/I_Understand.mid,True,12,15,Success,89.0,0,4/4,1825,13,
 56.0,True,1,192.17,192.17,In_Your_Eyes.mid,data/jazz/In_Your_Eyes.mid,True,5,9,Success,70.0,0,4/4,1361,6,
 108.5,True,1,134.23,134.23,It_Dont_Mean_a_Thing.mid,data/jazz/It_Dont_Mean_a_Thing.mid,True,15,31,Success,194.0,0,4/4,5714,16,
@@ -30,16 +35,26 @@ bars_approx,constant_tempo,drum_tracks,duration_file_sec,duration_notes_sec,file
 148.3,True,1,222.47,222.47,Night_and_Day.mid,data/jazz/Night_and_Day.mid,True,5,8,Success,160.0,0,4/4,6813,6,
 193.9,True,0,466.72,465.26,No_Mystery.mid,data/jazz/No_Mystery.mid,True,1,3,Success,100.0,0,4/4,3706,1,file length and last note time differ by >1 s (silence/padding at end)
 109.2,True,1,194.22,194.22,On_Broadway.mid,data/jazz/On_Broadway.mid,True,7,14,Success,135.0,0,4/4,4920,8,
+50.8,True,1,153.0,152.25,Once_I_Loved.mid,data/jazz/Once_I_Loved.mid,True,4,9,Success,80.0,0,4/4,3879,5,
+74.8,True,1,157.53,157.53,Orpheus.mid,data/jazz/Orpheus.mid,True,6,1,Success,114.0,0,"4/4 (default, none stored)",7764,7,
 105.4,True,0,210.88,210.88,Rockin_in_Rhythm.mid,data/jazz/Rockin_in_Rhythm.mid,True,4,5,Success,120.0,0,4/4,1838,4,
 119.0,True,1,282.89,282.89,Roof_Garden.mid,data/jazz/Roof_Garden.mid,True,8,1,Success,101.0,0,4/4,4494,9,
+246.7,True,7,481.88,348.24,So_Whats_New.mid,data/jazz/So_Whats_New.mid,True,7,16,Success,170.0,0,4/4,6903,14,file length and last note time differ by >1 s (silence/padding at end)
+66.0,True,1,150.0,132.0,South_of_the_Border.mid,data/jazz/South_of_the_Border.mid,True,11,1,Success,120.0,0,4/4,4287,12,file length and last note time differ by >1 s (silence/padding at end)
 99.8,True,0,242.21,239.63,Spain.mid,data/jazz/Spain.mid,True,1,3,Success,100.0,0,4/4,1894,1,file length and last note time differ by >1 s (silence/padding at end)
 ,True,1,220.21,219.26,Sundance_Chick_Corea_.mid,data/jazz/Sundance_Chick_Corea_.mid,False,8,11,Success,94.0,0,3/4,7333,9,
 ,True,1,201.33,198.01,Take_Five.mid,data/jazz/Take_Five.mid,False,5,1,Success,180.0,0,"4/4, 5/4",5437,6,multiple time signatures; file length and last note time differ by >1 s (silence/padding at end)
 ,False,5,112.62,112.62,Thats_My_Kick.mid,data/jazz/Thats_My_Kick.mid,True,18,34,Success,150.0,8,4/4,3235,23,"tempo changes within file: [145.0, 147.0, 150.0, 160.0, 161.0, 162.0, 163.0, 164.0, 165.0]"
+49.5,True,1,92.31,91.38,The_Girl_From_Ipanema.mid,data/jazz/The_Girl_From_Ipanema.mid,True,4,7,Success,130.0,0,4/4,2130,5,
+104.0,True,6,200.0,198.06,The_Girl_From_Ipanema_Garota_de_Ipanema_.1.mid,data/jazz/The_Girl_From_Ipanema_Garota_de_Ipanema_.1.mid,True,11,19,Success,126.0,0,4/4,6472,17,file length and last note time differ by >1 s (silence/padding at end)
+90.9,True,1,188.28,188.12,The_Girl_From_Ipanema_Garota_de_Ipanema_.mid,data/jazz/The_Girl_From_Ipanema_Garota_de_Ipanema_.mid,True,8,11,Success,116.0,0,4/4,4231,9,
 ,True,1,105.95,103.75,The_One_Step.mid,data/jazz/The_One_Step.mid,False,3,6,Success,111.0,0,"2/4, 4/4",1217,4,multiple time signatures; file length and last note time differ by >1 s (silence/padding at end)
+,False,1,212.11,210.01,The_Shadow_of_Your_Smile.mid,data/jazz/The_Shadow_of_Your_Smile.mid,True,10,13,Success,90.0,158,4/4,1584,11,"tempo changes within file: [30.5, 31.5, 36.0, 38.5, 40.0, 49.08, 49.5, 49.58, 50.08, 50.5, 50.58, 51.08, 51.58, 52.0, 52.08, 52.58, 53.08, 53.58, 54.08, 54.58, 55.08, 55.58, 56.08, 56.58, 57.0, 57.08, 57.5, 57.58, 58.08, 58.58, 59.08, 59.58, 60.0, 60.08, 60.5, 60.58, 61.08, 61.58, 62.08, 62.58, 63.08, 63.58, 64.08, 64.58, 65.08, 65.58, 66.08, 66.5, 66.58, 67.08, 67.58, 68.08, 68.58, 69.08, 69.5, 69.58, 70.0, 70.08, 70.58, 71.0, 71.08, 71.5, 71.58, 72.0, 72.08, 72.58, 73.08, 73.58, 74.08, 74.5, 74.58, 75.08, 75.58, 76.08, 76.5, 76.58, 77.08, 77.5, 77.58, 78.08, 78.5, 78.58, 79.0, 79.08, 79.5, 79.58, 80.0, 80.08, 80.58, 81.0, 81.08, 81.58, 82.0, 82.08, 82.58, 83.0, 83.08, 83.58, 84.08, 84.5, 84.58, 85.08, 85.58, 86.08, 86.5, 86.58, 87.08, 87.58, 88.08, 88.5, 88.58, 89.0, 89.08, 89.58, 90.0, 90.08, 90.58, 91.08, 91.58, 92.08, 92.58, 93.08, 93.58, 94.08, 94.58, 95.08, 95.58, 96.08, 96.58, 97.08, 97.58, 98.08, 98.58, 99.08, 99.58, 100.08, 100.58, 101.08, 101.58, 102.08, 102.58, 103.08, 103.58, 104.08, 104.58, 105.08, 105.58, 106.08, 106.58, 107.08, 107.58, 108.08, 108.58, 109.08, 109.58, 110.08, 110.58, 111.0, 111.08]; file length and last note time differ by >1 s (silence/padding at end)"
 122.0,True,1,304.99,304.99,This_Masquerade.mid,data/jazz/This_Masquerade.mid,True,4,8,Success,96.0,0,4/4,4907,5,
+,True,1,125.28,125.28,Tijuana_Taxi.mid,data/jazz/Tijuana_Taxi.mid,False,6,12,Success,100.0,0,"1/4, 2/4, 4/4",4370,7,multiple time signatures
 ,True,1,143.01,143.01,What_Is_This_Thing_Called_Love.mid,data/jazz/What_Is_This_Thing_Called_Love.mid,False,14,16,Success,70.0,0,"1/4, 1/16, 2/4",1054,15,multiple time signatures
 41.2,True,1,157.5,154.65,What_a_Wonderful_World.1.mid,data/jazz/What_a_Wonderful_World.1.mid,True,4,9,Success,64.0,0,4/4,1850,5,file length and last note time differ by >1 s (silence/padding at end)
 100.9,True,0,201.87,201.88,When_Sunny_Gets_Blue.mid,data/jazz/When_Sunny_Gets_Blue.mid,True,1,3,Success,120.0,0,"4/4 (default, none stored)",1357,1,
 107.4,True,1,234.53,234.25,When_Your_Lover_Has_Gone.mid,data/jazz/When_Your_Lover_Has_Gone.mid,True,2,5,Success,110.0,0,4/4,2810,3,
 36.9,True,1,66.09,64.17,When_the_Saints_Go_Marching_In.mid,data/jazz/When_the_Saints_Go_Marching_In.mid,True,7,1,Success,138.0,0,4/4,2331,8,file length and last note time differ by >1 s (silence/padding at end)
+78.5,True,0,108.43,108.26,Whirlaway.mid,data/jazz/Whirlaway.mid,True,1,3,Success,174.0,0,4/4,1304,1,

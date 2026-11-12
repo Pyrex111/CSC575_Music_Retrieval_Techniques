@@ -1,6 +1,7 @@
 bars_approx,constant_tempo,drum_tracks,duration_file_sec,duration_notes_sec,filename,filepath,only_4_4,pitched_tracks,raw_midi_tracks,status,tempo_bpm,tempo_changes,time_signatures,total_notes,tracks_with_notes,warnings
 120.0,True,1,200.0,200.0,16.mid,data/rock/16.mid,True,4,6,Success,144.0,0,4/4,4803,5,
 131.0,True,1,165.53,165.53,86.mid,data/rock/86.mid,True,6,17,Success,190.0,0,4/4,8470,7,
+,False,1,322.45,322.45,After_Forever.mid,data/rock/After_Forever.mid,True,11,1,Success,115.0,1,4/4,9593,12,"tempo changes within file: [95.0, 115.0]"
 35.6,True,0,194.5,142.5,Amazing.mid,data/rock/Amazing.mid,True,4,10,Success,60.0,0,4/4,798,4,file length and last note time differ by >1 s (silence/padding at end)
 ,True,1,290.63,290.63,Angel.mid,data/rock/Angel.mid,False,7,1,Success,117.0,0,"2/4, 4/4",6819,8,multiple time signatures
 91.0,True,1,230.46,230.46,Back_In_Black.1.mid,data/rock/Back_In_Black.1.mid,True,7,22,Success,94.8,0,4/4,10818,8,
@@ -8,35 +9,54 @@ bars_approx,constant_tempo,drum_tracks,duration_file_sec,duration_notes_sec,file
 133.0,True,1,171.61,171.61,Basket_Case.mid,data/rock/Basket_Case.mid,True,2,4,Success,186.0,0,4/4,4591,3,
 ,False,1,299.74,299.74,Be_Quiet_and_Drive_Far_Away_.mid,data/rock/Be_Quiet_and_Drive_Far_Away_.mid,False,5,12,Success,80.0,1,"2/4, 4/4",8690,6,"tempo changes within file: [80.0, 94.0]; multiple time signatures"
 63.7,True,1,198.45,198.45,Brain_Stew.mid,data/rock/Brain_Stew.mid,True,5,8,Success,77.0,0,4/4,2857,6,
+133.0,True,1,251.43,251.43,Cant_Get_Enough.mid,data/rock/Cant_Get_Enough.mid,True,10,11,Success,127.0,0,4/4,6439,11,
+133.0,True,1,251.43,251.43,Cant_Get_Enough_of_Your_Love.mid,data/rock/Cant_Get_Enough_of_Your_Love.mid,True,12,14,Success,127.0,0,4/4,8891,13,
+,True,0,232.06,232.06,Changes.mid,data/rock/Changes.mid,False,3,1,Success,85.0,0,3/4,1910,3,
+,False,1,270.5,270.5,Children_of_the_Grave.mid,data/rock/Children_of_the_Grave.mid,True,3,7,Success,135.0,1,4/4,3632,4,"tempo changes within file: [135.0, 195.0]"
 ,True,2,288.22,288.22,Crazy.mid,data/rock/Crazy.mid,False,7,10,Success,90.0,0,"3/4, 6/4",4436,9,multiple time signatures
 99.3,True,1,133.83,133.83,Desensitized.mid,data/rock/Desensitized.mid,True,3,8,Success,177.99,0,4/4,3740,4,
 117.0,True,1,200.57,200.57,Dirty_Deeds_Done_Dirt_Cheap.mid,data/rock/Dirty_Deeds_Done_Dirt_Cheap.mid,True,5,5,Success,140.0,0,4/4,3346,6,
+131.0,True,1,215.32,215.32,Dont_Cry.mid,data/rock/Dont_Cry.mid,True,18,12,Success,146.0,0,4/4,6259,19,
 ,,,,,Dream_On.mid,data/rock/Dream_On.mid,,,,Error: OSError: data byte must be in range 0..127,,,,,,
 134.0,True,1,238.23,236.46,Dream_Police.mid,data/rock/Dream_Police.mid,True,10,13,Success,136.0,0,4/4,6386,11,file length and last note time differ by >1 s (silence/padding at end)
+,True,1,318.14,314.0,Feel_Like_Makin_Love.mid,data/rock/Feel_Like_Makin_Love.mid,False,11,13,Success,86.0,0,"2/4, 4/4",8737,12,multiple time signatures; file length and last note time differ by >1 s (silence/padding at end)
 ,False,1,337.2,337.2,For_Those_About_To_Rock_We_Salute_You_.mid,data/rock/For_Those_About_To_Rock_We_Salute_You_.mid,True,9,12,Success,135.0,5,4/4,6940,10,"tempo changes within file: [41.0, 110.0, 111.0, 112.0, 131.0, 135.0]"
+,False,1,231.99,231.99,Heart_of_the_Moment.mid,data/rock/Heart_of_the_Moment.mid,False,20,14,Success,128.0,8,"2/4, 3/4, 3/8, 4/4, 5/8, 12/8",5112,21,"tempo changes within file: [128.0, 129.0, 130.0, 131.0, 132.0, 133.0, 134.0, 135.0, 136.0]; multiple time signatures"
 90.0,True,1,186.21,186.21,Highway_To_Hell.1.mid,data/rock/Highway_To_Hell.1.mid,True,4,6,Success,116.0,0,4/4,3095,5,
+92.6,True,0,185.1,185.1,Honestly_Love_You.mid,data/rock/Honestly_Love_You.mid,True,1,2,Success,120.0,0,"4/4 (default, none stored)",1138,1,no tempo event in midi;default 120 BPM assumed
 ,False,1,311.65,303.51,I_Dont_Want_to_Miss_a_Thing.mid,data/rock/I_Dont_Want_to_Miss_a_Thing.mid,False,15,1,Success,61.0,2,"2/4, 4/4",4043,16,"tempo changes within file: [59.0, 61.0, 62.0]; multiple time signatures; file length and last note time differ by >1 s (silence/padding at end)"
 252.0,True,0,336.0,336.0,I_Want_You_to_Want_Me.mid,data/rock/I_Want_You_to_Want_Me.mid,True,4,11,Success,180.0,0,4/4,2348,4,
+87.8,True,1,210.72,210.72,If_You_Needed_Somebody.mid,data/rock/If_You_Needed_Somebody.mid,True,4,6,Success,100.0,0,4/4,3182,5,
 ,False,1,337.29,337.29,Iron_Man.mid,data/rock/Iron_Man.mid,True,4,7,Success,85.0,1,4/4,5930,5,"tempo changes within file: [85.0, 90.0]"
 111.2,True,1,222.52,222.52,Its_My_Life.mid,data/rock/Its_My_Life.mid,True,11,15,Success,119.98,0,4/4,3268,12,
 70.0,True,3,139.92,139.92,Janies_Got_a_Gun.mid,data/rock/Janies_Got_a_Gun.mid,True,7,20,Success,120.0,0,4/4,2967,10,
 ,False,1,255.01,255.01,Kings_and_Queens.mid,data/rock/Kings_and_Queens.mid,True,13,22,Success,123.0,1,4/4,5639,14,"tempo changes within file: [123.0, 124.0]"
+57.9,True,0,134.59,134.59,Laguna_Sunrise.mid,data/rock/Laguna_Sunrise.mid,True,2,5,Success,103.2,0,4/4,882,2,
 111.6,True,8,282.0,282.0,Layla.mid,data/rock/Layla.mid,True,6,15,Success,95.0,0,4/4,7299,14,
 ,True,1,250.98,250.98,Living_on_a_Prayer.mid,data/rock/Living_on_a_Prayer.mid,False,13,1,Success,123.0,0,"3/4, 4/4",6926,14,multiple time signatures
 95.9,True,1,169.22,169.21,Minority.mid,data/rock/Minority.mid,True,7,12,Success,136.0,0,4/4,6967,8,
 133.1,True,0,215.88,215.88,Nightrain.mid,data/rock/Nightrain.mid,True,5,7,Success,148.0,0,4/4,3351,5,
+121.9,True,1,237.93,237.93,Nix_wie_bessher.mid,data/rock/Nix_wie_bessher.mid,True,12,1,Success,123.0,0,"4/4 (default, none stored)",5205,13,
 ,False,1,531.71,525.71,November_Rain.mid,data/rock/November_Rain.mid,True,9,12,Success,61.0,47,4/4,5600,10,"tempo changes within file: [40.0, 48.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0, 61.0, 62.0, 63.0, 64.0, 65.0, 66.0, 67.0, 68.0, 69.0, 70.0, 71.0, 72.0, 73.0, 74.0, 75.0, 76.0, 77.0, 78.0, 79.0, 80.0, 81.0, 82.0, 83.0, 84.0, 85.0, 86.0, 87.0, 88.0, 89.0, 90.0, 91.0, 92.0, 93.0, 94.0, 95.0, 96.0, 97.0, 98.0, 99.0]; file length and last note time differ by >1 s (silence/padding at end)"
+,False,1,311.19,311.19,Only_Time_Will_Tell.mid,data/rock/Only_Time_Will_Tell.mid,True,16,15,Success,121.0,3,4/4,6522,17,"tempo changes within file: [109.0, 113.0, 117.0, 121.0]"
 ,False,2,428.68,428.68,Paradise_City.mid,data/rock/Paradise_City.mid,False,7,13,Success,98.0,6,"2/4, 4/4",7053,9,"tempo changes within file: [98.0, 104.0, 105.0, 106.0, 109.0, 112.0, 114.0]; multiple time signatures"
+158.0,True,1,270.86,270.86,Paranoid.4.mid,data/rock/Paranoid.4.mid,True,8,19,Success,140.0,0,4/4,6347,9,
 150.0,True,0,299.99,299.99,Patience.mid,data/rock/Patience.mid,True,5,5,Success,120.0,0,4/4,2010,5,
 ,True,1,227.05,227.05,Pink.mid,data/rock/Pink.mid,False,9,14,Success,88.0,0,"2/4, 3/4, 4/4",5724,10,multiple time signatures
 46.1,True,1,112.8,110.55,R.I.P._Rock_in_Peace_.mid,data/rock/R.I.P._Rock_in_Peace_.mid,True,9,10,Success,100.0,0,4/4,2344,10,file length and last note time differ by >1 s (silence/padding at end)
+94.1,True,2,225.75,225.75,Rock_Steady.mid,data/rock/Rock_Steady.mid,True,10,17,Success,100.0,0,4/4,6184,12,
+,False,1,309.87,309.87,Sabbath_Bloody_Sabbath.mid,data/rock/Sabbath_Bloody_Sabbath.mid,True,7,1,Success,145.0,1,4/4,8773,8,"tempo changes within file: [145.0, 148.0]"
+241.5,True,1,340.94,340.94,Shooting_Star.mid,data/rock/Shooting_Star.mid,True,10,16,Success,170.0,0,4/4,7520,11,
 ,True,1,166.72,166.72,Suffocate.mid,data/rock/Suffocate.mid,False,3,6,Success,183.0,0,"1/4, 4/4",5029,4,multiple time signatures
 151.2,True,1,311.18,307.5,Sunshine_of_Your_Love.mid,data/rock/Sunshine_of_Your_Love.mid,True,7,1,Success,118.0,0,4/4,5619,8,file length and last note time differ by >1 s (silence/padding at end)
+86.0,True,1,172.02,172.02,Supernaut.mid,data/rock/Supernaut.mid,True,4,8,Success,120.0,0,4/4,3628,5,
 112.0,True,1,224.0,224.0,Sweet_Child_O_Mine.mid,data/rock/Sweet_Child_O_Mine.mid,True,4,14,Success,120.0,0,4/4,3627,5,
 ,True,8,214.8,214.8,Sweet_Emotion.mid,data/rock/Sweet_Emotion.mid,False,4,14,Success,99.0,0,"2/4, 4/4",5328,12,multiple time signatures
+,True,1,254.82,254.82,Symptom_of_the_Universe.mid,data/rock/Symptom_of_the_Universe.mid,False,6,9,Success,85.0,0,4/8,4450,7,
 106.4,True,1,202.74,202.74,TNT.mid,data/rock/TNT.mid,True,7,1,Success,126.0,0,"4/4 (default, none stored)",2930,8,
 133.0,True,2,309.9,309.9,The_Flame.mid,data/rock/The_Flame.mid,True,7,28,Success,103.0,0,4/4,3614,9,
 ,False,1,291.67,291.67,Thunderstruck.mid,data/rock/Thunderstruck.mid,True,4,1,Success,134.0,16,4/4,6345,5,"tempo changes within file: [80.0, 84.0, 87.0, 91.0, 94.0, 97.0, 101.0, 104.0, 107.0, 111.0, 114.0, 118.0, 121.0, 124.0, 128.0, 131.0, 134.0]"
+,False,1,339.68,339.48,Verdammt_lang_her.mid,data/rock/Verdammt_lang_her.mid,True,8,11,Success,120.0,1,4/4,7246,9,"tempo changes within file: [120.0, 152.0]"
 ,False,1,292.23,292.23,Wanted_Dead_or_Alive.mid,data/rock/Wanted_Dead_or_Alive.mid,False,15,1,Success,75.0,17,"2/4, 4/4",5032,16,"tempo changes within file: [20.0, 46.0, 48.0, 50.0, 52.0, 54.0, 56.0, 58.0, 60.0, 62.0, 64.0, 66.0, 68.0, 70.0, 72.0, 74.0, 75.0, 76.0]; multiple time signatures"
 ,False,1,434.75,434.75,War_Pigs.mid,data/rock/War_Pigs.mid,True,7,18,Success,120.0,2,4/4,6496,8,"tempo changes within file: [120.0, 160.0, 205.0]"
 111.1,True,1,222.25,222.25,Warning.mid,data/rock/Warning.mid,True,2,1,Success,120.0,0,4/4,1658,3,

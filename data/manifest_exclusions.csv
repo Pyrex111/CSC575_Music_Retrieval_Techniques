@@ -1,0 +1,71 @@
+genre,filename,reason
+rock,Suffocate.mid,not 4/4 only
+rock,Iron_Man.mid,tempo changes
+rock,Dream_On.mid,could not be parsed
+rock,I_Dont_Want_to_Miss_a_Thing.mid,tempo changes; not 4/4 only
+rock,Only_Time_Will_Tell.mid,tempo changes
+rock,War_Pigs.mid,tempo changes
+rock,Welcome_to_the_Jungle.mid,no drum track
+rock,Thunderstruck.mid,tempo changes
+rock,Angel.mid,not 4/4 only
+rock,Honestly_Love_You.mid,fewer than 2 pitched tracks (need melody + accompaniment); no drum track
+rock,For_Those_About_To_Rock_We_Salute_You_.mid,tempo changes
+rock,I_Want_You_to_Want_Me.mid,no drum track
+rock,You_Shook_Me_All_Night_Long.mid,tempo changes
+rock,You_Give_Love_a_Bad_Name.mid,not 4/4 only
+rock,After_Forever.mid,tempo changes
+rock,Paradise_City.mid,tempo changes; not 4/4 only
+rock,Sweet_Emotion.mid,not 4/4 only
+rock,You_Shook_Me_All_Night_Long.1.mid,tempo changes
+rock,Feel_Like_Makin_Love.mid,not 4/4 only
+rock,Verdammt_lang_her.mid,tempo changes
+rock,Laguna_Sunrise.mid,no drum track
+rock,Patience.mid,no drum track
+rock,Kings_and_Queens.mid,tempo changes
+rock,Pink.mid,not 4/4 only
+rock,Dirty_Deeds_Done_Dirt_Cheap.mid,no window where melody is active in >=75% of bars
+rock,Amazing.mid,no drum track
+rock,Living_on_a_Prayer.mid,not 4/4 only
+rock,Wanted_Dead_or_Alive.mid,tempo changes; not 4/4 only
+rock,You_Could_Be_Mine.mid,tempo changes
+rock,November_Rain.mid,tempo changes
+rock,Warning.mid,no melody candidate
+rock,Sabbath_Bloody_Sabbath.mid,tempo changes
+rock,Heart_of_the_Moment.mid,tempo changes; not 4/4 only
+rock,Changes.mid,not 4/4 only; no drum track
+rock,Symptom_of_the_Universe.mid,not 4/4 only
+rock,Crazy.mid,not 4/4 only
+rock,Children_of_the_Grave.mid,tempo changes
+rock,Worry_Rock.mid,tempo 278.0 BPM: no 30-60 s bar aligned excerpt possible
+rock,Nightrain.mid,no drum track
+rock,Whole_Lotta_Rosie.mid,eligible but not needed (30 already chosen)
+rock,Be_Quiet_and_Drive_Far_Away_.mid,tempo changes; not 4/4 only
+jazz,Dont_You_Worry_Bout_a_Thing.mid,tempo changes
+jazz,No_Mystery.mid,fewer than 2 pitched tracks (need melody + accompaniment); no drum track
+jazz,Love_Letters.mid,fewer than 2 pitched tracks (need melody + accompaniment); no drum track
+jazz,Aint_No_Sunshine.mid,tempo changes
+jazz,A_Taste_of_Honey.mid,no window where melody is active in >=75% of bars
+jazz,Just_One_of_Those_Things.mid,tempo changes; not 4/4 only
+jazz,Sundance_Chick_Corea_.mid,not 4/4 only
+jazz,500_Miles_High.mid,fewer than 2 pitched tracks (need melody + accompaniment); no drum track
+jazz,Spain.mid,fewer than 2 pitched tracks (need melody + accompaniment); no drum track
+jazz,Tijuana_Taxi.mid,not 4/4 only
+jazz,Feel_Like_Making_Love.mid,tempo changes
+jazz,Nature_Boy.mid,fewer than 2 pitched tracks (need melody + accompaniment); no drum track
+jazz,After_the_Fall.mid,tempo changes
+jazz,Anything_Goes.mid,tempo changes; not 4/4 only
+jazz,When_Sunny_Gets_Blue.mid,fewer than 2 pitched tracks (need melody + accompaniment); no drum track
+jazz,Eternal_Child.mid,fewer than 2 pitched tracks (need melody + accompaniment); no drum track
+jazz,Its_Only_a_Paper_Moon.mid,tempo changes
+jazz,La_Fiesta.mid,fewer than 2 pitched tracks (need melody + accompaniment); no drum track
+jazz,Whirlaway.mid,fewer than 2 pitched tracks (need melody + accompaniment); no drum track
+jazz,I_Left_My_Heart_In_San_Francisco.mid,tempo changes; not 4/4 only
+jazz,Take_Five.mid,not 4/4 only
+jazz,Rockin_in_Rhythm.mid,no drum track
+jazz,Christmas_Song.mid,no window where melody is active in >=75% of bars
+jazz,The_Shadow_of_Your_Smile.mid,tempo changes
+jazz,It_Dont_Mean_a_Thing.mid,no window where melody is active in >=75% of bars
+jazz,What_Is_This_Thing_Called_Love.mid,not 4/4 only
+jazz,Ive_Got_You_Under_My_Skin.mid,tempo changes
+jazz,Thats_My_Kick.mid,tempo changes
+jazz,The_One_Step.mid,not 4/4 only
