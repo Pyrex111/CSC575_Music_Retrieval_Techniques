@@ -7,7 +7,12 @@ import pretty_midi
 
 def inspect_midi_file(file_path):
     path = Path(file_path)
-    info = {"filename": path.name, "status": "Success", "warnings": []}
+    try:
+        rel_path = str(path.relative_to(Path.cwd()))
+    except ValueError:
+        rel_path = str(path) 
+
+    info = {"filename": path.name, "filepath": rel_path, "status": "Success", "warnings": []}
     try:
         raw = mido.MidiFile(str(path), clip=True)
         pm = pretty_midi.PrettyMIDI(str(path))
