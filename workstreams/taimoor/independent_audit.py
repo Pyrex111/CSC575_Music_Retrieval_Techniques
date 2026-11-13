@@ -93,7 +93,8 @@ def audit_case(annotation, root):
                'source_sha256': source['sha256'], 'output_sha256': output['sha256'],
                'melody_notes': sum(output_melody.values()), 'melody_event_differences': changes,
                'duration_seconds': output['duration_seconds'],
-               'duration_preserved': abs(output['duration_seconds']-expected_duration) < 1e-6,
+               'duration_preserved': abs(output['duration_seconds']-source['duration_seconds']) < 1e-6,
+               'annotation_duration_agreement_within_one_tick': abs(output['duration_seconds']-expected_duration) <= (source['tempos'][0][1]/1e6)/source['ticks_per_beat'] + 1e-8,
                'tempo_preserved': output['tempos'] == source['tempos'],
                'metre_preserved': output['signatures'] == source['signatures'],
                'markers_preserved': output['markers'] == expected_markers,
@@ -102,10 +103,12 @@ def audit_case(annotation, root):
                'register_violations': int(range_violations), 'bounds_violations': bounds_violations,
                'accompaniment_notes_per_bar_by_phrase': densities,
                'mean_phrase_texture_change_notes_per_bar': texture_change}
+        row['generated_harmony_register_constraints_applicable'] = method != 'instrument_only'
         row['technical_pass'] = changes == 0 and all(row[key] for key in (
             'duration_preserved', 'tempo_preserved', 'metre_preserved', 'markers_preserved')) and all(
-                row[key] == 0 for key in ('unmatched_note_events', 'chord_membership_violations',
-                                         'register_violations', 'bounds_violations'))
+                row[key] == 0 for key in ('unmatched_note_events', 'bounds_violations')) and (
+                    method == 'instrument_only' or
+                    (row['chord_membership_violations'] == 0 and row['register_violations'] == 0))
         rows.append(row)
     return rows
 

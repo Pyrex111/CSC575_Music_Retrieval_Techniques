@@ -1,0 +1,439 @@
+{
+  "schema_version": 1,
+  "case_id": "rock_Bad_Medicine",
+  "composition_id": "Bad_Medicine",
+  "source_style": "rock",
+  "split": "development",
+  "bars": 16,
+  "midi_path": "rock_Bad_Medicine.mid",
+  "melody_track": 4,
+  "tempo_bpm": 120.0,
+  "time_signature": [
+    4,
+    4
+  ],
+  "phrases": [
+    {
+      "label": "P1",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "P2",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "P3",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "P4",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ],
+  "chords": [
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    }
+  ],
+  "provenance": {
+    "source_url": "https://raw.githubusercontent.com/Pyrex111/CSC575_Music_Retrieval_Techniques/3316077bdd47621f2eb9a506ee2900c0bb94dfe4/data/rock/Bad_Medicine.mid",
+    "source_revision": "3316077bdd47621f2eb9a506ee2900c0bb94dfe4",
+    "source_sha256": "71b3688fcfe8044c0cab7cefa5c290480206129aec233d286afe3784893089d2",
+    "source_git_blob": "860d8d62877191fe6e382106c2f27765d22139a6",
+    "start_bar_zero_based": 8,
+    "source_melody_track_index": 6,
+    "source_melody_track_name": "Leading Voice",
+    "boundary_trimmed_melody_notes": 1
+  },
+  "annotation_status": "provisional_computational; not independently musician-reviewed",
+  "phrase_policy": "Four-bar grid; exact repeated melody signatures share labels; musical boundaries not independently reviewed",
+  "chord_diagnostics": [
+    {
+      "bar": 1,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Emaj",
+      "coverage": 1.0,
+      "score_margin": 0.03499999999999992,
+      "alternative": "E7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 2,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Amaj7",
+      "coverage": 0.7857142857142856,
+      "score_margin": 0.08542707292707274,
+      "alternative": "Dbmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 3,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Amaj",
+      "coverage": 0.9691358024691359,
+      "score_margin": 0.03499999999999992,
+      "alternative": "A7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 4,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Emaj",
+      "coverage": 0.859154929577465,
+      "score_margin": 0.03500000000000003,
+      "alternative": "E7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 5,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Emaj",
+      "coverage": 0.8823529411764708,
+      "score_margin": 0.03500000000000003,
+      "alternative": "E7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 6,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Amaj7",
+      "coverage": 0.7857142857142858,
+      "score_margin": 0.08542707292707286,
+      "alternative": "Dbmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 7,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Amaj",
+      "coverage": 0.9691358024691359,
+      "score_margin": 0.03499999999999992,
+      "alternative": "A7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 8,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Emaj",
+      "coverage": 0.9450549450549453,
+      "score_margin": 0.03499999999999992,
+      "alternative": "E7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 9,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "E7",
+      "coverage": 0.9395854203590968,
+      "score_margin": 0.0868052451773651,
+      "alternative": "Emaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 10,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.6981119413001659,
+      "score_margin": 0.05571052957414002,
+      "alternative": "A7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 11,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "E7",
+      "coverage": 0.9394127962889629,
+      "score_margin": 0.051733891497425244,
+      "alternative": "Emin7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 12,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Emin",
+      "coverage": 0.8289032258064511,
+      "score_margin": 0.03500000000000003,
+      "alternative": "Emin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 13,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "E7",
+      "coverage": 0.9368645815640695,
+      "score_margin": 0.08554448838958673,
+      "alternative": "Emaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 14,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.7119556428323901,
+      "score_margin": 0.07681702668360857,
+      "alternative": "Emin",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 15,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "E7",
+      "coverage": 0.9444248842185091,
+      "score_margin": 0.0689731332773611,
+      "alternative": "Emaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 16,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.661498835999802,
+      "score_margin": 0.009176652724773415,
+      "alternative": "A7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    }
+  ]
+}

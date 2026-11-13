@@ -1,5 +1,65 @@
 # Taimoor: constrained arrangement prototype
 
+## Source-derived evaluation checkpoint (12 November 2026)
+
+The workstream now also has a 12-composition pilot using Smit's pinned MIDI
+collection: four development inputs and eight compositions held out from
+parameter selection, with both source folders represented. See the
+[evaluation summary](../../results/taimoor_evaluation/EVALUATION_SUMMARY.md)
+and [updated indicator status](../../docs/taimoor_progress.md).
+
+The checkpoint uses provisional chord estimates and a four-bar grid; these are
+not independently reviewed musical annotations. It does not claim human-rated
+genre improvement or completion of the original 60-composition final study.
+Earlier synthetic-only limitations below describe the initial prototype.
+
+From the repository root, create a fresh run directory and execute:
+
+```bash
+python -m workstreams.taimoor.checkpoint prepare --output results/local/new_checkpoint
+python -m workstreams.taimoor.checkpoint tune --output results/local/new_checkpoint
+python -m workstreams.taimoor.checkpoint evaluate --output results/local/new_checkpoint
+python -m pytest tests/test_taimoor_arranger.py tests/test_taimoor_checkpoint.py -q
+```
+
+Preparation fetches exact pinned source blobs from Smit's branch. Tuning fetches
+Vinay's pinned, unchanged feature extractor and uses development inputs only.
+The selection file freezes input and code hashes before evaluation. Existing
+selection/evaluation records are never silently overwritten. Failed planned
+cases remain in the denominator and failure log.
+
+The current code passes 42 tests. A fresh run with the corrected code passes
+48/48 exported conditions in both technical checks. The original evaluation
+retains its false timing flags, and `evaluation_rechecked.json` measures those
+same saved MIDI files after the timing correction without changing their hashes.
+`code_at_first_run/` preserves the code that generated the original exports.
+The corrected repeat is explicitly diagnostic rather than a newly untouched test
+set; it selects the same style/continuity weights (1/4) using development data.
+
+The recorded comparison can be summarized or rechecked without generating new
+arrangements:
+
+```bash
+python -m scripts.recheck_taimoor_checkpoint --output results/taimoor_evaluation
+python -m scripts.summarize_taimoor_checkpoint --output results/taimoor_evaluation
+```
+
+For new matched audio, install FluidSynth/FFmpeg and a General MIDI SoundFont,
+then run:
+
+```bash
+python -m scripts.render_taimoor_listening --output results/taimoor_evaluation --soundfont /path/to/TimGM6mb.sf2
+```
+
+This fetches Abdullah's pinned renderer, records validation of source and four
+conditions per held-out composition, and creates anonymous A/B/C/D MP3 listening
+copies plus a blank ratings CSV. MP3/WAV files remain local. No listener responses
+are manufactured. Smit, Vinay and Abdullah retain ownership of their components.
+
+---
+
+## Initial standalone prototype
+
 This independently runnable workstream implements the arrangement and experiment-runner parts of Taimoor's design objectives. It is a progress-stage prototype, using hand-authored templates and original synthetic MIDI fixtures. It does not require Smit's dataset, Vinay's classifier, or Abdullah's renderer.
 
 ## Run it
@@ -113,3 +173,23 @@ The Python entry point is `arrange(song, target_style, method, weights)`, return
 The authoritative design specification remains the repository's root README. Detailed status, observed evidence, proposed advanced-objective refinements, and report text are in `docs/taimoor_progress.md`.
 
 The [verification protocol](../../docs/taimoor_verification.md) adds a separate raw-MIDI audit and a concrete blinded listening plan. Run the audit on local outputs with `python -m workstreams.taimoor.independent_audit --results results/local/taimoor`.
+
+## Optional independent audio-model diagnostic
+
+`scripts/assess_taimoor_audio.py` runs a pinned, quantized CLAP model locally on
+rendered WAVs; no project audio is sent to a service. The extra dependencies are
+in `audio_assessment_requirements.txt`. The downloadable model encoders total
+about 161 MB, with additional tokenizer/configuration files. It does not change
+arranger parameters or generate human ratings.
+
+The recorded [audio assessment](../../results/taimoor_audio_assessment/AUDIO_ASSESSMENT.md)
+contains 32 output-clip machine assessments, eight source clips and four
+source-development controls. The forced Jazz/Rock control result is 2/4, so the
+model is not used as a reliable final genre judge for these renderings. Two
+additional artist-labelled reference clips are documented separately.
+
+A guided listening package can be built with
+`scripts/build_taimoor_assessment_kit.py` after preparing the audio diagnostics
+and licensed reference excerpts. It supplies a plain-language form and CSV
+export. Team responses and external responses remain explicitly distinguished;
+unrated and unsure fields are retained rather than filled automatically.

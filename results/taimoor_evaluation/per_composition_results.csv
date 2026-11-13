@@ -1,0 +1,49 @@
+case_id,split,source_style,target_style,method,technical_pass,transform_seconds,target_reference_distance,accompaniment_events_different_from_fixed,mean_phrase_texture_change_notes_per_bar,mean_boundary_bass_jump_semitones,plans
+jazz_Cest_si_bon,development,jazz,rock,instrument_only,True,0.0028616390000024694,1.3998731779057336,756,2.3333333333333335,5.0,
+jazz_Cest_si_bon,development,jazz,rock,fixed,True,0.004792353000084404,1.2093313092303632,0,0.3333333333333333,4.666666666666667,regular / regular / regular / regular
+jazz_Cest_si_bon,development,jazz,rock,adaptive,True,0.005058485000063229,1.1822296029888366,85,1.1666666666666667,1.3333333333333333,build / build / regular / regular
+jazz_Cest_si_bon,development,jazz,rock,no_continuity,True,0.005284604999815201,1.2093313092303632,0,0.3333333333333333,4.666666666666667,regular / regular / regular / regular
+jazz_Feels_So_Good,development,jazz,rock,instrument_only,True,0.004808266000054573,1.1091757550888641,1469,11.0,5.0,
+jazz_Feels_So_Good,development,jazz,rock,fixed,True,0.005341842000234465,1.1817920290482447,0,0.0,2.3333333333333335,regular / regular / regular / regular
+jazz_Feels_So_Good,development,jazz,rock,adaptive,True,0.005680604000190215,1.1817920290482447,0,0.0,2.3333333333333335,regular / regular / regular / regular
+jazz_Feels_So_Good,development,jazz,rock,no_continuity,True,0.005853825000031065,1.1817920290482447,0,0.0,2.3333333333333335,regular / regular / regular / regular
+rock_Bad_Medicine,development,rock,jazz,instrument_only,True,0.0025785509997149347,0.5196293543915697,829,4.166666666666667,0.6666666666666666,
+rock_Bad_Medicine,development,rock,jazz,fixed,True,0.0050542479998512135,0.9571254368709288,0,0.5,3.6666666666666665,regular / regular / regular / regular
+rock_Bad_Medicine,development,rock,jazz,adaptive,True,0.005421272000148747,0.8902107259538815,62,7.833333333333333,3.6666666666666665,regular / regular / busy / regular
+rock_Bad_Medicine,development,rock,jazz,no_continuity,True,0.010896864999722311,0.8902107259538815,62,7.833333333333333,3.6666666666666665,regular / regular / busy / regular
+rock_Sweet_Child_O_Mine,development,rock,jazz,instrument_only,True,0.003128312000171718,1.1121885139728156,985,1.5833333333333333,0.0,
+rock_Sweet_Child_O_Mine,development,rock,jazz,fixed,True,0.004625330999715516,0.9857059199296628,0,0.16666666666666666,4.0,regular / regular / regular / regular
+rock_Sweet_Child_O_Mine,development,rock,jazz,adaptive,True,0.005119257000387734,0.9857059199296628,0,0.16666666666666666,4.0,regular / regular / regular / regular
+rock_Sweet_Child_O_Mine,development,rock,jazz,no_continuity,True,0.005286797999815462,1.0526622627620201,72,3.1666666666666665,4.0,regular / build / regular / build
+jazz_Let_There_Be_Love,test,jazz,rock,instrument_only,True,0.002365239000027941,0.44812334496113104,820,3.6666666666666665,6.666666666666667,
+jazz_Let_There_Be_Love,test,jazz,rock,fixed,True,0.004947345999880781,1.1917410563442346,0,1.1666666666666667,5.333333333333333,regular / regular / regular / regular
+jazz_Let_There_Be_Love,test,jazz,rock,adaptive,True,0.005345357000351214,0.5370754158383583,280,2.3333333333333335,2.6666666666666665,busy / busy / busy / busy
+jazz_Let_There_Be_Love,test,jazz,rock,no_continuity,True,0.005596036000042659,1.1917410563442346,0,1.1666666666666667,5.333333333333333,regular / regular / regular / regular
+jazz_Light_Years,test,jazz,rock,instrument_only,True,0.0025241189996449975,1.3471282167986391,926,3.5,4.0,
+jazz_Light_Years,test,jazz,rock,fixed,True,0.005152636999810056,1.1836220804531008,0,0.16666666666666666,1.3333333333333333,regular / regular / regular / regular
+jazz_Light_Years,test,jazz,rock,adaptive,True,0.005174930000066524,1.0796053671431962,50,1.5,1.3333333333333333,release / regular / regular / regular
+jazz_Light_Years,test,jazz,rock,no_continuity,True,0.005176081999707094,0.8680100456491016,122,8.166666666666666,2.3333333333333335,release / busy / regular / regular
+jazz_La_Vie_en_rose,test,jazz,rock,instrument_only,True,0.002489626999704342,0.866169851812914,809,9.666666666666666,3.0,
+jazz_La_Vie_en_rose,test,jazz,rock,fixed,True,0.005590936999851692,1.1894017197598936,0,0.5,0.0,regular / regular / regular / regular
+jazz_La_Vie_en_rose,test,jazz,rock,adaptive,True,0.0065617229997769755,1.1894017197598936,0,0.5,0.0,regular / regular / regular / regular
+jazz_La_Vie_en_rose,test,jazz,rock,no_continuity,True,0.00604569300003277,1.1894017197598936,0,0.5,0.0,regular / regular / regular / regular
+jazz_What_a_Wonderful_World_1,test,jazz,rock,instrument_only,True,0.003221763000055944,0.18519983213266167,1026,3.0,3.0,
+jazz_What_a_Wonderful_World_1,test,jazz,rock,fixed,True,0.0054124490002323,1.1940921136524347,0,0.8333333333333334,4.0,regular / regular / regular / regular
+jazz_What_a_Wonderful_World_1,test,jazz,rock,adaptive,True,0.006594382000002952,1.181165025659594,43,1.75,2.6666666666666665,build / regular / regular / regular
+jazz_What_a_Wonderful_World_1,test,jazz,rock,no_continuity,True,0.005766463000327349,1.1940921136524347,0,0.8333333333333334,4.0,regular / regular / regular / regular
+rock_Highway_To_Hell_1,test,rock,jazz,instrument_only,True,0.002635036999890872,0.811365939473023,788,6.333333333333333,0.0,
+rock_Highway_To_Hell_1,test,rock,jazz,fixed,True,0.005091003999950772,0.9758030808205833,0,0.0,4.0,regular / regular / regular / regular
+rock_Highway_To_Hell_1,test,rock,jazz,adaptive,True,0.004939404000197101,0.9758030808205833,0,0.0,4.0,regular / regular / regular / regular
+rock_Highway_To_Hell_1,test,rock,jazz,no_continuity,True,0.004962298999998893,0.9758030808205833,0,0.0,4.0,regular / regular / regular / regular
+rock_Brain_Stew,test,rock,jazz,instrument_only,True,0.0024663320000399835,0.7579198247899676,843,8.166666666666666,1.0,
+rock_Brain_Stew,test,rock,jazz,fixed,True,0.00494191799998589,0.9319865231346122,0,0.0,4.0,regular / regular / regular / regular
+rock_Brain_Stew,test,rock,jazz,adaptive,True,0.005530376000024262,0.9292702395004805,132,2.0,2.0,release / regular / release / release
+rock_Brain_Stew,test,rock,jazz,no_continuity,True,0.005203021999932389,0.8793007184757222,152,8.0,3.0,release / busy / regular / release
+rock_When_I_Come_Around,test,rock,jazz,instrument_only,True,0.003995139999915409,0.8354941783618316,1200,1.8333333333333333,1.0,
+rock_When_I_Come_Around,test,rock,jazz,fixed,True,0.004962988999977824,0.9634015937080057,0,0.16666666666666666,0.6666666666666666,regular / regular / regular / regular
+rock_When_I_Come_Around,test,rock,jazz,adaptive,True,0.005279477999920346,0.9634015937080057,0,0.16666666666666666,0.6666666666666666,regular / regular / regular / regular
+rock_When_I_Come_Around,test,rock,jazz,no_continuity,True,0.005223213000135729,0.953007161758003,41,2.0,3.6666666666666665,regular / release / regular / regular
+rock_TNT,test,rock,jazz,instrument_only,True,0.001694717999725981,1.0836515471314987,605,2.0833333333333335,12.0,
+rock_TNT,test,rock,jazz,fixed,True,0.004559560999950918,0.9542365313771792,0,0.5,2.3333333333333335,regular / regular / regular / regular
+rock_TNT,test,rock,jazz,adaptive,True,0.0049312229998577095,0.9542365313771792,0,0.5,2.3333333333333335,regular / regular / regular / regular
+rock_TNT,test,rock,jazz,no_continuity,True,0.005092496000088431,0.8046122628985347,184,4.666666666666667,2.3333333333333335,regular / busy / busy / busy

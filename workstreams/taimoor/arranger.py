@@ -203,7 +203,8 @@ def arrange(song: Song, target_style: str, method: str = 'adaptive',
         result = copy.deepcopy(song.midi)
         for index, instrument in enumerate(result.instruments):
             if index != song.melody_track and not instrument.is_drum:
-                instrument.program = PALETTES[target_style][0 if 'bass' in instrument.name.lower() else 1]
+                bass = 'bass' in instrument.name.lower() or 32 <= instrument.program <= 39
+                instrument.program = PALETTES[target_style][0 if bass else 1]
         return result, {'method': method, 'melody_track': song.melody_track, 'selection': [],
                         'weights': asdict(weights), 'selection_objective': None}
     effective = Weights(weights.style, 0 if method == 'no_continuity' else weights.continuity,

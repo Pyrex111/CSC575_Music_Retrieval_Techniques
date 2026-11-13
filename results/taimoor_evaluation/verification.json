@@ -1,0 +1,26 @@
+{
+  "suite": "tests/test_taimoor_arranger.py + tests/test_taimoor_checkpoint.py",
+  "passed": 42,
+  "failed": 0,
+  "original_recorded_suite": 35,
+  "new_regressions": 7,
+  "new_regression_scope": [
+    "GM bass with unnamed track",
+    "B0 source nonchord/range applicability plus negative melody control",
+    "crop-boundary and expression preservation",
+    "development reference fitting does not read heldout files",
+    "three decimal-tempo serialization and measurement cases"
+  ],
+  "corrected_fresh_repeat": {
+    "conditions": 48,
+    "technical_passes": 48,
+    "raw_audit_passes": 48,
+    "selected_weights": {
+      "style": 1,
+      "continuity": 4
+    }
+  },
+  "audio_clips": 40,
+  "audio_clipped_samples": 0,
+  "listener_responses_collected": 0
+}

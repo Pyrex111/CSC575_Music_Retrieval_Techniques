@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "case_id": "rock_Brain_Stew",
+  "composition_id": "Brain_Stew",
+  "source_style": "rock",
+  "split": "test",
+  "bars": 16,
+  "midi_path": "rock_Brain_Stew.mid",
+  "melody_track": 3,
+  "tempo_bpm": 76.99997818333952,
+  "time_signature": [
+    4,
+    4
+  ],
+  "phrases": [
+    {
+      "label": "P1",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "P2",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "P3",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "P4",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ],
+  "chords": [
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    }
+  ],
+  "provenance": {
+    "source_url": "https://raw.githubusercontent.com/Pyrex111/CSC575_Music_Retrieval_Techniques/3316077bdd47621f2eb9a506ee2900c0bb94dfe4/data/rock/Brain_Stew.mid",
+    "source_revision": "3316077bdd47621f2eb9a506ee2900c0bb94dfe4",
+    "source_sha256": "b184787c0ae1665a2d87d17f65d11446401076a8d9eebba11211c54bde9ecfe6",
+    "source_git_blob": "f491e188bc475692aa393fbad5113b10cdc21a8c",
+    "start_bar_zero_based": 8,
+    "source_melody_track_index": 4,
+    "source_melody_track_name": "",
+    "boundary_trimmed_melody_notes": 1
+  },
+  "annotation_status": "provisional_computational; not independently musician-reviewed",
+  "phrase_policy": "Four-bar grid; exact repeated melody signatures share labels; musical boundaries not independently reviewed",
+  "chord_diagnostics": [
+    {
+      "bar": 1,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Fmaj7",
+      "coverage": 0.5555578370276067,
+      "score_margin": 0.0,
+      "alternative": "Gbmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 2,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.8333243500601888,
+      "score_margin": 5.133298939807851e-06,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 3,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Fmaj7",
+      "coverage": 0.5555681036518371,
+      "score_margin": 1.1293291922509496e-05,
+      "alternative": "Gbmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 4,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.8333140834623093,
+      "score_margin": 1.0266597879615702e-05,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 5,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Fmaj7",
+      "coverage": 0.5555859746623997,
+      "score_margin": 2.2586204400654175e-05,
+      "alternative": "Gbmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 6,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.8999638102424729,
+      "score_margin": 9.239938092320266e-06,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 7,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Fmaj7",
+      "coverage": 0.6000328531975356,
+      "score_margin": 3.4495883973639785e-05,
+      "alternative": "Gbmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 8,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.899951490325019,
+      "score_margin": 1.2319917455538842e-05,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 9,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Fmaj7",
+      "coverage": 0.6000431198217665,
+      "score_margin": 4.599452208720045e-05,
+      "alternative": "Gbmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 10,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.899939170407571,
+      "score_margin": 1.539989681742515e-05,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 11,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Fmaj7",
+      "coverage": 0.6000533864459883,
+      "score_margin": 5.749316524994441e-05,
+      "alternative": "Gbmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 12,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.8999268504901059,
+      "score_margin": 1.8479876184751554e-05,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 13,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Fmaj7",
+      "coverage": 0.6000636530702338,
+      "score_margin": 6.899181349284689e-05,
+      "alternative": "Gbmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 14,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.8999145305726545,
+      "score_margin": 2.155985554652684e-05,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 15,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Fmaj7",
+      "coverage": 0.6000739196944592,
+      "score_margin": 8.049046678493266e-05,
+      "alternative": "Gbmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 16,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.8999884486542701,
+      "score_margin": 0.0,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    }
+  ]
+}

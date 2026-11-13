@@ -1,0 +1,175 @@
+{
+  "protocol_version": 1,
+  "scope": "Exploratory source-derived MIDI checkpoint; not the original 60-composition study.",
+  "team_repository": "Pyrex111/CSC575_Music_Retrieval_Techniques",
+  "source_revision": "3316077bdd47621f2eb9a506ee2900c0bb94dfe4",
+  "vinay_revision": "dcf7a4218243606e79055212830e08f4bfd9ff55",
+  "abdullah_revision": "98510f50b262683e227a09b4017788e85800e93a",
+  "composition_split_rule": "One crop per distinct filename/composition; no composition crosses development/test. Source MIDI SHA256 and content similarity are also checked. Artist grouping is not established.",
+  "sampling_rule": "Convenience pilot selected for constant 4/4 tempo, track identity and 30-60 second length, before any pilot parameter-selection or held-out arrangement run.",
+  "annotation_policy": "Melody tracks selected by track names/programs and inspected note activity; per-bar chord estimates and four-bar phrase grid are provisional computational annotations, not independently musician-reviewed ground truth. Cropping may trim boundary notes; invariants compare against prepared excerpt.",
+  "style_weight": 1.0,
+  "continuity_grid": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.8,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "selection_rule": "Minimize mean development target-reference descriptor distance + 0.25 * mean boundary bass jump in octaves. Any invariant/generation failure disqualifies a setting. Break exact ties by smallest continuity weight. Reference centers/scales use development source excerpts only. This is an engineering selection proxy, not perceptual quality.",
+  "descriptor_features": [
+    "note_density",
+    "average_polyphony",
+    "offbeat_activity",
+    "average_note_duration_beats"
+  ],
+  "descriptor_scale_floor": [
+    1.0,
+    1.0,
+    0.15,
+    0.25
+  ],
+  "methods": [
+    "instrument_only",
+    "fixed",
+    "adaptive",
+    "no_continuity"
+  ],
+  "cases": [
+    {
+      "case_id": "jazz_Cest_si_bon",
+      "composition_id": "Cest_si_bon",
+      "source_style": "jazz",
+      "path": "data/jazz/Cest_si_bon.mid",
+      "source_git_blob": "64e737756064274d985b443e979f0d9e9949f027",
+      "melody_track": 2,
+      "start_bar": 8,
+      "bars": 16,
+      "split": "development"
+    },
+    {
+      "case_id": "jazz_Feels_So_Good",
+      "composition_id": "Feels_So_Good",
+      "source_style": "jazz",
+      "path": "data/jazz/Feels_So_Good.mid",
+      "source_git_blob": "17de4f74d44b8ffdd8b244de7c65f0024b10d8bf",
+      "melody_track": 2,
+      "start_bar": 4,
+      "bars": 16,
+      "split": "development"
+    },
+    {
+      "case_id": "rock_Bad_Medicine",
+      "composition_id": "Bad_Medicine",
+      "source_style": "rock",
+      "path": "data/rock/Bad_Medicine.mid",
+      "source_git_blob": "860d8d62877191fe6e382106c2f27765d22139a6",
+      "melody_track": 6,
+      "start_bar": 8,
+      "bars": 16,
+      "split": "development"
+    },
+    {
+      "case_id": "rock_Sweet_Child_O_Mine",
+      "composition_id": "Sweet_Child_O_Mine",
+      "source_style": "rock",
+      "path": "data/rock/Sweet_Child_O_Mine.mid",
+      "source_git_blob": "cd2c20baa33da68b8686c4fcdb0c80a5f183f3e2",
+      "melody_track": 3,
+      "start_bar": 24,
+      "bars": 16,
+      "split": "development"
+    },
+    {
+      "case_id": "jazz_Let_There_Be_Love",
+      "composition_id": "Let_There_Be_Love",
+      "source_style": "jazz",
+      "path": "data/jazz/Let_There_Be_Love.mid",
+      "source_git_blob": "8b1c5aefd1db3a9469af7654e1c9df694c83b990",
+      "melody_track": 2,
+      "start_bar": 20,
+      "bars": 16,
+      "split": "test"
+    },
+    {
+      "case_id": "jazz_Light_Years",
+      "composition_id": "Light_Years",
+      "source_style": "jazz",
+      "path": "data/jazz/Light_Years.mid",
+      "source_git_blob": "f50caf315e938ba7a0bbdf5aa1bf69de80134c4f",
+      "melody_track": 1,
+      "start_bar": 12,
+      "bars": 16,
+      "split": "test"
+    },
+    {
+      "case_id": "jazz_La_Vie_en_rose",
+      "composition_id": "La_Vie_en_rose",
+      "source_style": "jazz",
+      "path": "data/jazz/La_Vie_en_rose.mid",
+      "source_git_blob": "90aa59a8be43d69db3e854427322aafead5c263e",
+      "melody_track": 0,
+      "start_bar": 8,
+      "bars": 16,
+      "split": "test"
+    },
+    {
+      "case_id": "jazz_What_a_Wonderful_World_1",
+      "composition_id": "What_a_Wonderful_World.1",
+      "source_style": "jazz",
+      "path": "data/jazz/What_a_Wonderful_World.1.mid",
+      "source_git_blob": "78308313bcec23f364ab8e3fc513c3362253b30a",
+      "melody_track": 0,
+      "start_bar": 8,
+      "bars": 16,
+      "split": "test"
+    },
+    {
+      "case_id": "rock_Highway_To_Hell_1",
+      "composition_id": "Highway_To_Hell.1",
+      "source_style": "rock",
+      "path": "data/rock/Highway_To_Hell.1.mid",
+      "source_git_blob": "278cdefe511ee05257ab4868af2ff20ad28aa566",
+      "melody_track": 4,
+      "start_bar": 12,
+      "bars": 16,
+      "split": "test"
+    },
+    {
+      "case_id": "rock_Brain_Stew",
+      "composition_id": "Brain_Stew",
+      "source_style": "rock",
+      "path": "data/rock/Brain_Stew.mid",
+      "source_git_blob": "f491e188bc475692aa393fbad5113b10cdc21a8c",
+      "melody_track": 4,
+      "start_bar": 8,
+      "bars": 16,
+      "split": "test"
+    },
+    {
+      "case_id": "rock_When_I_Come_Around",
+      "composition_id": "When_I_Come_Around",
+      "source_style": "rock",
+      "path": "data/rock/When_I_Come_Around.mid",
+      "source_git_blob": "56c1005bef56f4a6ecf24e8b403b6c1370abc6e1",
+      "melody_track": 3,
+      "start_bar": 12,
+      "bars": 16,
+      "split": "test"
+    },
+    {
+      "case_id": "rock_TNT",
+      "composition_id": "TNT",
+      "source_style": "rock",
+      "path": "data/rock/TNT.mid",
+      "source_git_blob": "f9ea0687aca5d24d0c059190fe523fed0ab369d0",
+      "melody_track": 5,
+      "start_bar": 12,
+      "bars": 16,
+      "split": "test"
+    }
+  ]
+}

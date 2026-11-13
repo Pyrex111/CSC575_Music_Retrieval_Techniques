@@ -1,70 +1,152 @@
-# Taimoor: progress evidence and next steps
+# Taimoor: progress evidence and remaining work
 
-## Scope of this checkpoint
+Checkpoint: 12 November 2026. This file distinguishes Taimoor's contribution from
+team components and preserves the limits of the evidence.
 
-The current main branch was inspected at commit `2295649a2e3d6f47a9adebfceae9c243a9fda517`. It contained the approved design README and no implementation files. This checkpoint supplies an independently runnable arrangement prototype, engineering comparisons, and reproducible evidence. It does not infer that teammates have done no work outside the repository.
+## Current implementation
 
-The instructor awarded the design specification 10/10, approved the basic and expected indicators, and requested more independent contributions, stronger advanced objectives, and consideration of audio work. This implementation addresses independence by accepting reviewed example inputs directly, without requiring the team's unfinished dataset, classifier, or UI.
+The standalone arranger defines a beat-based MIDI/annotation contract; adapts
+bass and chord templates to supplied harmony; and selects phrase plans using
+dynamic programming, transition costs, and repeated-label consistency. The
+experiment runner compares instrument substitution (B0), fixed patterns (B1),
+adaptive selection (M), and a continuity ablation on matched inputs.
 
-## Status against Taimoor's existing objectives
+The original four synthetic fixtures remain engineering checks. The new
+[source-derived checkpoint](../results/taimoor_evaluation/EVALUATION_SUMMARY.md)
+uses 12 distinct compositions from Smit's dataset branch, with four development
+and eight held-out-for-parameter-selection cases, balanced between the two
+source genre folders. Each prepared excerpt is 16 bars, about 30-60 seconds.
 
-| Objective / indicator | Status | Evidence and remaining work |
+## Status against the approved README indicators
+
+| Indicator | Current status | Evidence and limits |
 | --- | --- | --- |
-| O1 PI1 basic: representation/interfaces | Implemented for the supported scope | `model.py`, annotation examples, and the workstream README define beat coordinates, melody selection, chord maps, phrase markers, and pattern interfaces. Team agreement is still needed. |
-| O1 PI2 basic: constrained adaptation | Implemented and engineering-tested | Templates map onto supplied chords; selected melody is protected. Export/reload and all-root chord/register tests are included. Real-song review remains. |
-| O1 PI3 expected: style-aware retrieval | Prototype only | Candidates are scored against hand-authored density/offbeat profiles. No real-data validation, GMD library, or parameter selection has been completed. |
-| O1 PI4 expected: phrase-level selection | Prototype demonstrated | Dynamic programming, continuity penalties, repeated-phrase assignments, and 32/48-second outputs in both directions work on synthetic fixtures. Real excerpts and independent musical assessment remain. |
-| O1 PI5 advanced: learned/pretrained comparison | Not implemented | A concrete proposed refinement is below. No model compatibility or training result is claimed. |
-| O2 PI1 basic: matched experiment design | Implemented for engineering demonstration | Controlled B0/B1/M reference conditions and a continuity ablation use matched inputs, harmony, and palettes. The real-music experimental protocol remains to be frozen. |
-| O2 PI2 basic: experiment runner | Implemented | Saves IDs, inputs/output hashes, source-code hashes, configuration, traces, versions, and transformation time. No randomness is used. |
-| O2 PI3 expected: held-out comparisons | Not completed | Only generated fixtures have been evaluated. No real-composition held-out results exist. |
-| O2 PI4 expected: ablations | Engineering pilot only | Fixed choice versus adaptive choice, and full selection versus zero continuity, have been executed. Interpretation on real music and listener evidence remain. |
-| O2 PI5 advanced: robustness/sensitivity | Not completed | Default weights are documented, not optimized; no completed validation-selected sensitivity study is claimed. |
+| O1 PI1 basic: representation/interfaces with examples | Implemented | `model.py`, worked synthetic annotations, and 12 source-derived annotation JSONs. Team agreement and independent annotation review remain pending. |
+| O1 PI2 basic: constrained bass/chord adaptation | Implemented and tested | Chord mapping, melody protection and bounds; 42 passing tests and 48/48 checkpoint raw-event audit passes. Harmony claims concern the supplied chord map. |
+| O1 PI3 expected: descriptor retrieval and development-only parameters | Implemented; pilot selection completed | Transparent local costs and hard constraints; eight continuity settings evaluated using four development compositions only; style/continuity weights frozen at 1/4 before test evaluation. This is proxy-based selection in a small grid, not learned genre modeling. |
+| O1 PI4 expected: phrase selection, transitions, repeated phrases, both styles | Implemented and demonstrated | DP objective verified against exhaustive search; repeated-label constraint tested; 32/48-second synthetic demonstrations and 30-60-second source-derived outputs in both directions. Real-source phrase grid is provisional. |
+| O1 PI5 advanced: learned/pretrained matched comparison | Pending | No learned reranker or pretrained accompaniment comparison is claimed. |
+| O2 PI1 basic: matched hypothesis, controls and outcomes | Implemented | B0/B1/M with shared input, target palette and B1/M pattern library. Explicit symbolic, technical and runtime outcomes. |
+| O2 PI2 basic: experiment runner and logging | Implemented | Input IDs, source/annotation/code/output hashes, settings, traces, transformation times, planned denominators and failures. The implementation is deterministic. |
+| O2 PI3 expected: held-out comparisons in both directions | Completed as an exploratory checkpoint | Eight composition-separated cases and 32 test conditions; invariant, accompaniment, failure and runtime analyses. Not the original 20-test-composition final study, and annotations are not independently reviewed. |
+| O2 PI4 expected: selection/continuity ablations and interpretation | Symbolic pilot completed; listening interpretation pending | Fixed selection versus adaptive selection, and full versus zero continuity, with per-composition plans and texture/bass-jump comparisons. Anonymous playable materials and blank rating forms are prepared; no responses are claimed. |
+| O2 PI5 advanced: sensitivity/validation trade-offs | Initial grid only | Development-only ratio sweep and frozen test comparison now exist. The broader final robustness analysis remains pending. |
 
-## Recorded engineering results
+The approved design README has not been rewritten to lower the original targets.
+These statuses support progress-stage coding and experimental claims; they do
+not certify full marks or complete the team's final evaluation commitments.
 
-See `results/taimoor_progress/summary.md` and `results.json` for the saved run. Four original synthetic 16-bar fixtures produce 16 conditions across Rock-to-Jazz and Jazz-to-Rock directions. Development examples last 32 seconds and verification examples last 48 seconds.
+## Recorded results
 
-- All 16 exported MIDI files were reopened and passed the selected-melody, excerpt-duration, tempo, metre, and phrase-marker checks.
-- No generated accompaniment chord-membership, register, or event-bound violations were found in the recorded fixtures.
-- Adaptive accompaniment differed from the fixed comparator in every fixture. This confirms different event arrangements, not better target-genre quality.
-- The continuity ablation changed the final phrase's selected plan in the recorded examples. This confirms that the continuity term affects selection; listener preference remains unknown.
-- The automated suite contains 35 passing cases, including a brute-force comparison of the optimization objective, deliberately corrupted melody detection, selection of a melody outside the first track, unsupported-input rejection, repeated-phrase consistency, and reproducibility checks.
+- Original synthetic checkpoint: four fixtures, 16 conditions, 35 original tests,
+  successful local reproduction and preliminary listening reported by Taimoor.
+- Expanded suite: **42 passing tests**, including source-baseline applicability,
+  crop/expression handling, development/test separation, decimal-tempo cases and
+  deliberate melody corruption detection.
+- Source-derived checkpoint: **48/48 conditions pass** both corrected technical
+  checking and the independent raw-MIDI audit. All melody pitch/onset/offset/
+  velocity events match the prepared source exactly in beat coordinates.
+- Held-out subset: eight compositions / 32 conditions. Adaptive selection differs
+  from fixed in four compositions. Continuity changes the plan in six of eight.
+- Mean held-out phrase texture change: full **1.09** versus zero-continuity
+  **3.17 notes/bar**. Mean boundary bass jump: full **1.96** versus zero-continuity
+  **3.08 semitones**. These are descriptive proxies, not listener preferences.
+- Target-reference descriptor distance: B0 **0.792**, B1 **1.073**, M **0.976**,
+  zero-continuity **1.007**. The descriptor evidence does not establish that M
+  outperforms B0 or that any output is perceptually superior.
+- Matched listening materials: source and four conditions for each of the eight
+  test compositions. Audio validation is recorded separately from music quality.
 
-Recorded repository tests and outputs were generated in the environment listed in `results.json`. Taimoor subsequently reported successful local execution, supplied his plot and summary (all 16 rows passed the reported constraints), and auditioned the outputs, describing them as sounding fine. This is preliminary developer feedback. No blinded listener results or WAV render-quality audit are claimed.
+Per-composition results, parameter scores, source hashes, charts, and the
+measurement correction are in `results/taimoor_evaluation/`.
 
-A [separate raw-MIDI audit and listening protocol](taimoor_verification.md) now supplement the original checks. The saved repository outputs pass 16/16 independent event-level audits, and a temporary deliberately corrupted melody was correctly rejected. Reports are saved as `results/taimoor_progress/independent_audit.json` and `independent_audit.md`.
+## What the real-data pilot revealed
 
-## Addressing the independence feedback
+The first evaluation recorded 36/48 generator-check passes and 32/48 raw-audit
+passes. Encoded MIDI tempo is an integer number of microseconds per beat; the
+BPM approximation placed some downbeat notes just inside the preceding bar in
+the evaluator and produced overly strict duration mismatches. Measurements now
+use encoded timing and compare output duration with the actual prepared source.
+Rechecking the same exports yields 48/48 passes, with all MIDI hashes unchanged.
+The first run, first-run code, selected settings and repair record remain saved.
+A fresh corrected-code repeat also passes 48/48 checks and selects the same 1/4
+weights. It is a diagnostic repeat of an already inspected test set.
 
-The standalone demonstration needs only this repository and Python dependencies. It creates original engineering fixtures, then loads the same annotation format intended for team-reviewed excerpts. Minimal B0/B1 comparators are present solely to exercise Taimoor's experiment runner. Smit retains ownership of the project's corpus and baseline contribution, Vinay retains independent style/perceptual evaluation, and Abdullah retains audio rendering and interface work.
+A related serialization regression exposed pretty_midi's truncation of floating
+MIDI tempo. Future exports explicitly round constant-tempo encoding to avoid
+one-microsecond drift across save/reload cycles. Tests cover three noninteger
+BPM cases. No test-informed weight change was made.
 
-Each output records the selected plans and costs. Taimoor can explain and demonstrate one input's melody/chord contract, chord adaptation, an adaptive output, its fixed-pattern comparison, and its continuity ablation without waiting for another component.
+Original source accompaniment can legitimately contain passing tones and notes
+outside the generator's instrument ranges. B0 is now assessed for source event
+preservation and valid timing; generator-only chord/register constraints apply
+to B1/M/ablation. This distinction does not exempt B0 from melody checks.
 
-## Proposed advanced-indicator refinements for review
+## Boundaries and dependencies
 
-The approved root README has not been silently rewritten. These are proposals to discuss with the instructor and Vinay before treating them as revised commitments.
+- **Smit:** supplied MIDI collection and file inspection. Chord estimates and
+  melody selections in this pilot were prepared in Taimoor's adapter; they are
+  not claimed as Smit's completed annotations. Independent chord/phrase review,
+  upstream acquisition/provenance documentation, and the final grouped corpus
+  are still needed. The estimator conservatively flags 173/192 bars for review;
+  a flag indicates ambiguity or within-bar variation, not proven error.
+- **Vinay:** supplied the unchanged accompaniment feature extractor. Its four
+  structural descriptors support the development-selection proxy. No trained
+  classifier results or independent genre-quality validation are attributed to
+  this checkpoint. Independent style and listening analysis remain his role.
+- **Abdullah:** supplied the unchanged, pinned MIDI-to-WAV rendering implementation.
+  It is reused for the matched audio materials, with consistent synthesis and
+  loudness settings. This is integration evidence, not a new rendering
+  contribution claimed by Taimoor.
+- **Taimoor:** owns the input adapter, constraints, arrangement selection,
+  development selection, controlled comparisons, audits, timing corrections,
+  experiment records and method interpretation. The core demonstration remains
+  runnable without trained models or an interface.
 
-**Objective 1, advanced:** Develop a learned candidate-ranking extension using labelled development comparisons, with composition-grouped training/validation separation. Compare it with the transparent heuristic ranker using the same candidate library, preservation constraints, and phrase selector. Freeze the choice before a held-out comparison; report ranking agreement, constraint failures, runtime, and a separate method-anonymized listening comparison. The ranking model's own score must not serve as independent proof of quality. Taimoor would own integration and comparative experiments; model ownership and any shared labels must be explicitly agreed with Vinay to avoid duplicated claims.
+Per-bar chord estimates may simplify within-bar harmony. Four-bar grid boundaries
+are not independently validated musical phrases. Source genre names are inherited
+from Smit's folders. Artist-level split independence and alternate-version checks
+are not established. These limitations must appear in the progress report.
 
-**Objective 2, advanced:** Extend the weight study into a validation-selected robustness analysis across melody density, harmonic complexity, and both transfer directions. Predefine the parameter grid and comparison protocol, select the configuration on development inputs, and evaluate once on held-out compositions. Report per-composition effects, uncertainty, failure cases, and whether the selected configuration remains useful across those strata. Small samples must be labelled exploratory. This is more assessable than an unspecified sensitivity sweep, but the data and evaluation effort still require planning.
+## Additional waveform-based evaluation
 
-These extensions remain pending and have not been counted among completed work.
+An independent, pretrained CLAP audio-text model was run locally on the actual
+rendered audio: four development-source controls, eight source excerpts, and
+32 transformed output clips. A fixed 10-genre / three-prompt protocol and
+full-coverage 10-second windows were used. No arranger setting was changed.
 
-## Audio feedback
+The forced Jazz/Rock choice agreed with only 2/4 development-folder labels; both
+Rock-labelled development renderings favoured Jazz. A supplementary check on two
+artist-labelled reference recordings, Kevin MacLeod's *Hot Swing* and *Rock on
+Chicago* (CC BY 4.0), selected the expected genres for both. This difference
+suggests that the project renderings and inherited labels need further review;
+it does not establish a particular cause or model reliability.
 
-The prototype exports actual MIDI and is ready for Abdullah's synthesis component. Rendering MIDI as audio will provide listening outputs, but the instructor also suggested exploring audio generation. A bounded text-prompted audio experiment can be proposed separately with a recorded model/version, prompts, outputs, and evaluation question. Genre-matching generated audio must not be described as source-song transformation unless melodic/structural retention has actually been tested. No model, paid service, or new audio-generation commitment is selected here.
+On project outputs, CLAP's forced target-genre agreement was M 5/8 and B0/B1/
+no-continuity 4/8 each. These are **diagnostic target-agreement counts, not
+validated genre accuracy or human ratings**. Scores and segment/prompt details
+are retained in `results/taimoor_audio_assessment/`. The model is not used to
+assign final 1-5 style, recognizability, or coherence ratings. Global audio
+embedding similarity is not a melody-recognizability measure.
 
-## Immediate next actions
+A reference-guided listening form now supplies independently artist-labelled
+Jazz and Rock audio anchors, plain-language recognizability/coherence scales,
+an "I cannot judge" option, and CSV export. It distinguishes internal team
+feedback from external listeners. All human fields remain unfilled until actual
+responses are collected. The automated assessment attempt is a documented
+limitation and lesson learned, not a completed perceptual study.
 
-1. Local execution and preliminary listening have been reported. Next, record specific recognizability, style, and transition observations and carry out the blinded pilot in the verification protocol.
-2. Agree the provisional annotation/pattern interface with Smit and obtain at least two reviewed real MIDI excerpts, ideally one per transfer direction, with provenance and permitted use.
-3. Apply the existing runner to those development examples and inspect failures before freezing the larger evaluation protocol. Such a small check is a pilot, not the planned held-out study.
-4. Agree the descriptor/ranking handoff with Vinay and provide exported conditions to Abdullah for consistent audio rendering.
-5. Use the progress-report instructions and exact deadline, once supplied, to integrate evidence and finalize revised advanced indicators.
+## Final-project goals and revised milestones
 
-## Progress-report text to adapt after review
+| Level | Concrete outcome | Evidence / milestone |
+| --- | --- | --- |
+| Basic | Deliver the CPU-capable arranger and a reproducible two-direction comparison even if integration is delayed. | Existing standalone code, synthetic negative controls, 12-composition pilot, hashes, logs and saved MIDI. Already demonstrable. |
+| Expected | Review the real-source annotations, freeze the agreed final composition splits, and rerun matched B0/B1/M and ablations with documented failures and actual listening observations. | First obtain annotation/provenance handoff; then freeze final inputs/settings; then render and collect method-anonymized ratings; finally report per-composition and listener results. Retain the original 60-composition collection and 8-12 listener targets unless the team records an explicit scope revision. |
+| Advanced O1 | Integrate one learned candidate reranker or compatible pretrained accompaniment model and compare it with the heuristic under identical preservation constraints. | Record compatibility, development-only model choices, output failures, runtime and independent evaluation. The ranker's own score cannot establish improvement. |
+| Advanced O2 | Extend the pilot grid into a validation-selected sensitivity/robustness analysis across melody density, harmony complexity and both directions. | Predefine strata and settings before final held-out evaluation; report trade-offs, uncertainty and failure examples. The current eight-setting sweep is preliminary evidence only. |
 
-The arrangement workstream now has a standalone symbolic prototype that accepts a MIDI excerpt with an explicitly selected melody, reviewed per-bar chords, and supplied phrase boundaries. It adapts authored accompaniment patterns to those chords and uses dynamic programming to select phrase plans while accounting for continuity and repeated phrases. An experiment runner compares instrument substitution, fixed patterns, adaptive selection, and a continuity ablation, with saved configurations and event-level preservation checks.
-
-Initial engineering verification used four original synthetic excerpts lasting 32 or 48 seconds. All 16 exported conditions preserved the selected melody, tempo, duration, metre, and phrase markers under the implemented checks. The accompanying 35-case test suite includes an independent brute-force check of the selection objective. These results demonstrate execution and constraint preservation; they do not establish genre-transfer quality. The next stage is to integrate reviewed real MIDI examples, validate the hand-authored profiles, and obtain independent musical and perceptual evidence. Learned ranking and the advanced robustness study remain pending.
+For this progress submission, the remaining immediate human-dependent work is to
+review the provisional annotations and record specific listening observations.
+Do not invent ratings or describe developer listening as an external user study.
+The report can then describe the completed engineering/pilot evidence and the
+remaining final-project work accurately.

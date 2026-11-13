@@ -94,11 +94,13 @@ def main(argv=None):
                    'input_annotation': str(song.annotation_path.relative_to(output)) if not args.annotation else str(song.annotation_path),
                    'chords': [{'root_pc': c.root_pc, 'intervals': c.intervals} for c in song.chords],
                    'metrics': metrics, 'trace': trace}
+            row['generated_harmony_register_constraints_applicable'] = method != 'instrument_only'
             report['runs'].append(row)
             if not all(metrics[k] for k in ('melody_preserved', 'duration_preserved', 'phrase_markers_preserved',
                                             'tempo_preserved', 'time_signature_preserved')):
                 failures.append(f'{song.case_id}/{method}: invariant failure')
-            if metrics['event_bounds_violations'] or metrics['register_violations'] or metrics['harmony_pitch_class_violations']:
+            if metrics['event_bounds_violations'] or (method != 'instrument_only' and (
+                    metrics['register_violations'] or metrics['harmony_pitch_class_violations'])):
                 failures.append(f'{song.case_id}/{method}: invalid accompaniment')
             if method == 'adaptive' and args.plots:
                 plot(song, transformed, folder/'piano_roll.png')
@@ -107,8 +109,9 @@ def main(argv=None):
             signature = condition_results[row['method']][1]
             row['accompaniment_event_difference_from_fixed'] = sum((signature-fixed_signature).values()) + sum((fixed_signature-signature).values())
     (output/'results.json').write_text(json.dumps(report, indent=2)+'\n', encoding='utf-8')
-    lines = ['# Engineering demonstration results', '',
-             'Synthetic fixtures only. These checks do not establish perceptual genre quality.', '',
+    lines = ['# Arrangement engineering results', '',
+             report['evidence_type'] + '. These checks do not establish perceptual genre quality.',
+             'Instrument-only chord/register counts describe retained source notes; generator-specific constraints do not apply to B0.', '',
              '| Input | Direction | Method | Melody / duration / markers | Harmony / register / bounds violations | Events different from fixed | Transformation seconds |',
              '| --- | --- | --- | --- | --- | --- | --- |']
     for row in report['runs']:

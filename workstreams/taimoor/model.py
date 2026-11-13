@@ -138,6 +138,15 @@ def write_midi(midi: pretty_midi.PrettyMIDI, path: Path, duration_beats: int,
     path.parent.mkdir(parents=True, exist_ok=True)
     midi.write(str(path))
     raw = mido.MidiFile(path)
+    # pretty_midi's writer truncates floating-point microseconds. Round constant
+    # tempo explicitly so a save/reload cycle cannot lose one microsecond/beat.
+    _, tempi = midi.get_tempo_changes()
+    if len(tempi) == 1:
+        encoded_tempo = mido.bpm2tempo(float(tempi[0]))
+        for track in raw.tracks:
+            for message in track:
+                if message.type == 'set_tempo':
+                    message.tempo = encoded_tempo
     end_tick = int(round(duration_beats * raw.ticks_per_beat))
     if phrases:
         absolute, cursor = [], 0

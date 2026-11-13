@@ -1,0 +1,441 @@
+{
+  "schema_version": 1,
+  "case_id": "rock_TNT",
+  "composition_id": "TNT",
+  "source_style": "rock",
+  "split": "test",
+  "bars": 16,
+  "midi_path": "rock_TNT.mid",
+  "melody_track": 3,
+  "tempo_bpm": 126.00012600012602,
+  "time_signature": [
+    4,
+    4
+  ],
+  "phrases": [
+    {
+      "label": "P1",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "P2",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "P3",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "P4",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ],
+  "chords": [
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    }
+  ],
+  "provenance": {
+    "source_url": "https://raw.githubusercontent.com/Pyrex111/CSC575_Music_Retrieval_Techniques/3316077bdd47621f2eb9a506ee2900c0bb94dfe4/data/rock/TNT.mid",
+    "source_revision": "3316077bdd47621f2eb9a506ee2900c0bb94dfe4",
+    "source_sha256": "e042c460cb72516f8a44809bbc5457260c6124cf189fd1b69f6c727d28c33fc3",
+    "source_git_blob": "f9ea0687aca5d24d0c059190fe523fed0ab369d0",
+    "start_bar_zero_based": 12,
+    "source_melody_track_index": 5,
+    "source_melody_track_name": "",
+    "boundary_trimmed_melody_notes": 0
+  },
+  "annotation_status": "provisional_computational; not independently musician-reviewed",
+  "phrase_policy": "Four-bar grid; exact repeated melody signatures share labels; musical boundaries not independently reviewed",
+  "chord_diagnostics": [
+    {
+      "bar": 1,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.7659836476935492,
+      "score_margin": 0.015398527755264957,
+      "alternative": "Emin",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 2,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Emin",
+      "coverage": 0.8724560969110491,
+      "score_margin": 0.0026836767963978048,
+      "alternative": "Emin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 3,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.7781351729659022,
+      "score_margin": 0.006221443089948875,
+      "alternative": "Emin",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 4,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Emin",
+      "coverage": 0.8702123675044742,
+      "score_margin": 0.002115998773738137,
+      "alternative": "Emin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 5,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.7865893076598952,
+      "score_margin": 0.0,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 6,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.8842252586849219,
+      "score_margin": 0.004286544561977967,
+      "alternative": "Emin",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 7,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.7809923205348942,
+      "score_margin": 0.0,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 8,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Emin",
+      "coverage": 0.8636684516804833,
+      "score_margin": 0.00045971440712611056,
+      "alternative": "Emin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 9,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.7355928941074246,
+      "score_margin": 0.0005957557766966826,
+      "alternative": "A7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 10,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Emin",
+      "coverage": 0.8866763582588484,
+      "score_margin": 0.006289603790208043,
+      "alternative": "Emin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 11,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.7781482996018578,
+      "score_margin": 0.00622100462879871,
+      "alternative": "Emin",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 12,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Emin",
+      "coverage": 0.8849081957830378,
+      "score_margin": 0.005842373513692434,
+      "alternative": "Emin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 13,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.7865924077783568,
+      "score_margin": 0.0,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 14,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Emin",
+      "coverage": 0.8654642418583262,
+      "score_margin": 0.0009172517015035853,
+      "alternative": "Emin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 15,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.7809839546971282,
+      "score_margin": 0.0,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 16,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.8224193069237176,
+      "score_margin": 0.024154537779325413,
+      "alternative": "Emin",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    }
+  ]
+}
