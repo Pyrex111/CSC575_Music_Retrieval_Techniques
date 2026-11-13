@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "case_id": "jazz_015",
+  "source_style": "jazz",
+  "split": "train",
+  "provenance": "Lakh MIDI Clean Dataset; file The_Girl_From_Ipanema_Garota_de_Ipanema_.1.mid (sha256 c71d149865c8); title: TODO; artist: TODO; excerpt = source bars 53-68; licence: TODO; chords and phrases: automatic estimate, not manually reviewed",
+  "midi_path": "jazz_015.mid",
+  "melody_track": 5,
+  "tempo_bpm": 126.000126000126,
+  "time_signature": [
+    4,
+    4
+  ],
+  "bars": 16,
+  "chords": [
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 3,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 3,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "label": "A",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "B",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "A",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "B",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ]
+}

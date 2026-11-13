@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "case_id": "rock_016",
+  "source_style": "rock",
+  "split": "val",
+  "provenance": "Lakh MIDI Clean Dataset; file Desensitized.mid (sha256 ec0c6816cc2f); title: TODO; artist: TODO; excerpt = source bars 69-92; licence: TODO; chords and phrases: automatic estimate, not manually reviewed",
+  "midi_path": "rock_016.mid",
+  "melody_track": 0,
+  "tempo_bpm": 177.9903113940498,
+  "time_signature": [
+    4,
+    4
+  ],
+  "bars": 24,
+  "chords": [
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "label": "A",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "A",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "B",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "B",
+      "start_bar": 12,
+      "bars": 4
+    },
+    {
+      "label": "C",
+      "start_bar": 16,
+      "bars": 4
+    },
+    {
+      "label": "D",
+      "start_bar": 20,
+      "bars": 4
+    }
+  ]
+}

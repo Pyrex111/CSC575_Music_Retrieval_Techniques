@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "case_id": "rock_002",
+  "source_style": "rock",
+  "split": "train",
+  "provenance": "Lakh MIDI Clean Dataset; file Layla.mid (sha256 9593ee29ef4e); title: TODO; artist: TODO; excerpt = source bars 13-28; licence: TODO; chords and phrases: automatic estimate, not manually reviewed",
+  "midi_path": "rock_002.mid",
+  "melody_track": 0,
+  "tempo_bpm": 95.00014250021376,
+  "time_signature": [
+    4,
+    4
+  ],
+  "bars": 16,
+  "chords": [
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "label": "A",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "B",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "C",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "D",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "case_id": "jazz_007",
+  "source_style": "jazz",
+  "split": "train",
+  "provenance": "Lakh MIDI Clean Dataset; file What_a_Wonderful_World.1.mid (sha256 4201cef61d51); title: TODO; artist: TODO; excerpt = source bars 25-32; licence: TODO; chords and phrases: automatic estimate, not manually reviewed",
+  "midi_path": "jazz_007.mid",
+  "melody_track": 3,
+  "tempo_bpm": 64.0,
+  "time_signature": [
+    4,
+    4
+  ],
+  "bars": 8,
+  "chords": [
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "label": "A",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "B",
+      "start_bar": 4,
+      "bars": 4
+    }
+  ]
+}

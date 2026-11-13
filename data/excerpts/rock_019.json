@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "case_id": "rock_019",
+  "source_style": "rock",
+  "split": "val",
+  "provenance": "Lakh MIDI Clean Dataset; file Janies_Got_a_Gun.mid (sha256 4ce768a8f020); title: TODO; artist: TODO; excerpt = source bars 49-64; licence: TODO; chords and phrases: automatic estimate, not manually reviewed",
+  "midi_path": "rock_019.mid",
+  "melody_track": 0,
+  "tempo_bpm": 120.0,
+  "time_signature": [
+    4,
+    4
+  ],
+  "bars": 16,
+  "chords": [
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 3,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 11,
+      "intervals": [
+        0,
+        3,
+        6
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 3,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "label": "A",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "B",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "C",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "D",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ]
+}

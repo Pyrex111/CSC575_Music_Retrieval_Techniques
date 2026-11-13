@@ -2,6 +2,17 @@ import argparse
 from pathlib import Path
 import pandas as pd
 import pretty_midi
+import mido
+
+
+def pad_to_exact_length(path, bars):
+    """makes a midi file end at the end of {bars} bars"""
+    mid = mido.MidiFile(str(path))
+    target = bars * 4 * mid.ticks_per_beat
+    track = mid.tracks[0] # pretty_midi writes the tempo/time-signature track first
+    used = sum(m.time for m in track if m.type != "end_of_track")
+    track[:] = [m for m in track if m.type != "end_of_track"] + [mido.MetaMessage("end_of_track", time=target - used)]
+    mid.save(str(path))
 
 def main(args):
     # load dataset manifest
@@ -39,7 +50,9 @@ def main(args):
             excerpt_pm.time_signature_changes = [pretty_midi.TimeSignature(4, 4, 0.0)]
 
             # slice and shift notes for every instrument
-            for inst in pm.instruments:
+            melody_idx = int(row_dict["melody_track"])   # melody index in the SOURCE file
+            kept_indices = []                              # source index of every instrument we keep
+            for idx, inst in enumerate(pm.instruments):
                 new_inst = pretty_midi.Instrument(program=inst.program, is_drum=inst.is_drum, name=inst.name)
                 for note in inst.notes:
                     # keeping notes that fall in window
@@ -53,10 +66,17 @@ def main(args):
                 
                 if new_inst.notes:
                     excerpt_pm.instruments.append(new_inst)
+                    kept_indices.append(idx)
+
+            # empty instruments were dropped, so the melody's position may have shifted
+            if melody_idx not in kept_indices:
+                raise ValueError("melody track has no notes inside the crop window")
+            row_dict["excerpt_melody_track"] = kept_indices.index(melody_idx)
 
             # saving new midi excerpt file
             out_path = out_dir / f"{case_id}.mid"
             excerpt_pm.write(str(out_path))
+            pad_to_exact_length(out_path, int(row_dict["crop_bars"]))
             
             row_dict["excerpt_path"] = str(out_path)
             row_dict["status"] = "OK"
@@ -64,6 +84,7 @@ def main(args):
             
         except Exception as e:
             row_dict["excerpt_path"] = ""
+            row_dict["excerpt_melody_track"] = ""
             row_dict["status"] = f"FAILED: {e}"
             print(f"Error cropping {case_id}: {e}")
             

@@ -2,7 +2,7 @@ import pretty_midi
 from pathlib import Path
 
 # Pick the first excerpt file from your excerpts folder
-excerpt_path = Path("data/excerpts/jazz_001.mid")
+excerpt_path = Path("data/excerpts/rock_001.mid")
 wav_output_path = Path("jazz_001_preview.wav")
 
 print(f"Synthesizing audio preview for {excerpt_path.name}...")
