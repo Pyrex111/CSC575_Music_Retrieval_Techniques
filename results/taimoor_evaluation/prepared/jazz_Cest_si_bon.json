@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "case_id": "jazz_Cest_si_bon",
+  "composition_id": "Cest_si_bon",
+  "source_style": "jazz",
+  "split": "development",
+  "bars": 16,
+  "midi_path": "jazz_Cest_si_bon.mid",
+  "melody_track": 2,
+  "tempo_bpm": 116.00030933415822,
+  "time_signature": [
+    4,
+    4
+  ],
+  "phrases": [
+    {
+      "label": "P1",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "P2",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "P3",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "P4",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ],
+  "chords": [
+    {
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    }
+  ],
+  "provenance": {
+    "source_url": "https://raw.githubusercontent.com/Pyrex111/CSC575_Music_Retrieval_Techniques/3316077bdd47621f2eb9a506ee2900c0bb94dfe4/data/jazz/Cest_si_bon.mid",
+    "source_revision": "3316077bdd47621f2eb9a506ee2900c0bb94dfe4",
+    "source_sha256": "8608ff2e9f4a44529bb9ac85def8a56ceb917d3725b98cf6fb5cafd64eed3608",
+    "source_git_blob": "64e737756064274d985b443e979f0d9e9949f027",
+    "start_bar_zero_based": 8,
+    "source_melody_track_index": 2,
+    "source_melody_track_name": "MELODY",
+    "boundary_trimmed_melody_notes": 0
+  },
+  "annotation_status": "provisional_computational; not independently musician-reviewed",
+  "phrase_policy": "Four-bar grid; exact repeated melody signatures share labels; musical boundaries not independently reviewed",
+  "chord_diagnostics": [
+    {
+      "bar": 1,
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Ebmaj",
+      "coverage": 1.0,
+      "score_margin": 0.03499999999999992,
+      "alternative": "Eb7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 2,
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Abmaj",
+      "coverage": 1.0,
+      "score_margin": 0.03499999999999992,
+      "alternative": "Ab7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 3,
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Abmaj",
+      "coverage": 0.8169182842080039,
+      "score_margin": 0.03500000000000003,
+      "alternative": "Ab7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 4,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Bbmin",
+      "coverage": 0.9054436625414546,
+      "score_margin": 0.03499999999999992,
+      "alternative": "Bbmin7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 5,
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Ebmaj",
+      "coverage": 0.9999999999999993,
+      "score_margin": 0.03499999999999992,
+      "alternative": "Eb7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 6,
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Abmaj7",
+      "coverage": 0.9097122996717528,
+      "score_margin": 0.01014385016412378,
+      "alternative": "Abmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 7,
+      "root_pc": 8,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Abmin",
+      "coverage": 0.723540218867322,
+      "score_margin": 1.6653345369377348e-15,
+      "alternative": "Abmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 8,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Bbmin",
+      "coverage": 1.0,
+      "score_margin": 0.03499999999999992,
+      "alternative": "Bbmin7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 9,
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Ebmaj",
+      "coverage": 1.0,
+      "score_margin": 0.03499999999999992,
+      "alternative": "Eb7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 10,
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Abmaj",
+      "coverage": 1.0,
+      "score_margin": 0.03499999999999992,
+      "alternative": "Ab7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 11,
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Abmaj",
+      "coverage": 0.816918284208002,
+      "score_margin": 0.03500000000000003,
+      "alternative": "Ab7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 12,
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "Eb7",
+      "coverage": 0.9122369187255631,
+      "score_margin": 0.0,
+      "alternative": "Ebmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 13,
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "Eb7",
+      "coverage": 0.8488944513975797,
+      "score_margin": 0.024947851481018635,
+      "alternative": "Ebmaj7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 14,
+      "root_pc": 8,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Abmaj",
+      "coverage": 1.0,
+      "score_margin": 0.03499999999999992,
+      "alternative": "Ab7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 15,
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "B7",
+      "coverage": 0.8669247145345463,
+      "score_margin": 0.022217921424424247,
+      "alternative": "Abmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 16,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Emaj",
+      "coverage": 0.9027104443145065,
+      "score_margin": 0.03499999999999992,
+      "alternative": "E7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    }
+  ]
+}

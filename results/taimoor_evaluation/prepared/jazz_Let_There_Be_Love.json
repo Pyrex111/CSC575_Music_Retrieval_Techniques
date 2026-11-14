@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "case_id": "jazz_Let_There_Be_Love",
+  "composition_id": "Let_There_Be_Love",
+  "source_style": "jazz",
+  "split": "test",
+  "bars": 16,
+  "midi_path": "jazz_Let_There_Be_Love.mid",
+  "melody_track": 2,
+  "tempo_bpm": 120.0,
+  "time_signature": [
+    4,
+    4
+  ],
+  "phrases": [
+    {
+      "label": "P1",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "P2",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "P3",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "P4",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ],
+  "chords": [
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    }
+  ],
+  "provenance": {
+    "source_url": "https://raw.githubusercontent.com/Pyrex111/CSC575_Music_Retrieval_Techniques/3316077bdd47621f2eb9a506ee2900c0bb94dfe4/data/jazz/Let_There_Be_Love.mid",
+    "source_revision": "3316077bdd47621f2eb9a506ee2900c0bb94dfe4",
+    "source_sha256": "cc6232c727c81d4eee78c586697e61f727ae0bbcc7b9a35df4279b456631a53a",
+    "source_git_blob": "8b1c5aefd1db3a9469af7654e1c9df694c83b990",
+    "start_bar_zero_based": 20,
+    "source_melody_track_index": 2,
+    "source_melody_track_name": "VIBRAPHONE",
+    "boundary_trimmed_melody_notes": 2
+  },
+  "annotation_status": "provisional_computational; not independently musician-reviewed",
+  "phrase_policy": "Four-bar grid; exact repeated melody signatures share labels; musical boundaries not independently reviewed",
+  "chord_diagnostics": [
+    {
+      "bar": 1,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Dmin7",
+      "coverage": 0.7030326458338528,
+      "score_margin": 0.11356211187869414,
+      "alternative": "D7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 2,
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "G7",
+      "coverage": 0.7112209367628889,
+      "score_margin": 0.0,
+      "alternative": "Gmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 3,
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "C7",
+      "coverage": 0.9875031399145943,
+      "score_margin": 0.11124675542158591,
+      "alternative": "Cmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 4,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.7993120355765027,
+      "score_margin": 0.00326878123871599,
+      "alternative": "Amin7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 5,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Dmin",
+      "coverage": 0.9354506069919584,
+      "score_margin": 0.028103125020925046,
+      "alternative": "Dmin7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 6,
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Gmaj",
+      "coverage": 0.9013627864608303,
+      "score_margin": 0.0230501486240291,
+      "alternative": "Gmaj7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 7,
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Cmaj",
+      "coverage": 0.824991063788304,
+      "score_margin": 0.010830850545248683,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 8,
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "G7",
+      "coverage": 0.7665147035590963,
+      "score_margin": 0.10006530392609558,
+      "alternative": "Dmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 9,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Fmaj7",
+      "coverage": 0.7002709867452132,
+      "score_margin": 0.07760831871553475,
+      "alternative": "Dmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 10,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Fmaj7",
+      "coverage": 0.7369991985915405,
+      "score_margin": 0.18912253620404762,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 11,
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "C7",
+      "coverage": 0.8463195831864294,
+      "score_margin": 0.025246966073040444,
+      "alternative": "Emin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 12,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.9505890688027788,
+      "score_margin": 0.16991709613648553,
+      "alternative": "Amaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 13,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Dmin7",
+      "coverage": 0.9772739710352584,
+      "score_margin": 0.0013576663034882142,
+      "alternative": "Dmin",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 14,
+      "root_pc": 7,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "G7",
+      "coverage": 0.8864201118214057,
+      "score_margin": 0.14638414059838445,
+      "alternative": "Gmaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 15,
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Cmaj",
+      "coverage": 0.8154908046509463,
+      "score_margin": 0.03500000000000003,
+      "alternative": "C7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 16,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Amin7",
+      "coverage": 0.6688663059258283,
+      "score_margin": 0.04859995838850806,
+      "alternative": "Fmaj7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    }
+  ]
+}

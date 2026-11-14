@@ -1,0 +1,34 @@
+{
+  "reason": "BPM floats diverged slightly from encoded integer MIDI tempo, misassigning some downbeat notes to the preceding chord bar; the raw audit also compared duration against the BPM approximation instead of the source file.",
+  "change": "Use encoded source/output tempo for event-to-beat conversion and compare output duration directly with the source duration. Keep the original one-tick annotation agreement diagnostic.",
+  "original_evaluation_sha256": "918508edac2e5ae2d277fbe0245bf404bfdd45e90af9643833dd5857c8726807",
+  "frozen_selection_sha256": "ebf219b95c103466d45fbb8f32f139cef25b1db501f252f6da4d9cc5eaac4145",
+  "original_code_sha256": {
+    "__init__.py": "76e80fd1150e358cbad578adffafcd7350d602e9b6e70e781b87a2375153c3aa",
+    "arranger.py": "ab4e98473365bf4ffe46c65e47ea76b849eaeee2fb7ccbce56b2e9c68eb3ed09",
+    "checkpoint.py": "bc62683aa141bc09d0b89c1cef32087386baf908165a571dcb31732d7cd18730",
+    "evaluate.py": "6a531a35899a0678d9f629a70777f85169d4bd692e65cb57c627eb9757146377",
+    "fixtures.py": "bf9c5de5a1a7afcbbb0763dfbeee1d703d35d4f1b5a5d53073042a07f296a0f6",
+    "independent_audit.py": "20c8f82d6d6fe1e7da8da1c1547221c2427197cc975d71e0ada16a14af465229",
+    "model.py": "c413d0134ba26f8a0e9221bee1447e00d7f57e55bacc42db3955e6553159c140",
+    "run.py": "90015d37afe4cec43e5000ac52675a77a0ad473212b9585d15318594f46f7216"
+  },
+  "corrected_measurement_code_sha256": {
+    "__init__.py": "76e80fd1150e358cbad578adffafcd7350d602e9b6e70e781b87a2375153c3aa",
+    "arranger.py": "ab4e98473365bf4ffe46c65e47ea76b849eaeee2fb7ccbce56b2e9c68eb3ed09",
+    "checkpoint.py": "a57d2289302fd3b1513796f4a0d6ef310c0a0103536099937ea2c1e571fc9ad6",
+    "evaluate.py": "dd3dae67b4c36329529c82f761b0997e3ec62727eb8bbbc437f6bf34de3a30c3",
+    "fixtures.py": "bf9c5de5a1a7afcbbb0763dfbeee1d703d35d4f1b5a5d53073042a07f296a0f6",
+    "independent_audit.py": "d34b42e33f63a6df6d7376bb9722f8d11713ca3f99ab3b68517b294a2c513d67",
+    "model.py": "320ac2c5e2b2564bb3b2bec3f3a7ebe52f0012d91b4053c01e1fa95f76ed3384",
+    "run.py": "90015d37afe4cec43e5000ac52675a77a0ad473212b9585d15318594f46f7216"
+  },
+  "parameters_changed": false,
+  "arrangements_regenerated": false,
+  "all_midi_hashes_unchanged": true,
+  "first_run_technical_passes": 36,
+  "first_run_raw_audit_passes": 32,
+  "rechecked_technical_passes": 48,
+  "rechecked_raw_audit_passes": 48,
+  "regression_tests": "Decimal-BPM regression cases at 90.000900009, 98.0001437335, and 126.0001260001 BPM, plus negative melody-corruption control."
+}

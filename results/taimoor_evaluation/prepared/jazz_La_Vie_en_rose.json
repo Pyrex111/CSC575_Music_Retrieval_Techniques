@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "case_id": "jazz_La_Vie_en_rose",
+  "composition_id": "La_Vie_en_rose",
+  "source_style": "jazz",
+  "split": "test",
+  "bars": 16,
+  "midi_path": "jazz_La_Vie_en_rose.mid",
+  "melody_track": 0,
+  "tempo_bpm": 90.0009000090001,
+  "time_signature": [
+    4,
+    4
+  ],
+  "phrases": [
+    {
+      "label": "P1",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "P2",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "P3",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "P4",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ],
+  "chords": [
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    }
+  ],
+  "provenance": {
+    "source_url": "https://raw.githubusercontent.com/Pyrex111/CSC575_Music_Retrieval_Techniques/3316077bdd47621f2eb9a506ee2900c0bb94dfe4/data/jazz/La_Vie_en_rose.mid",
+    "source_revision": "3316077bdd47621f2eb9a506ee2900c0bb94dfe4",
+    "source_sha256": "b7e7ff0fbf40dfae19284c2c1f477acc0cab67f4d94c8bc0eacd02a722b0b306",
+    "source_git_blob": "90aa59a8be43d69db3e854427322aafead5c263e",
+    "start_bar_zero_based": 8,
+    "source_melody_track_index": 0,
+    "source_melody_track_name": "TRUMPET",
+    "boundary_trimmed_melody_notes": 2
+  },
+  "annotation_status": "provisional_computational; not independently musician-reviewed",
+  "phrase_policy": "Four-bar grid; exact repeated melody signatures share labels; musical boundaries not independently reviewed",
+  "chord_diagnostics": [
+    {
+      "bar": 1,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Bbmaj",
+      "coverage": 0.9029141592970349,
+      "score_margin": 0.03500000000000003,
+      "alternative": "Bb7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 2,
+      "root_pc": 0,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Cmin",
+      "coverage": 0.9253995046723288,
+      "score_margin": 0.03499999999999992,
+      "alternative": "Cmin7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 3,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bbmaj7",
+      "coverage": 0.928510289162827,
+      "score_margin": 0.02694156540313064,
+      "alternative": "Bbmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 4,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "F7",
+      "coverage": 0.7376545263772392,
+      "score_margin": 0.05858914223229594,
+      "alternative": "Fmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 5,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "F7",
+      "coverage": 1.0,
+      "score_margin": 0.06774380598138463,
+      "alternative": "Fmaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 6,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "F7",
+      "coverage": 1.0000000000000002,
+      "score_margin": 0.058787687825254675,
+      "alternative": "Fmaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 7,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bbmaj7",
+      "coverage": 0.9952416808197915,
+      "score_margin": 0.02047644317056907,
+      "alternative": "Bbmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 8,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bbmaj7",
+      "coverage": 0.9263492948471154,
+      "score_margin": 0.07666496918271737,
+      "alternative": "Gmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 9,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bbmaj7",
+      "coverage": 0.930499420174388,
+      "score_margin": 0.09777324376690544,
+      "alternative": "Bbmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 10,
+      "root_pc": 0,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Cmin7",
+      "coverage": 0.7686921056718504,
+      "score_margin": 0.09926895451769702,
+      "alternative": "C7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 11,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "F7",
+      "coverage": 0.7946740669750727,
+      "score_margin": 0.03361882017417106,
+      "alternative": "Fmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 12,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "F7",
+      "coverage": 0.8243905072180598,
+      "score_margin": 0.09461169986289142,
+      "alternative": "Fmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 13,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "F7",
+      "coverage": 0.8763685331489243,
+      "score_margin": 0.11243283732478848,
+      "alternative": "Fmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 14,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Bbmin",
+      "coverage": 0.6611332014229164,
+      "score_margin": 0.03266723866992349,
+      "alternative": "Bbmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 15,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bbmaj7",
+      "coverage": 0.7996961359306984,
+      "score_margin": 0.03298900856202713,
+      "alternative": "Bbmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 16,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bbmaj7",
+      "coverage": 0.9751323424730028,
+      "score_margin": 0.05546011771981896,
+      "alternative": "Bbmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    }
+  ]
+}

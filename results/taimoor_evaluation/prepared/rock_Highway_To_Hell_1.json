@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "case_id": "rock_Highway_To_Hell_1",
+  "composition_id": "Highway_To_Hell.1",
+  "source_style": "rock",
+  "split": "test",
+  "bars": 16,
+  "midi_path": "rock_Highway_To_Hell_1.mid",
+  "melody_track": 4,
+  "tempo_bpm": 116.00030933415822,
+  "time_signature": [
+    4,
+    4
+  ],
+  "phrases": [
+    {
+      "label": "P1",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "P2",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "P3",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "P4",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ],
+  "chords": [
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    }
+  ],
+  "provenance": {
+    "source_url": "https://raw.githubusercontent.com/Pyrex111/CSC575_Music_Retrieval_Techniques/3316077bdd47621f2eb9a506ee2900c0bb94dfe4/data/rock/Highway_To_Hell.1.mid",
+    "source_revision": "3316077bdd47621f2eb9a506ee2900c0bb94dfe4",
+    "source_sha256": "032edf6607e63aedec7c3f8d998caea8791f708682b955acf834bcba8a1a18ad",
+    "source_git_blob": "278cdefe511ee05257ab4868af2ff20ad28aa566",
+    "start_bar_zero_based": 12,
+    "source_melody_track_index": 4,
+    "source_melody_track_name": "Vocal",
+    "boundary_trimmed_melody_notes": 0
+  },
+  "annotation_status": "provisional_computational; not independently musician-reviewed",
+  "phrase_policy": "Four-bar grid; exact repeated melody signatures share labels; musical boundaries not independently reviewed",
+  "chord_diagnostics": [
+    {
+      "bar": 1,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Dmaj7",
+      "coverage": 0.8500000000000001,
+      "score_margin": 0.015000000000000013,
+      "alternative": "Dmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 2,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Amaj",
+      "coverage": 1.0,
+      "score_margin": 0.03499999999999992,
+      "alternative": "A7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 3,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Dmaj",
+      "coverage": 0.8333333333333335,
+      "score_margin": 0.03500000000000003,
+      "alternative": "D7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 4,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Dmaj",
+      "coverage": 0.8333333333333331,
+      "score_margin": 0.03500000000000003,
+      "alternative": "D7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 5,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Dmaj7",
+      "coverage": 0.85,
+      "score_margin": 0.014999999999999791,
+      "alternative": "Dmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 6,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Amaj",
+      "coverage": 1.0,
+      "score_margin": 0.03499999999999992,
+      "alternative": "A7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 7,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Dmaj",
+      "coverage": 0.8333333333333329,
+      "score_margin": 0.03500000000000003,
+      "alternative": "D7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 8,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Dmaj",
+      "coverage": 0.8333333333333333,
+      "score_margin": 0.03500000000000003,
+      "alternative": "D7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 9,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Dmaj7",
+      "coverage": 0.8499999999999995,
+      "score_margin": 0.015000000000000124,
+      "alternative": "Dmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 10,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Amaj",
+      "coverage": 1.0,
+      "score_margin": 0.03499999999999992,
+      "alternative": "A7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 11,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Dmaj",
+      "coverage": 0.8333333333333326,
+      "score_margin": 0.03500000000000003,
+      "alternative": "D7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 12,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Dmaj",
+      "coverage": 0.8333333333333326,
+      "score_margin": 0.03500000000000003,
+      "alternative": "D7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 13,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Dmaj7",
+      "coverage": 0.8235294117647057,
+      "score_margin": 0.023823529411764577,
+      "alternative": "Dmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 14,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Emaj",
+      "coverage": 1.0,
+      "score_margin": 0.0,
+      "alternative": "Emin",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 15,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Emaj",
+      "coverage": 1.0,
+      "score_margin": 0.0,
+      "alternative": "Emin",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 16,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Amaj",
+      "coverage": 0.9285714285714284,
+      "score_margin": 0.03500000000000003,
+      "alternative": "A7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "case_id": "jazz_Light_Years",
+  "composition_id": "Light_Years",
+  "source_style": "jazz",
+  "split": "test",
+  "bars": 16,
+  "midi_path": "jazz_Light_Years.mid",
+  "melody_track": 1,
+  "tempo_bpm": 105.00157502362535,
+  "time_signature": [
+    4,
+    4
+  ],
+  "phrases": [
+    {
+      "label": "P1",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "P2",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "P3",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "P4",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ],
+  "chords": [
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    }
+  ],
+  "provenance": {
+    "source_url": "https://raw.githubusercontent.com/Pyrex111/CSC575_Music_Retrieval_Techniques/3316077bdd47621f2eb9a506ee2900c0bb94dfe4/data/jazz/Light_Years.mid",
+    "source_revision": "3316077bdd47621f2eb9a506ee2900c0bb94dfe4",
+    "source_sha256": "237b7b230bfb237cb3e1d25ec0ec7692f5ebe1b189faff29391e0bde18fbaa80",
+    "source_git_blob": "f50caf315e938ba7a0bbdf5aa1bf69de80134c4f",
+    "start_bar_zero_based": 12,
+    "source_melody_track_index": 1,
+    "source_melody_track_name": "SOLO VOX",
+    "boundary_trimmed_melody_notes": 0
+  },
+  "annotation_status": "provisional_computational; not independently musician-reviewed",
+  "phrase_policy": "Four-bar grid; exact repeated melody signatures share labels; musical boundaries not independently reviewed",
+  "chord_diagnostics": [
+    {
+      "bar": 1,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.9074548774492591,
+      "score_margin": 0.22846653557131835,
+      "alternative": "Emin",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 2,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.9163801820020221,
+      "score_margin": 0.1354318936877077,
+      "alternative": "Emin",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 3,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.9140027542559108,
+      "score_margin": 0.06740601834217241,
+      "alternative": "E7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 4,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "E7",
+      "coverage": 0.8489268628110782,
+      "score_margin": 0.0,
+      "alternative": "Emin7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 5,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.9108388037928513,
+      "score_margin": 0.205222465353757,
+      "alternative": "E7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 6,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 0.9247134434131432,
+      "score_margin": 0.11133745534881634,
+      "alternative": "E7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 7,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Emin7",
+      "coverage": 1.0,
+      "score_margin": 0.08280767296501235,
+      "alternative": "E7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 8,
+      "root_pc": 6,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Gbmin7",
+      "coverage": 0.936892219212735,
+      "score_margin": 0.12795827380823166,
+      "alternative": "Dmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 9,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "E7",
+      "coverage": 0.7702868672690566,
+      "score_margin": 0.0,
+      "alternative": "Emin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 10,
+      "root_pc": 6,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Gbmin7",
+      "coverage": 1.0,
+      "score_margin": 0.11370216914452846,
+      "alternative": "Gbmin",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 11,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "D7",
+      "coverage": 0.7188409324762411,
+      "score_margin": 0.0,
+      "alternative": "Dmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 12,
+      "root_pc": 6,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Gbmin7",
+      "coverage": 0.9431125165370603,
+      "score_margin": 0.11839937401181089,
+      "alternative": "Gbmin",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 13,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "E7",
+      "coverage": 0.7863357495848595,
+      "score_margin": 0.0,
+      "alternative": "Emin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 14,
+      "root_pc": 6,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Gbmin7",
+      "coverage": 0.8473343556898633,
+      "score_margin": 0.20154916544442325,
+      "alternative": "Bmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 15,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Dmaj",
+      "coverage": 1.0,
+      "score_margin": 0.0,
+      "alternative": "Dmin",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 16,
+      "root_pc": 4,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "E7",
+      "coverage": 0.7810149661931121,
+      "score_margin": 0.0,
+      "alternative": "Emin7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    }
+  ]
+}

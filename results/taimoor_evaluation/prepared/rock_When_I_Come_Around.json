@@ -1,0 +1,435 @@
+{
+  "schema_version": 1,
+  "case_id": "rock_When_I_Come_Around",
+  "composition_id": "When_I_Come_Around",
+  "source_style": "rock",
+  "split": "test",
+  "bars": 16,
+  "midi_path": "rock_When_I_Come_Around.mid",
+  "melody_track": 3,
+  "tempo_bpm": 98.00014373354416,
+  "time_signature": [
+    4,
+    4
+  ],
+  "phrases": [
+    {
+      "label": "P1",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "P2",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "P3",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "P4",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ],
+  "chords": [
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 8,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    }
+  ],
+  "provenance": {
+    "source_url": "https://raw.githubusercontent.com/Pyrex111/CSC575_Music_Retrieval_Techniques/3316077bdd47621f2eb9a506ee2900c0bb94dfe4/data/rock/When_I_Come_Around.mid",
+    "source_revision": "3316077bdd47621f2eb9a506ee2900c0bb94dfe4",
+    "source_sha256": "768d41047d26a4f3bc92099264a4200279bd1e936be79c31b48a3616c0ee12a6",
+    "source_git_blob": "56c1005bef56f4a6ecf24e8b403b6c1370abc6e1",
+    "start_bar_zero_based": 12,
+    "source_melody_track_index": 3,
+    "source_melody_track_name": "",
+    "boundary_trimmed_melody_notes": 1
+  },
+  "annotation_status": "provisional_computational; not independently musician-reviewed",
+  "phrase_policy": "Four-bar grid; exact repeated melody signatures share labels; musical boundaries not independently reviewed",
+  "chord_diagnostics": [
+    {
+      "bar": 1,
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "Db7",
+      "coverage": 0.7019227724847222,
+      "score_margin": 0.009615370118320032,
+      "alternative": "Dbmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 2,
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Gbmaj",
+      "coverage": 0.8289454228946607,
+      "score_margin": 0.00868422862423568,
+      "alternative": "Gbmaj7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 3,
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bmaj7",
+      "coverage": 0.9444431001356096,
+      "score_margin": 0.09462841078961926,
+      "alternative": "Bmaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 4,
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Gbmaj",
+      "coverage": 0.7968704317641343,
+      "score_margin": 0.003750051041741531,
+      "alternative": "Gbmaj7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 5,
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bmaj7",
+      "coverage": 0.9444421322332481,
+      "score_margin": 0.07610896021697477,
+      "alternative": "Bmaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 6,
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Gbmaj",
+      "coverage": 0.7968679817605412,
+      "score_margin": 0.003750051041741531,
+      "alternative": "Gbmaj7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 7,
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bmaj7",
+      "coverage": 0.9444411643308865,
+      "score_margin": 0.09462647498489607,
+      "alternative": "Bmaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 8,
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Gbmaj",
+      "coverage": 0.7968655317569489,
+      "score_margin": 0.0037500510417419752,
+      "alternative": "Gbmaj7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 9,
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bmaj7",
+      "coverage": 0.9444401964285261,
+      "score_margin": 0.07610702441225325,
+      "alternative": "Bmaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 10,
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Gbmaj",
+      "coverage": 0.7968630817533549,
+      "score_margin": 0.003750051041741531,
+      "alternative": "Gbmaj7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 11,
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bmaj7",
+      "coverage": 0.9999840296110399,
+      "score_margin": 0.03906909116932533,
+      "alternative": "Bmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 12,
+      "root_pc": 8,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Abmin",
+      "coverage": 0.9999950999928144,
+      "score_margin": 1.4700021556679488e-05,
+      "alternative": "Abmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 13,
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Bmaj",
+      "coverage": 0.9999840749766454,
+      "score_margin": 5.308341118226423e-06,
+      "alternative": "Bmin",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 14,
+      "root_pc": 8,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Abmin",
+      "coverage": 0.9999942833249496,
+      "score_margin": 1.715002515134678e-05,
+      "alternative": "Abmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 15,
+      "root_pc": 11,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bmaj7",
+      "coverage": 0.9999911910046223,
+      "score_margin": 0.05488742929748902,
+      "alternative": "Bmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 16,
+      "root_pc": 6,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Gbmaj",
+      "coverage": 0.7968700233001443,
+      "score_margin": 0.003749234353868869,
+      "alternative": "Gbmaj7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    }
+  ]
+}

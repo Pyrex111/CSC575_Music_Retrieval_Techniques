@@ -1,0 +1,3519 @@
+{
+  "evidence_type": "synthetic_engineering_checks",
+  "limitations": [
+    "No real-song held-out evaluation or listening study has been completed.",
+    "Hand-authored templates and weights; no trained model or genre-quality claim.",
+    "Reference baselines here are test comparators, not Smit\u2019s completed contribution."
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "pretty_midi": "0.2.11",
+    "mido": "1.3.3"
+  },
+  "code": {
+    "git_head": "2295649a2e3d6f47a9adebfceae9c243a9fda517",
+    "working_tree_dirty": true,
+    "sha256": {
+      "__init__.py": "76e80fd1150e358cbad578adffafcd7350d602e9b6e70e781b87a2375153c3aa",
+      "arranger.py": "50d7203bb6cf65961397d289b8111a1b896a0e3abe0694a79fac24afed73443a",
+      "evaluate.py": "6a531a35899a0678d9f629a70777f85169d4bd692e65cb57c627eb9757146377",
+      "fixtures.py": "bf9c5de5a1a7afcbbb0763dfbeee1d703d35d4f1b5a5d53073042a07f296a0f6",
+      "model.py": "c413d0134ba26f8a0e9221bee1447e00d7f57e55bacc42db3955e6553159c140",
+      "run.py": "6f6a64078cb865a7116cada50135892154594beb700b2cad9c8746088b9d802a"
+    }
+  },
+  "weights": {
+    "style": 1.0,
+    "continuity": 0.8,
+    "max_states": 100000
+  },
+  "random_seed": null,
+  "deterministic": true,
+  "runs": [
+    {
+      "case_id": "development_rock",
+      "split": "development",
+      "source_style": "rock",
+      "target_style": "jazz",
+      "method": "instrument_only",
+      "transform_seconds": 0.0031775329998708912,
+      "output": "development_rock/instrument_only.mid",
+      "output_sha256": "112f4fbcfdc8e0caae2bb23f1fa1c0ee757a4c885cd0953455f30e81544e08fc",
+      "input_midi_sha256": "34ab1c5c081a219b859624b2a0dab80badf4e5bddacce8b620bb4784d5b7dd19",
+      "annotation_sha256": "86bd0add7b549d768cebdf59dcdb1bd8a957ab1d7e15bf7020abd68d2fe16a31",
+      "input_annotation": "fixtures/development_rock.json",
+      "chords": [
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 32.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 1.0,
+          "chords": 1.5,
+          "drums": 3.0
+        }
+      },
+      "trace": {
+        "method": "instrument_only",
+        "melody_track": 0,
+        "selection": [],
+        "weights": {
+          "style": 1.0,
+          "continuity": 0.8,
+          "max_states": 100000
+        },
+        "selection_objective": null
+      },
+      "accompaniment_event_difference_from_fixed": 560
+    },
+    {
+      "case_id": "development_rock",
+      "split": "development",
+      "source_style": "rock",
+      "target_style": "jazz",
+      "method": "fixed",
+      "transform_seconds": 0.00523270700023204,
+      "output": "development_rock/fixed.mid",
+      "output_sha256": "821af08cfd18ed4286fe027ba0025720a297ccb718067d24140f5d46ce4fbe87",
+      "input_midi_sha256": "34ab1c5c081a219b859624b2a0dab80badf4e5bddacce8b620bb4784d5b7dd19",
+      "annotation_sha256": "86bd0add7b549d768cebdf59dcdb1bd8a957ab1d7e15bf7020abd68d2fe16a31",
+      "input_annotation": "fixtures/development_rock.json",
+      "chords": [
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 32.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 1.0,
+          "chords": 1.5,
+          "drums": 2.25
+        }
+      },
+      "trace": {
+        "method": "fixed",
+        "melody_track": 0,
+        "weights": {
+          "style": 1.0,
+          "continuity": 0.8,
+          "max_states": 100000
+        },
+        "selection_objective": 9.495833333333334,
+        "selection": [
+          {
+            "phrase": "A",
+            "start_bar": 0,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5,
+            "transition_from_previous": 0
+          },
+          {
+            "phrase": "B",
+            "start_bar": 4,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0.4166666666666667
+          },
+          {
+            "phrase": "A",
+            "start_bar": 8,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5,
+            "transition_from_previous": 0.6666666666666666
+          },
+          {
+            "phrase": "C",
+            "start_bar": 12,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 1.0,
+            "transition_from_previous": 0.08333333333333333
+          }
+        ]
+      },
+      "accompaniment_event_difference_from_fixed": 0
+    },
+    {
+      "case_id": "development_rock",
+      "split": "development",
+      "source_style": "rock",
+      "target_style": "jazz",
+      "method": "adaptive",
+      "transform_seconds": 0.005695363000086218,
+      "output": "development_rock/adaptive.mid",
+      "output_sha256": "5d053fd3c34beae14b3df365e1d6c67005064dc531538082eb964b2b726ed9ce",
+      "input_midi_sha256": "34ab1c5c081a219b859624b2a0dab80badf4e5bddacce8b620bb4784d5b7dd19",
+      "annotation_sha256": "86bd0add7b549d768cebdf59dcdb1bd8a957ab1d7e15bf7020abd68d2fe16a31",
+      "input_annotation": "fixtures/development_rock.json",
+      "chords": [
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 32.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 1.125,
+          "chords": 2.0625,
+          "drums": 2.125
+        }
+      },
+      "trace": {
+        "method": "adaptive",
+        "melody_track": 0,
+        "weights": {
+          "style": 1.0,
+          "continuity": 0.8,
+          "max_states": 100000
+        },
+        "selection_objective": 4.529166666666667,
+        "selection": [
+          {
+            "phrase": "A",
+            "start_bar": 0,
+            "bars": 4,
+            "plan": "busy",
+            "patterns": [
+              "busy",
+              "busy",
+              "busy",
+              "busy"
+            ],
+            "local_cost": 0.5,
+            "transition_from_previous": 0
+          },
+          {
+            "phrase": "B",
+            "start_bar": 4,
+            "bars": 4,
+            "plan": "sparse",
+            "patterns": [
+              "sparse",
+              "sparse",
+              "sparse",
+              "sparse"
+            ],
+            "local_cost": 0.0625,
+            "transition_from_previous": 1.2916666666666667
+          },
+          {
+            "phrase": "A",
+            "start_bar": 8,
+            "bars": 4,
+            "plan": "busy",
+            "patterns": [
+              "busy",
+              "busy",
+              "busy",
+              "busy"
+            ],
+            "local_cost": 0.5,
+            "transition_from_previous": 1.2916666666666667
+          },
+          {
+            "phrase": "C",
+            "start_bar": 12,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 1.0,
+            "transition_from_previous": 0.5
+          }
+        ]
+      },
+      "accompaniment_event_difference_from_fixed": 156
+    },
+    {
+      "case_id": "development_rock",
+      "split": "development",
+      "source_style": "rock",
+      "target_style": "jazz",
+      "method": "no_continuity",
+      "transform_seconds": 0.0059436070000629115,
+      "output": "development_rock/no_continuity.mid",
+      "output_sha256": "cdd9c263b6cc9aa17460ea4f5150deb751df55f311936a84dda468a141b1a9a9",
+      "input_midi_sha256": "34ab1c5c081a219b859624b2a0dab80badf4e5bddacce8b620bb4784d5b7dd19",
+      "annotation_sha256": "86bd0add7b549d768cebdf59dcdb1bd8a957ab1d7e15bf7020abd68d2fe16a31",
+      "input_annotation": "fixtures/development_rock.json",
+      "chords": [
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 32.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 1.0,
+          "chords": 1.875,
+          "drums": 1.75
+        }
+      },
+      "trace": {
+        "method": "no_continuity",
+        "melody_track": 0,
+        "weights": {
+          "style": 1.0,
+          "continuity": 0,
+          "max_states": 100000
+        },
+        "selection_objective": 2.0625,
+        "selection": [
+          {
+            "phrase": "A",
+            "start_bar": 0,
+            "bars": 4,
+            "plan": "busy",
+            "patterns": [
+              "busy",
+              "busy",
+              "busy",
+              "busy"
+            ],
+            "local_cost": 0.5,
+            "transition_from_previous": 0
+          },
+          {
+            "phrase": "B",
+            "start_bar": 4,
+            "bars": 4,
+            "plan": "sparse",
+            "patterns": [
+              "sparse",
+              "sparse",
+              "sparse",
+              "sparse"
+            ],
+            "local_cost": 0.0625,
+            "transition_from_previous": 1.2916666666666667
+          },
+          {
+            "phrase": "A",
+            "start_bar": 8,
+            "bars": 4,
+            "plan": "busy",
+            "patterns": [
+              "busy",
+              "busy",
+              "busy",
+              "busy"
+            ],
+            "local_cost": 0.5,
+            "transition_from_previous": 1.2916666666666667
+          },
+          {
+            "phrase": "C",
+            "start_bar": 12,
+            "bars": 4,
+            "plan": "sparse",
+            "patterns": [
+              "sparse",
+              "sparse",
+              "sparse",
+              "sparse"
+            ],
+            "local_cost": 1.0,
+            "transition_from_previous": 0.9583333333333334
+          }
+        ]
+      },
+      "accompaniment_event_difference_from_fixed": 200
+    },
+    {
+      "case_id": "development_jazz",
+      "split": "development",
+      "source_style": "jazz",
+      "target_style": "rock",
+      "method": "instrument_only",
+      "transform_seconds": 0.0025174899997182365,
+      "output": "development_jazz/instrument_only.mid",
+      "output_sha256": "dd8f5bc18569ece9af3e29fc02032ef6f442ca596be2d64c9685e3c1a1127e3a",
+      "input_midi_sha256": "0186320f3b99452eb7de9e7f92deaca016ed09a19c62a913c23a5913d23ac011",
+      "annotation_sha256": "2862bff352243511ba4a2840cefddd3218f97cb1bab38e1b23a3e2599e6364f7",
+      "input_annotation": "fixtures/development_jazz.json",
+      "chords": [
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 11,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 32.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 1.0,
+          "chords": 1.5,
+          "drums": 2.25
+        }
+      },
+      "trace": {
+        "method": "instrument_only",
+        "melody_track": 0,
+        "selection": [],
+        "weights": {
+          "style": 1.0,
+          "continuity": 0.8,
+          "max_states": 100000
+        },
+        "selection_objective": null
+      },
+      "accompaniment_event_difference_from_fixed": 560
+    },
+    {
+      "case_id": "development_jazz",
+      "split": "development",
+      "source_style": "jazz",
+      "target_style": "rock",
+      "method": "fixed",
+      "transform_seconds": 0.006322527000065747,
+      "output": "development_jazz/fixed.mid",
+      "output_sha256": "cad98206eabee760c57a9970ff8172ebb044c1c4a5b76ae992afec40124f70e2",
+      "input_midi_sha256": "0186320f3b99452eb7de9e7f92deaca016ed09a19c62a913c23a5913d23ac011",
+      "annotation_sha256": "2862bff352243511ba4a2840cefddd3218f97cb1bab38e1b23a3e2599e6364f7",
+      "input_annotation": "fixtures/development_jazz.json",
+      "chords": [
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 11,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 32.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 1.0,
+          "chords": 1.5,
+          "drums": 3.0
+        }
+      },
+      "trace": {
+        "method": "fixed",
+        "melody_track": 0,
+        "weights": {
+          "style": 1.0,
+          "continuity": 0.8,
+          "max_states": 100000
+        },
+        "selection_objective": 9.745833333333334,
+        "selection": [
+          {
+            "phrase": "A",
+            "start_bar": 0,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0
+          },
+          {
+            "phrase": "B",
+            "start_bar": 4,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.625,
+            "transition_from_previous": 0.75
+          },
+          {
+            "phrase": "A",
+            "start_bar": 8,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0.0
+          },
+          {
+            "phrase": "C",
+            "start_bar": 12,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 1.0625,
+            "transition_from_previous": 0.4166666666666667
+          }
+        ]
+      },
+      "accompaniment_event_difference_from_fixed": 0
+    },
+    {
+      "case_id": "development_jazz",
+      "split": "development",
+      "source_style": "jazz",
+      "target_style": "rock",
+      "method": "adaptive",
+      "transform_seconds": 0.007148960999984411,
+      "output": "development_jazz/adaptive.mid",
+      "output_sha256": "a7d19c4f668490bdbe9d5ee9f2762d715dd57e0186c0427defaebb882d7f1a60",
+      "input_midi_sha256": "0186320f3b99452eb7de9e7f92deaca016ed09a19c62a913c23a5913d23ac011",
+      "annotation_sha256": "2862bff352243511ba4a2840cefddd3218f97cb1bab38e1b23a3e2599e6364f7",
+      "input_annotation": "fixtures/development_jazz.json",
+      "chords": [
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 11,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 32.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 0.875,
+          "chords": 1.3125,
+          "drums": 2.625
+        }
+      },
+      "trace": {
+        "method": "adaptive",
+        "melody_track": 0,
+        "weights": {
+          "style": 1.0,
+          "continuity": 0.8,
+          "max_states": 100000
+        },
+        "selection_objective": 7.979166666666667,
+        "selection": [
+          {
+            "phrase": "A",
+            "start_bar": 0,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0
+          },
+          {
+            "phrase": "B",
+            "start_bar": 4,
+            "bars": 4,
+            "plan": "sparse",
+            "patterns": [
+              "sparse",
+              "sparse",
+              "sparse",
+              "sparse"
+            ],
+            "local_cost": 0.125,
+            "transition_from_previous": 1.2083333333333333
+          },
+          {
+            "phrase": "A",
+            "start_bar": 8,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0.4583333333333333
+          },
+          {
+            "phrase": "C",
+            "start_bar": 12,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 1.0625,
+            "transition_from_previous": 0.4166666666666667
+          }
+        ]
+      },
+      "accompaniment_event_difference_from_fixed": 52
+    },
+    {
+      "case_id": "development_jazz",
+      "split": "development",
+      "source_style": "jazz",
+      "target_style": "rock",
+      "method": "no_continuity",
+      "transform_seconds": 0.008208024999930785,
+      "output": "development_jazz/no_continuity.mid",
+      "output_sha256": "06e0566acb3072c9c1ebcfb3bff83d6155156063a8784b30e681c34548589b9d",
+      "input_midi_sha256": "0186320f3b99452eb7de9e7f92deaca016ed09a19c62a913c23a5913d23ac011",
+      "annotation_sha256": "2862bff352243511ba4a2840cefddd3218f97cb1bab38e1b23a3e2599e6364f7",
+      "input_annotation": "fixtures/development_jazz.json",
+      "chords": [
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 11,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 32.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 0.75,
+          "chords": 1.125,
+          "drums": 2.25
+        }
+      },
+      "trace": {
+        "method": "no_continuity",
+        "melody_track": 0,
+        "weights": {
+          "style": 1.0,
+          "continuity": 0,
+          "max_states": 100000
+        },
+        "selection_objective": 6.3125,
+        "selection": [
+          {
+            "phrase": "A",
+            "start_bar": 0,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0
+          },
+          {
+            "phrase": "B",
+            "start_bar": 4,
+            "bars": 4,
+            "plan": "sparse",
+            "patterns": [
+              "sparse",
+              "sparse",
+              "sparse",
+              "sparse"
+            ],
+            "local_cost": 0.125,
+            "transition_from_previous": 1.2083333333333333
+          },
+          {
+            "phrase": "A",
+            "start_bar": 8,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0.4583333333333333
+          },
+          {
+            "phrase": "C",
+            "start_bar": 12,
+            "bars": 4,
+            "plan": "sparse",
+            "patterns": [
+              "sparse",
+              "sparse",
+              "sparse",
+              "sparse"
+            ],
+            "local_cost": 1.0625,
+            "transition_from_previous": 0.875
+          }
+        ]
+      },
+      "accompaniment_event_difference_from_fixed": 104
+    },
+    {
+      "case_id": "verification_rock",
+      "split": "verification",
+      "source_style": "rock",
+      "target_style": "jazz",
+      "method": "instrument_only",
+      "transform_seconds": 0.00263055000004897,
+      "output": "verification_rock/instrument_only.mid",
+      "output_sha256": "9a350b4dea352272dfd02ffda64d4ec1081d26b6f93f03ad642b1cd1b5aaac79",
+      "input_midi_sha256": "e95022e59b652869ee59254151d0c48de2a268a9e59ebc311d25b60c1f05075d",
+      "annotation_sha256": "7feca591687f0880ae2f5320a8b20359f391067439129c31a588d6fa1264222f",
+      "input_annotation": "fixtures/verification_rock.json",
+      "chords": [
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 48.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 1.0,
+          "chords": 1.5,
+          "drums": 3.0
+        }
+      },
+      "trace": {
+        "method": "instrument_only",
+        "melody_track": 0,
+        "selection": [],
+        "weights": {
+          "style": 1.0,
+          "continuity": 0.8,
+          "max_states": 100000
+        },
+        "selection_objective": null
+      },
+      "accompaniment_event_difference_from_fixed": 560
+    },
+    {
+      "case_id": "verification_rock",
+      "split": "verification",
+      "source_style": "rock",
+      "target_style": "jazz",
+      "method": "fixed",
+      "transform_seconds": 0.006068864999633661,
+      "output": "verification_rock/fixed.mid",
+      "output_sha256": "c0b0deff78e8bca12b585257734ec58d888d120bbe899274c603b7d9573158db",
+      "input_midi_sha256": "e95022e59b652869ee59254151d0c48de2a268a9e59ebc311d25b60c1f05075d",
+      "annotation_sha256": "7feca591687f0880ae2f5320a8b20359f391067439129c31a588d6fa1264222f",
+      "input_annotation": "fixtures/verification_rock.json",
+      "chords": [
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 48.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 1.0,
+          "chords": 1.5,
+          "drums": 2.25
+        }
+      },
+      "trace": {
+        "method": "fixed",
+        "melody_track": 0,
+        "weights": {
+          "style": 1.0,
+          "continuity": 0.8,
+          "max_states": 100000
+        },
+        "selection_objective": 9.3625,
+        "selection": [
+          {
+            "phrase": "A",
+            "start_bar": 0,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5,
+            "transition_from_previous": 0
+          },
+          {
+            "phrase": "B",
+            "start_bar": 4,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0.5833333333333334
+          },
+          {
+            "phrase": "A",
+            "start_bar": 8,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5,
+            "transition_from_previous": 0.3333333333333333
+          },
+          {
+            "phrase": "C",
+            "start_bar": 12,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 1.0,
+            "transition_from_previous": 0.08333333333333333
+          }
+        ]
+      },
+      "accompaniment_event_difference_from_fixed": 0
+    },
+    {
+      "case_id": "verification_rock",
+      "split": "verification",
+      "source_style": "rock",
+      "target_style": "jazz",
+      "method": "adaptive",
+      "transform_seconds": 0.0056659780002519256,
+      "output": "verification_rock/adaptive.mid",
+      "output_sha256": "14709a7b322a7a8601c4ea4b31fa14e248e07c6beaba1cbbb616b77a5d6820b3",
+      "input_midi_sha256": "e95022e59b652869ee59254151d0c48de2a268a9e59ebc311d25b60c1f05075d",
+      "annotation_sha256": "7feca591687f0880ae2f5320a8b20359f391067439129c31a588d6fa1264222f",
+      "input_annotation": "fixtures/verification_rock.json",
+      "chords": [
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 48.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 1.125,
+          "chords": 2.0625,
+          "drums": 2.125
+        }
+      },
+      "trace": {
+        "method": "adaptive",
+        "melody_track": 0,
+        "weights": {
+          "style": 1.0,
+          "continuity": 0.8,
+          "max_states": 100000
+        },
+        "selection_objective": 4.795833333333334,
+        "selection": [
+          {
+            "phrase": "A",
+            "start_bar": 0,
+            "bars": 4,
+            "plan": "busy",
+            "patterns": [
+              "busy",
+              "busy",
+              "busy",
+              "busy"
+            ],
+            "local_cost": 0.5,
+            "transition_from_previous": 0
+          },
+          {
+            "phrase": "B",
+            "start_bar": 4,
+            "bars": 4,
+            "plan": "sparse",
+            "patterns": [
+              "sparse",
+              "sparse",
+              "sparse",
+              "sparse"
+            ],
+            "local_cost": 0.0625,
+            "transition_from_previous": 1.4583333333333335
+          },
+          {
+            "phrase": "A",
+            "start_bar": 8,
+            "bars": 4,
+            "plan": "busy",
+            "patterns": [
+              "busy",
+              "busy",
+              "busy",
+              "busy"
+            ],
+            "local_cost": 0.5,
+            "transition_from_previous": 1.4583333333333335
+          },
+          {
+            "phrase": "C",
+            "start_bar": 12,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 1.0,
+            "transition_from_previous": 0.5
+          }
+        ]
+      },
+      "accompaniment_event_difference_from_fixed": 156
+    },
+    {
+      "case_id": "verification_rock",
+      "split": "verification",
+      "source_style": "rock",
+      "target_style": "jazz",
+      "method": "no_continuity",
+      "transform_seconds": 0.005924307999976008,
+      "output": "verification_rock/no_continuity.mid",
+      "output_sha256": "43dc2cfe25c39a49754abce2ffeb7921ff2e7f2c9612c0f2a2fbb802b0080253",
+      "input_midi_sha256": "e95022e59b652869ee59254151d0c48de2a268a9e59ebc311d25b60c1f05075d",
+      "annotation_sha256": "7feca591687f0880ae2f5320a8b20359f391067439129c31a588d6fa1264222f",
+      "input_annotation": "fixtures/verification_rock.json",
+      "chords": [
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 10,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 5,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 48.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 1.0,
+          "chords": 1.875,
+          "drums": 1.75
+        }
+      },
+      "trace": {
+        "method": "no_continuity",
+        "melody_track": 0,
+        "weights": {
+          "style": 1.0,
+          "continuity": 0,
+          "max_states": 100000
+        },
+        "selection_objective": 2.0625,
+        "selection": [
+          {
+            "phrase": "A",
+            "start_bar": 0,
+            "bars": 4,
+            "plan": "busy",
+            "patterns": [
+              "busy",
+              "busy",
+              "busy",
+              "busy"
+            ],
+            "local_cost": 0.5,
+            "transition_from_previous": 0
+          },
+          {
+            "phrase": "B",
+            "start_bar": 4,
+            "bars": 4,
+            "plan": "sparse",
+            "patterns": [
+              "sparse",
+              "sparse",
+              "sparse",
+              "sparse"
+            ],
+            "local_cost": 0.0625,
+            "transition_from_previous": 1.4583333333333335
+          },
+          {
+            "phrase": "A",
+            "start_bar": 8,
+            "bars": 4,
+            "plan": "busy",
+            "patterns": [
+              "busy",
+              "busy",
+              "busy",
+              "busy"
+            ],
+            "local_cost": 0.5,
+            "transition_from_previous": 1.4583333333333335
+          },
+          {
+            "phrase": "C",
+            "start_bar": 12,
+            "bars": 4,
+            "plan": "sparse",
+            "patterns": [
+              "sparse",
+              "sparse",
+              "sparse",
+              "sparse"
+            ],
+            "local_cost": 1.0,
+            "transition_from_previous": 0.9583333333333334
+          }
+        ]
+      },
+      "accompaniment_event_difference_from_fixed": 200
+    },
+    {
+      "case_id": "verification_jazz",
+      "split": "verification",
+      "source_style": "jazz",
+      "target_style": "rock",
+      "method": "instrument_only",
+      "transform_seconds": 0.0029901810003138962,
+      "output": "verification_jazz/instrument_only.mid",
+      "output_sha256": "21a6121ea906f3afb4139d932b855e53fd1204309f40f6b5c1947fc3a5ad00c8",
+      "input_midi_sha256": "a6bc6b40ea50cfccbda0990db524b448d2b079bede3d617dd2cbefd0f3b35d0a",
+      "annotation_sha256": "aa80bb49d2a6236aed206c55dbb1e75873c384858f174859c2ae9acec3af2a58",
+      "input_annotation": "fixtures/verification_jazz.json",
+      "chords": [
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 48.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 1.0,
+          "chords": 1.5,
+          "drums": 2.25
+        }
+      },
+      "trace": {
+        "method": "instrument_only",
+        "melody_track": 0,
+        "selection": [],
+        "weights": {
+          "style": 1.0,
+          "continuity": 0.8,
+          "max_states": 100000
+        },
+        "selection_objective": null
+      },
+      "accompaniment_event_difference_from_fixed": 560
+    },
+    {
+      "case_id": "verification_jazz",
+      "split": "verification",
+      "source_style": "jazz",
+      "target_style": "rock",
+      "method": "fixed",
+      "transform_seconds": 0.005890767999972013,
+      "output": "verification_jazz/fixed.mid",
+      "output_sha256": "526671b97b05e1f869f8d319261a5bf502c503899878e10153502a804119867f",
+      "input_midi_sha256": "a6bc6b40ea50cfccbda0990db524b448d2b079bede3d617dd2cbefd0f3b35d0a",
+      "annotation_sha256": "aa80bb49d2a6236aed206c55dbb1e75873c384858f174859c2ae9acec3af2a58",
+      "input_annotation": "fixtures/verification_jazz.json",
+      "chords": [
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 48.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 1.0,
+          "chords": 1.5,
+          "drums": 3.0
+        }
+      },
+      "trace": {
+        "method": "fixed",
+        "melody_track": 0,
+        "weights": {
+          "style": 1.0,
+          "continuity": 0.8,
+          "max_states": 100000
+        },
+        "selection_objective": 9.345833333333333,
+        "selection": [
+          {
+            "phrase": "A",
+            "start_bar": 0,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0
+          },
+          {
+            "phrase": "B",
+            "start_bar": 4,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.625,
+            "transition_from_previous": 0.25
+          },
+          {
+            "phrase": "A",
+            "start_bar": 8,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0.0
+          },
+          {
+            "phrase": "C",
+            "start_bar": 12,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 1.0625,
+            "transition_from_previous": 0.4166666666666667
+          }
+        ]
+      },
+      "accompaniment_event_difference_from_fixed": 0
+    },
+    {
+      "case_id": "verification_jazz",
+      "split": "verification",
+      "source_style": "jazz",
+      "target_style": "rock",
+      "method": "adaptive",
+      "transform_seconds": 0.00633621699989817,
+      "output": "verification_jazz/adaptive.mid",
+      "output_sha256": "829a037b911b720259039fc72ed2a84e41cc55c37d7c2a93a864e4e6ec054fad",
+      "input_midi_sha256": "a6bc6b40ea50cfccbda0990db524b448d2b079bede3d617dd2cbefd0f3b35d0a",
+      "annotation_sha256": "aa80bb49d2a6236aed206c55dbb1e75873c384858f174859c2ae9acec3af2a58",
+      "input_annotation": "fixtures/verification_jazz.json",
+      "chords": [
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 48.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 0.875,
+          "chords": 1.3125,
+          "drums": 2.625
+        }
+      },
+      "trace": {
+        "method": "adaptive",
+        "melody_track": 0,
+        "weights": {
+          "style": 1.0,
+          "continuity": 0.8,
+          "max_states": 100000
+        },
+        "selection_objective": 7.579166666666667,
+        "selection": [
+          {
+            "phrase": "A",
+            "start_bar": 0,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0
+          },
+          {
+            "phrase": "B",
+            "start_bar": 4,
+            "bars": 4,
+            "plan": "sparse",
+            "patterns": [
+              "sparse",
+              "sparse",
+              "sparse",
+              "sparse"
+            ],
+            "local_cost": 0.125,
+            "transition_from_previous": 0.7083333333333333
+          },
+          {
+            "phrase": "A",
+            "start_bar": 8,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0.4583333333333333
+          },
+          {
+            "phrase": "C",
+            "start_bar": 12,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 1.0625,
+            "transition_from_previous": 0.4166666666666667
+          }
+        ]
+      },
+      "accompaniment_event_difference_from_fixed": 52
+    },
+    {
+      "case_id": "verification_jazz",
+      "split": "verification",
+      "source_style": "jazz",
+      "target_style": "rock",
+      "method": "no_continuity",
+      "transform_seconds": 0.0062569480001002376,
+      "output": "verification_jazz/no_continuity.mid",
+      "output_sha256": "e548be1a0e59737567af9b6809bd0993f57f02edeb258872faf5446707afa543",
+      "input_midi_sha256": "a6bc6b40ea50cfccbda0990db524b448d2b079bede3d617dd2cbefd0f3b35d0a",
+      "annotation_sha256": "aa80bb49d2a6236aed206c55dbb1e75873c384858f174859c2ae9acec3af2a58",
+      "input_annotation": "fixtures/verification_jazz.json",
+      "chords": [
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 4,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 9,
+          "intervals": [
+            0,
+            3,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 0,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 2,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        },
+        {
+          "root_pc": 7,
+          "intervals": [
+            0,
+            4,
+            7
+          ]
+        }
+      ],
+      "metrics": {
+        "melody_preserved": true,
+        "melody_notes": 96,
+        "melody_pitch_errors": 0,
+        "max_melody_timing_error_beats": 0.0,
+        "duration_seconds": 48.0,
+        "duration_preserved": true,
+        "phrase_markers_preserved": true,
+        "tempo_preserved": true,
+        "time_signature_preserved": true,
+        "harmony_pitch_class_violations": 0,
+        "register_violations": 0,
+        "event_bounds_violations": 0,
+        "note_density_per_beat": {
+          "melody": 1.5,
+          "bass": 0.75,
+          "chords": 1.125,
+          "drums": 2.25
+        }
+      },
+      "trace": {
+        "method": "no_continuity",
+        "melody_track": 0,
+        "weights": {
+          "style": 1.0,
+          "continuity": 0,
+          "max_states": 100000
+        },
+        "selection_objective": 6.3125,
+        "selection": [
+          {
+            "phrase": "A",
+            "start_bar": 0,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0
+          },
+          {
+            "phrase": "B",
+            "start_bar": 4,
+            "bars": 4,
+            "plan": "sparse",
+            "patterns": [
+              "sparse",
+              "sparse",
+              "sparse",
+              "sparse"
+            ],
+            "local_cost": 0.125,
+            "transition_from_previous": 0.7083333333333333
+          },
+          {
+            "phrase": "A",
+            "start_bar": 8,
+            "bars": 4,
+            "plan": "regular",
+            "patterns": [
+              "regular",
+              "regular",
+              "regular",
+              "regular"
+            ],
+            "local_cost": 2.5625,
+            "transition_from_previous": 0.4583333333333333
+          },
+          {
+            "phrase": "C",
+            "start_bar": 12,
+            "bars": 4,
+            "plan": "sparse",
+            "patterns": [
+              "sparse",
+              "sparse",
+              "sparse",
+              "sparse"
+            ],
+            "local_cost": 1.0625,
+            "transition_from_previous": 0.875
+          }
+        ]
+      },
+      "accompaniment_event_difference_from_fixed": 104
+    }
+  ]
+}

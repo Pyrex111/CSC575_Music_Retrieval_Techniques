@@ -1,0 +1,20 @@
+{
+  "output_clips_machine_assessed": 32,
+  "source_clips_assessed": 8,
+  "development_source_controls": 4,
+  "source_control_jazz_rock_agreement": 2,
+  "additional_artist_labelled_controls": 2,
+  "additional_control_agreement": 2,
+  "human_ratings_collected": 0,
+  "form_checks": {
+    "javascript_syntax": true,
+    "required_identity_check": true,
+    "audio_player_count": 42,
+    "export_rows": 32,
+    "blank_and_unsure_responses_preserved": true,
+    "internal_listener_role_retained": true,
+    "dom_runtime_errors": 0
+  },
+  "browser_visual_check": "Not completed: local Chromium launch was blocked by socket permissions; DOM/export checks used jsdom instead. Audio assets were decoded by FFmpeg.",
+  "core_arranger_changed": false
+}

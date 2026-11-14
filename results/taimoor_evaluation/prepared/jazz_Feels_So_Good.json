@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "case_id": "jazz_Feels_So_Good",
+  "composition_id": "Feels_So_Good",
+  "source_style": "jazz",
+  "split": "development",
+  "bars": 16,
+  "midi_path": "jazz_Feels_So_Good.mid",
+  "melody_track": 2,
+  "tempo_bpm": 115.00002875000717,
+  "time_signature": [
+    4,
+    4
+  ],
+  "phrases": [
+    {
+      "label": "P1",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "P2",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "P3",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "P4",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ],
+  "chords": [
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    }
+  ],
+  "provenance": {
+    "source_url": "https://raw.githubusercontent.com/Pyrex111/CSC575_Music_Retrieval_Techniques/3316077bdd47621f2eb9a506ee2900c0bb94dfe4/data/jazz/Feels_So_Good.mid",
+    "source_revision": "3316077bdd47621f2eb9a506ee2900c0bb94dfe4",
+    "source_sha256": "7c1567b9ebf7f34636f2911b92131e47b1e7da9baaaeae2bdb023fd60740a027",
+    "source_git_blob": "17de4f74d44b8ffdd8b244de7c65f0024b10d8bf",
+    "start_bar_zero_based": 4,
+    "source_melody_track_index": 2,
+    "source_melody_track_name": "Melody / Trumpet",
+    "boundary_trimmed_melody_notes": 1
+  },
+  "annotation_status": "provisional_computational; not independently musician-reviewed",
+  "phrase_policy": "Four-bar grid; exact repeated melody signatures share labels; musical boundaries not independently reviewed",
+  "chord_diagnostics": [
+    {
+      "bar": 1,
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Gmin7",
+      "coverage": 1.0,
+      "score_margin": 0.13017202467525946,
+      "alternative": "G7",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 2,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bbmaj7",
+      "coverage": 0.7258827908955542,
+      "score_margin": 0.1418874348494087,
+      "alternative": "Gmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 3,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Amin7",
+      "coverage": 1.0,
+      "score_margin": 0.13662590260231666,
+      "alternative": "Amin",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 4,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Dmin7",
+      "coverage": 1.0000000000000002,
+      "score_margin": 0.09739560551669635,
+      "alternative": "Dmin",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 5,
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Gmin7",
+      "coverage": 0.9999999999999998,
+      "score_margin": 0.12918697747685903,
+      "alternative": "Gmin",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 6,
+      "root_pc": 9,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "A7",
+      "coverage": 0.8677553229880904,
+      "score_margin": 0.07632623601587862,
+      "alternative": "Amin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 7,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Dmin7",
+      "coverage": 0.9999999999999998,
+      "score_margin": 0.18604840098754072,
+      "alternative": "Dmin",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 8,
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Ebmaj7",
+      "coverage": 0.8533048603081055,
+      "score_margin": 0.16299321123503308,
+      "alternative": "Ebmaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 9,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Dmin7",
+      "coverage": 1.0,
+      "score_margin": 0.2164473244294286,
+      "alternative": "Dmin",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 10,
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Ebmaj7",
+      "coverage": 0.8295974743488554,
+      "score_margin": 0.1514640883977899,
+      "alternative": "Ebmaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 11,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Dmin7",
+      "coverage": 0.9999999999999998,
+      "score_margin": 0.17287503850925467,
+      "alternative": "Dmin",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 12,
+      "root_pc": 3,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Ebmaj7",
+      "coverage": 0.9171944377516951,
+      "score_margin": 0.22562712972842724,
+      "alternative": "Ebmaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 13,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Dmin7",
+      "coverage": 1.0,
+      "score_margin": 0.17468822708236387,
+      "alternative": "Dmin",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 14,
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Gmin7",
+      "coverage": 0.5135560523438429,
+      "score_margin": 0.008226540052870934,
+      "alternative": "Ebmaj7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 15,
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Gmin7",
+      "coverage": 1.0,
+      "score_margin": 0.22789535657859494,
+      "alternative": "Gmin",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 16,
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Gmin7",
+      "coverage": 0.5501772973896694,
+      "score_margin": 7.771561172376096e-16,
+      "alternative": "Bbmaj7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    }
+  ]
+}

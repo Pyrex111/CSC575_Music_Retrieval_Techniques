@@ -1,0 +1,592 @@
+{
+  "protocol_sha256": "258092fc3ebf4c6c8cf98f52329f204251bd5007824ead514581f62749364ede",
+  "code_sha256": {
+    "__init__.py": "76e80fd1150e358cbad578adffafcd7350d602e9b6e70e781b87a2375153c3aa",
+    "arranger.py": "ab4e98473365bf4ffe46c65e47ea76b849eaeee2fb7ccbce56b2e9c68eb3ed09",
+    "checkpoint.py": "bc62683aa141bc09d0b89c1cef32087386baf908165a571dcb31732d7cd18730",
+    "evaluate.py": "6a531a35899a0678d9f629a70777f85169d4bd692e65cb57c627eb9757146377",
+    "fixtures.py": "bf9c5de5a1a7afcbbb0763dfbeee1d703d35d4f1b5a5d53073042a07f296a0f6",
+    "independent_audit.py": "20c8f82d6d6fe1e7da8da1c1547221c2427197cc975d71e0ada16a14af465229",
+    "model.py": "c413d0134ba26f8a0e9221bee1447e00d7f57e55bacc42db3955e6553159c140",
+    "run.py": "90015d37afe4cec43e5000ac52675a77a0ad473212b9585d15318594f46f7216"
+  },
+  "input_hashes": {
+    "jazz_Cest_si_bon": "d238b18404bd92f3c7fe077f9065d00cce44a8cc2bd506f15f683014048f9404",
+    "jazz_Feels_So_Good": "6624a56b3520a75d2cc284a05ba74f2ee828fe003ba5d1b2f073ce1ec7db819e",
+    "rock_Bad_Medicine": "95597351446459c5c96c7be4684b595c9588bb09e29c09a6474f353e763187eb",
+    "rock_Sweet_Child_O_Mine": "8a8e41f8b91a5db5a6607ea5daa709c7c2ca98ac32367a13ca66731eca9b190a",
+    "jazz_Let_There_Be_Love": "f486116bb136bd5b066fed570e813dd5191db1d05f699639e5710a5bf2ae74bc",
+    "jazz_Light_Years": "25b92e4dddb652b93834df72e3a9df87ecddd2e739b162916ccd5d62b7fcf9ca",
+    "jazz_La_Vie_en_rose": "394a894629f4f8c477d71cfd13cdbb17a53571874956b5b03507c8a30454e606",
+    "jazz_What_a_Wonderful_World_1": "9eea3ef186232c818cad42d8f6179aeab40aac38cb4f98896caad4f60aeea6f0",
+    "rock_Highway_To_Hell_1": "90551fc84594a1c1dfb34750de324bd567ce7da25469a2552669f473845016a5",
+    "rock_Brain_Stew": "af20e0ad93dff427b3f5366bb5fd5758d234145735cd4f72392f4471393fe96a",
+    "rock_When_I_Come_Around": "dada0beedd1a1d0753680a84b78aebad3cd44e853b9ad67f43225c4b99bb8a30",
+    "rock_TNT": "dc8e7b107f11f16da27a32b5a30341c92933dd5e2d0ad413a80d5758ac492b20"
+  },
+  "selected_weights": {
+    "style": 1.0,
+    "continuity": 4.0
+  },
+  "selection_rule": "Minimize mean development target-reference descriptor distance + 0.25 * mean boundary bass jump in octaves. Any invariant/generation failure disqualifies a setting. Break exact ties by smallest continuity weight. Reference centers/scales use development source excerpts only. This is an engineering selection proxy, not perceptual quality.",
+  "development_cases": [
+    "jazz_Cest_si_bon",
+    "jazz_Feels_So_Good",
+    "rock_Bad_Medicine",
+    "rock_Sweet_Child_O_Mine"
+  ],
+  "test_cases": [
+    "jazz_Let_There_Be_Love",
+    "jazz_Light_Years",
+    "jazz_La_Vie_en_rose",
+    "jazz_What_a_Wonderful_World_1",
+    "rock_Highway_To_Hell_1",
+    "rock_Brain_Stew",
+    "rock_When_I_Come_Around",
+    "rock_TNT"
+  ],
+  "target_references": {
+    "centers": {
+      "jazz": [
+        11.570312500000007,
+        4.341080729166666,
+        0.3844039473071731,
+        0.34021900068271027
+      ],
+      "rock": [
+        9.265625,
+        5.526529947916661,
+        0.504058061948625,
+        0.576926133057179
+      ]
+    },
+    "scale": [
+      4.088772842124171,
+      2.4587543852732017,
+      0.23316516404654494,
+      0.25
+    ],
+    "reference_cases": [
+      "jazz_Cest_si_bon",
+      "jazz_Feels_So_Good",
+      "rock_Bad_Medicine",
+      "rock_Sweet_Child_O_Mine"
+    ]
+  },
+  "feature_code_git_blob": "f6c70768cbc5334241dbd1d3f3e9564dfa5a840c",
+  "grid": [
+    {
+      "continuity": 0.0,
+      "style": 1.0,
+      "eligible": true,
+      "mean_selection_proxy": 1.1598879706375163,
+      "per_composition": [
+        {
+          "case_id": "jazz_Cest_si_bon",
+          "technical_pass": true,
+          "descriptor_distance": 1.2093313092303632,
+          "boundary_bass_jump_semitones": 4.666666666666667,
+          "selection_proxy": 1.3065535314525856,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "6b1e5691c18b533b478844485261a7dc1f0b48baa42b985b2199b429e329d9b3"
+        },
+        {
+          "case_id": "jazz_Feels_So_Good",
+          "technical_pass": true,
+          "descriptor_distance": 1.1817920290482447,
+          "boundary_bass_jump_semitones": 2.3333333333333335,
+          "selection_proxy": 1.2304031401593558,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "ab74619422355a30da8b567640b4ea1643e0c4c80be59ccb3f9ce1de74c44b47"
+        },
+        {
+          "case_id": "rock_Bad_Medicine",
+          "technical_pass": true,
+          "descriptor_distance": 0.8902107259538815,
+          "boundary_bass_jump_semitones": 3.6666666666666665,
+          "selection_proxy": 0.9665996148427703,
+          "plans": [
+            "regular",
+            "regular",
+            "busy",
+            "regular"
+          ],
+          "output_sha256": "6cfd8bc998f26f83d1d7631e9aa35c886ac1058e2583a36e05067b253ba7209b"
+        },
+        {
+          "case_id": "rock_Sweet_Child_O_Mine",
+          "technical_pass": true,
+          "descriptor_distance": 1.0526622627620201,
+          "boundary_bass_jump_semitones": 4.0,
+          "selection_proxy": 1.1359955960953534,
+          "plans": [
+            "regular",
+            "build",
+            "regular",
+            "build"
+          ],
+          "output_sha256": "c673b851e81be821fa502d9b4ac9a4aa979240d0f079279f141427ae99d837f5"
+        }
+      ]
+    },
+    {
+      "continuity": 0.1,
+      "style": 1.0,
+      "eligible": true,
+      "mean_selection_proxy": 1.1598879706375163,
+      "per_composition": [
+        {
+          "case_id": "jazz_Cest_si_bon",
+          "technical_pass": true,
+          "descriptor_distance": 1.2093313092303632,
+          "boundary_bass_jump_semitones": 4.666666666666667,
+          "selection_proxy": 1.3065535314525856,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "6b1e5691c18b533b478844485261a7dc1f0b48baa42b985b2199b429e329d9b3"
+        },
+        {
+          "case_id": "jazz_Feels_So_Good",
+          "technical_pass": true,
+          "descriptor_distance": 1.1817920290482447,
+          "boundary_bass_jump_semitones": 2.3333333333333335,
+          "selection_proxy": 1.2304031401593558,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "ab74619422355a30da8b567640b4ea1643e0c4c80be59ccb3f9ce1de74c44b47"
+        },
+        {
+          "case_id": "rock_Bad_Medicine",
+          "technical_pass": true,
+          "descriptor_distance": 0.8902107259538815,
+          "boundary_bass_jump_semitones": 3.6666666666666665,
+          "selection_proxy": 0.9665996148427703,
+          "plans": [
+            "regular",
+            "regular",
+            "busy",
+            "regular"
+          ],
+          "output_sha256": "6cfd8bc998f26f83d1d7631e9aa35c886ac1058e2583a36e05067b253ba7209b"
+        },
+        {
+          "case_id": "rock_Sweet_Child_O_Mine",
+          "technical_pass": true,
+          "descriptor_distance": 1.0526622627620201,
+          "boundary_bass_jump_semitones": 4.0,
+          "selection_proxy": 1.1359955960953534,
+          "plans": [
+            "regular",
+            "build",
+            "regular",
+            "build"
+          ],
+          "output_sha256": "c673b851e81be821fa502d9b4ac9a4aa979240d0f079279f141427ae99d837f5"
+        }
+      ]
+    },
+    {
+      "continuity": 0.25,
+      "style": 1.0,
+      "eligible": true,
+      "mean_selection_proxy": 1.1598879706375163,
+      "per_composition": [
+        {
+          "case_id": "jazz_Cest_si_bon",
+          "technical_pass": true,
+          "descriptor_distance": 1.2093313092303632,
+          "boundary_bass_jump_semitones": 4.666666666666667,
+          "selection_proxy": 1.3065535314525856,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "6b1e5691c18b533b478844485261a7dc1f0b48baa42b985b2199b429e329d9b3"
+        },
+        {
+          "case_id": "jazz_Feels_So_Good",
+          "technical_pass": true,
+          "descriptor_distance": 1.1817920290482447,
+          "boundary_bass_jump_semitones": 2.3333333333333335,
+          "selection_proxy": 1.2304031401593558,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "ab74619422355a30da8b567640b4ea1643e0c4c80be59ccb3f9ce1de74c44b47"
+        },
+        {
+          "case_id": "rock_Bad_Medicine",
+          "technical_pass": true,
+          "descriptor_distance": 0.8902107259538815,
+          "boundary_bass_jump_semitones": 3.6666666666666665,
+          "selection_proxy": 0.9665996148427703,
+          "plans": [
+            "regular",
+            "regular",
+            "busy",
+            "regular"
+          ],
+          "output_sha256": "6cfd8bc998f26f83d1d7631e9aa35c886ac1058e2583a36e05067b253ba7209b"
+        },
+        {
+          "case_id": "rock_Sweet_Child_O_Mine",
+          "technical_pass": true,
+          "descriptor_distance": 1.0526622627620201,
+          "boundary_bass_jump_semitones": 4.0,
+          "selection_proxy": 1.1359955960953534,
+          "plans": [
+            "regular",
+            "build",
+            "regular",
+            "build"
+          ],
+          "output_sha256": "c673b851e81be821fa502d9b4ac9a4aa979240d0f079279f141427ae99d837f5"
+        }
+      ]
+    },
+    {
+      "continuity": 0.5,
+      "style": 1.0,
+      "eligible": true,
+      "mean_selection_proxy": 1.1598879706375163,
+      "per_composition": [
+        {
+          "case_id": "jazz_Cest_si_bon",
+          "technical_pass": true,
+          "descriptor_distance": 1.2093313092303632,
+          "boundary_bass_jump_semitones": 4.666666666666667,
+          "selection_proxy": 1.3065535314525856,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "6b1e5691c18b533b478844485261a7dc1f0b48baa42b985b2199b429e329d9b3"
+        },
+        {
+          "case_id": "jazz_Feels_So_Good",
+          "technical_pass": true,
+          "descriptor_distance": 1.1817920290482447,
+          "boundary_bass_jump_semitones": 2.3333333333333335,
+          "selection_proxy": 1.2304031401593558,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "ab74619422355a30da8b567640b4ea1643e0c4c80be59ccb3f9ce1de74c44b47"
+        },
+        {
+          "case_id": "rock_Bad_Medicine",
+          "technical_pass": true,
+          "descriptor_distance": 0.8902107259538815,
+          "boundary_bass_jump_semitones": 3.6666666666666665,
+          "selection_proxy": 0.9665996148427703,
+          "plans": [
+            "regular",
+            "regular",
+            "busy",
+            "regular"
+          ],
+          "output_sha256": "6cfd8bc998f26f83d1d7631e9aa35c886ac1058e2583a36e05067b253ba7209b"
+        },
+        {
+          "case_id": "rock_Sweet_Child_O_Mine",
+          "technical_pass": true,
+          "descriptor_distance": 1.0526622627620201,
+          "boundary_bass_jump_semitones": 4.0,
+          "selection_proxy": 1.1359955960953534,
+          "plans": [
+            "regular",
+            "build",
+            "regular",
+            "build"
+          ],
+          "output_sha256": "c673b851e81be821fa502d9b4ac9a4aa979240d0f079279f141427ae99d837f5"
+        }
+      ]
+    },
+    {
+      "continuity": 0.8,
+      "style": 1.0,
+      "eligible": true,
+      "mean_selection_proxy": 1.1598879706375163,
+      "per_composition": [
+        {
+          "case_id": "jazz_Cest_si_bon",
+          "technical_pass": true,
+          "descriptor_distance": 1.2093313092303632,
+          "boundary_bass_jump_semitones": 4.666666666666667,
+          "selection_proxy": 1.3065535314525856,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "6b1e5691c18b533b478844485261a7dc1f0b48baa42b985b2199b429e329d9b3"
+        },
+        {
+          "case_id": "jazz_Feels_So_Good",
+          "technical_pass": true,
+          "descriptor_distance": 1.1817920290482447,
+          "boundary_bass_jump_semitones": 2.3333333333333335,
+          "selection_proxy": 1.2304031401593558,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "ab74619422355a30da8b567640b4ea1643e0c4c80be59ccb3f9ce1de74c44b47"
+        },
+        {
+          "case_id": "rock_Bad_Medicine",
+          "technical_pass": true,
+          "descriptor_distance": 0.8902107259538815,
+          "boundary_bass_jump_semitones": 3.6666666666666665,
+          "selection_proxy": 0.9665996148427703,
+          "plans": [
+            "regular",
+            "regular",
+            "busy",
+            "regular"
+          ],
+          "output_sha256": "6cfd8bc998f26f83d1d7631e9aa35c886ac1058e2583a36e05067b253ba7209b"
+        },
+        {
+          "case_id": "rock_Sweet_Child_O_Mine",
+          "technical_pass": true,
+          "descriptor_distance": 1.0526622627620201,
+          "boundary_bass_jump_semitones": 4.0,
+          "selection_proxy": 1.1359955960953534,
+          "plans": [
+            "regular",
+            "build",
+            "regular",
+            "build"
+          ],
+          "output_sha256": "c673b851e81be821fa502d9b4ac9a4aa979240d0f079279f141427ae99d837f5"
+        }
+      ]
+    },
+    {
+      "continuity": 1.0,
+      "style": 1.0,
+      "eligible": true,
+      "mean_selection_proxy": 1.1513866400366084,
+      "per_composition": [
+        {
+          "case_id": "jazz_Cest_si_bon",
+          "technical_pass": true,
+          "descriptor_distance": 1.2093313092303632,
+          "boundary_bass_jump_semitones": 4.666666666666667,
+          "selection_proxy": 1.3065535314525856,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "6b1e5691c18b533b478844485261a7dc1f0b48baa42b985b2199b429e329d9b3"
+        },
+        {
+          "case_id": "jazz_Feels_So_Good",
+          "technical_pass": true,
+          "descriptor_distance": 1.1817920290482447,
+          "boundary_bass_jump_semitones": 2.3333333333333335,
+          "selection_proxy": 1.2304031401593558,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "ab74619422355a30da8b567640b4ea1643e0c4c80be59ccb3f9ce1de74c44b47"
+        },
+        {
+          "case_id": "rock_Bad_Medicine",
+          "technical_pass": true,
+          "descriptor_distance": 0.8902107259538815,
+          "boundary_bass_jump_semitones": 3.6666666666666665,
+          "selection_proxy": 0.9665996148427703,
+          "plans": [
+            "regular",
+            "regular",
+            "busy",
+            "regular"
+          ],
+          "output_sha256": "6cfd8bc998f26f83d1d7631e9aa35c886ac1058e2583a36e05067b253ba7209b"
+        },
+        {
+          "case_id": "rock_Sweet_Child_O_Mine",
+          "technical_pass": true,
+          "descriptor_distance": 1.0186569403583887,
+          "boundary_bass_jump_semitones": 4.0,
+          "selection_proxy": 1.101990273691722,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "build"
+          ],
+          "output_sha256": "bdc86c3f10a105d6d4674f734717574888fe8d3888c31128bc8661c0b400597c"
+        }
+      ]
+    },
+    {
+      "continuity": 2.0,
+      "style": 1.0,
+      "eligible": true,
+      "mean_selection_proxy": 1.143148884929427,
+      "per_composition": [
+        {
+          "case_id": "jazz_Cest_si_bon",
+          "technical_pass": true,
+          "descriptor_distance": 1.2093313092303632,
+          "boundary_bass_jump_semitones": 4.666666666666667,
+          "selection_proxy": 1.3065535314525856,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "6b1e5691c18b533b478844485261a7dc1f0b48baa42b985b2199b429e329d9b3"
+        },
+        {
+          "case_id": "jazz_Feels_So_Good",
+          "technical_pass": true,
+          "descriptor_distance": 1.1817920290482447,
+          "boundary_bass_jump_semitones": 2.3333333333333335,
+          "selection_proxy": 1.2304031401593558,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "ab74619422355a30da8b567640b4ea1643e0c4c80be59ccb3f9ce1de74c44b47"
+        },
+        {
+          "case_id": "rock_Bad_Medicine",
+          "technical_pass": true,
+          "descriptor_distance": 0.8902107259538815,
+          "boundary_bass_jump_semitones": 3.6666666666666665,
+          "selection_proxy": 0.9665996148427703,
+          "plans": [
+            "regular",
+            "regular",
+            "busy",
+            "regular"
+          ],
+          "output_sha256": "6cfd8bc998f26f83d1d7631e9aa35c886ac1058e2583a36e05067b253ba7209b"
+        },
+        {
+          "case_id": "rock_Sweet_Child_O_Mine",
+          "technical_pass": true,
+          "descriptor_distance": 0.9857059199296628,
+          "boundary_bass_jump_semitones": 4.0,
+          "selection_proxy": 1.0690392532629962,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "0bbe83980865d8ce9f99da5ceb42e7b625586a4ad8dc35e7814b1f02a52db20a"
+        }
+      ]
+    },
+    {
+      "continuity": 4.0,
+      "style": 1.0,
+      "eligible": true,
+      "mean_selection_proxy": 1.119012347257934,
+      "per_composition": [
+        {
+          "case_id": "jazz_Cest_si_bon",
+          "technical_pass": true,
+          "descriptor_distance": 1.1822296029888366,
+          "boundary_bass_jump_semitones": 1.3333333333333333,
+          "selection_proxy": 1.2100073807666143,
+          "plans": [
+            "build",
+            "build",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "f1d407ca4b76bf7b8fdc1856b7907134320ac10a816d80a53edf1546b7a44045"
+        },
+        {
+          "case_id": "jazz_Feels_So_Good",
+          "technical_pass": true,
+          "descriptor_distance": 1.1817920290482447,
+          "boundary_bass_jump_semitones": 2.3333333333333335,
+          "selection_proxy": 1.2304031401593558,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "ab74619422355a30da8b567640b4ea1643e0c4c80be59ccb3f9ce1de74c44b47"
+        },
+        {
+          "case_id": "rock_Bad_Medicine",
+          "technical_pass": true,
+          "descriptor_distance": 0.8902107259538815,
+          "boundary_bass_jump_semitones": 3.6666666666666665,
+          "selection_proxy": 0.9665996148427703,
+          "plans": [
+            "regular",
+            "regular",
+            "busy",
+            "regular"
+          ],
+          "output_sha256": "6cfd8bc998f26f83d1d7631e9aa35c886ac1058e2583a36e05067b253ba7209b"
+        },
+        {
+          "case_id": "rock_Sweet_Child_O_Mine",
+          "technical_pass": true,
+          "descriptor_distance": 0.9857059199296628,
+          "boundary_bass_jump_semitones": 4.0,
+          "selection_proxy": 1.0690392532629962,
+          "plans": [
+            "regular",
+            "regular",
+            "regular",
+            "regular"
+          ],
+          "output_sha256": "0bbe83980865d8ce9f99da5ceb42e7b625586a4ad8dc35e7814b1f02a52db20a"
+        }
+      ]
+    }
+  ],
+  "quality_claim": "Development proxy selection only; no perceptual quality claim or test-based tuning."
+}

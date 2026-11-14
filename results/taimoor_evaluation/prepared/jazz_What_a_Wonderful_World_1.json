@@ -1,0 +1,443 @@
+{
+  "schema_version": 1,
+  "case_id": "jazz_What_a_Wonderful_World_1",
+  "composition_id": "What_a_Wonderful_World.1",
+  "source_style": "jazz",
+  "split": "test",
+  "bars": 16,
+  "midi_path": "jazz_What_a_Wonderful_World_1.mid",
+  "melody_track": 0,
+  "tempo_bpm": 64.0,
+  "time_signature": [
+    4,
+    4
+  ],
+  "phrases": [
+    {
+      "label": "P1",
+      "start_bar": 0,
+      "bars": 4
+    },
+    {
+      "label": "P2",
+      "start_bar": 4,
+      "bars": 4
+    },
+    {
+      "label": "P3",
+      "start_bar": 8,
+      "bars": 4
+    },
+    {
+      "label": "P4",
+      "start_bar": 12,
+      "bars": 4
+    }
+  ],
+  "chords": [
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7
+      ]
+    },
+    {
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ]
+    },
+    {
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ]
+    }
+  ],
+  "provenance": {
+    "source_url": "https://raw.githubusercontent.com/Pyrex111/CSC575_Music_Retrieval_Techniques/3316077bdd47621f2eb9a506ee2900c0bb94dfe4/data/jazz/What_a_Wonderful_World.1.mid",
+    "source_revision": "3316077bdd47621f2eb9a506ee2900c0bb94dfe4",
+    "source_sha256": "4201cef61d51ef03676d31f631f928e378ed20b928328574ef3e83efa2a8a380",
+    "source_git_blob": "78308313bcec23f364ab8e3fc513c3362253b30a",
+    "start_bar_zero_based": 8,
+    "source_melody_track_index": 0,
+    "source_melody_track_name": "TENOR SAX",
+    "boundary_trimmed_melody_notes": 2
+  },
+  "annotation_status": "provisional_computational; not independently musician-reviewed",
+  "phrase_policy": "Four-bar grid; exact repeated melody signatures share labels; musical boundaries not independently reviewed",
+  "chord_diagnostics": [
+    {
+      "bar": 1,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Dmaj7",
+      "coverage": 0.813909807954066,
+      "score_margin": 0.0036944918301721197,
+      "alternative": "Dmin",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 2,
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Dbmaj",
+      "coverage": 1.0,
+      "score_margin": 0.03499999999999992,
+      "alternative": "Db7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 3,
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "C7",
+      "coverage": 0.8128267745336403,
+      "score_margin": 0.0,
+      "alternative": "Cmin7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 4,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Fmaj",
+      "coverage": 0.8848596505280986,
+      "score_margin": 0.03500000000000003,
+      "alternative": "F7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 5,
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "C7",
+      "coverage": 0.7483658631331994,
+      "score_margin": 0.03149288381952153,
+      "alternative": "Cmin7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 6,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Fmaj7",
+      "coverage": 1.0,
+      "score_margin": 0.06721640969163012,
+      "alternative": "Fmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 7,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bbmaj7",
+      "coverage": 0.8009882395642286,
+      "score_margin": 0.23374650315474355,
+      "alternative": "Fmaj7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 8,
+      "root_pc": 7,
+      "intervals": [
+        0,
+        3,
+        7,
+        10
+      ],
+      "symbol": "Gmin7",
+      "coverage": 0.7817088553675516,
+      "score_margin": 0.10435279665604968,
+      "alternative": "G7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 9,
+      "root_pc": 2,
+      "intervals": [
+        0,
+        3,
+        7
+      ],
+      "symbol": "Dmin",
+      "coverage": 0.7861463716018873,
+      "score_margin": 0.030708829476522204,
+      "alternative": "Dmaj7",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 10,
+      "root_pc": 1,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Dbmaj",
+      "coverage": 1.0,
+      "score_margin": 0.03499999999999992,
+      "alternative": "Db7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 11,
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "C7",
+      "coverage": 0.8417193024071544,
+      "score_margin": 0.08107712534414047,
+      "alternative": "Cmin7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 12,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bbmaj7",
+      "coverage": 0.9706033508068659,
+      "score_margin": 0.09409857128173493,
+      "alternative": "Bbmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 13,
+      "root_pc": 10,
+      "intervals": [
+        0,
+        4,
+        7,
+        11
+      ],
+      "symbol": "Bbmaj7",
+      "coverage": 0.8863328629458447,
+      "score_margin": 0.07311675512617621,
+      "alternative": "Bbmaj",
+      "half_bar_disagreement": true,
+      "needs_human_review": true
+    },
+    {
+      "bar": 14,
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "C7",
+      "coverage": 1.0,
+      "score_margin": 0.20070606552937986,
+      "alternative": "Cmaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    },
+    {
+      "bar": 15,
+      "root_pc": 5,
+      "intervals": [
+        0,
+        4,
+        7
+      ],
+      "symbol": "Fmaj",
+      "coverage": 0.9796189566100278,
+      "score_margin": 0.03499999999999992,
+      "alternative": "F7",
+      "half_bar_disagreement": false,
+      "needs_human_review": true
+    },
+    {
+      "bar": 16,
+      "root_pc": 0,
+      "intervals": [
+        0,
+        4,
+        7,
+        10
+      ],
+      "symbol": "C7",
+      "coverage": 0.9516350849453598,
+      "score_margin": 0.10479955695003773,
+      "alternative": "Cmaj",
+      "half_bar_disagreement": false,
+      "needs_human_review": false
+    }
+  ]
+}

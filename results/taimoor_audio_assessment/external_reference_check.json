@@ -1,0 +1,57 @@
+{
+  "scope": "Post hoc reference-clip sanity check; not training or final benchmark",
+  "references": [
+    {
+      "title": "Hot Swing",
+      "author": "Kevin MacLeod",
+      "artist_labelled_genre": "jazz",
+      "isrc": "USUAN1100202",
+      "source_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100202",
+      "source_sha256": "b8ffccb85d145b00d39505fcd405a27a7b632af153db54862511209c2232cdc5",
+      "excerpt_sha256": "defefe8400e1318cfad0e6d480c302672b47e3b7639d6ace66d79b6f4e1d957c",
+      "changes": "First 12 seconds extracted, loudness normalized to -23 LUFS target and short end fade; re-encoded as MP3.",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "model_top_genre": "jazz",
+      "model_jazz_vs_rock_choice": "jazz",
+      "model_genre_cosines": {
+        "jazz": 0.7324718832969666,
+        "rock": 0.468463271856308,
+        "classical": 0.4805312752723694,
+        "pop": 0.5133165419101715,
+        "blues": 0.5445757508277893,
+        "country": 0.45746956765651703,
+        "reggae": 0.5719502866268158,
+        "electronic": 0.3750668615102768,
+        "hip hop": 0.47773484885692596,
+        "folk": 0.48016005754470825
+      }
+    },
+    {
+      "title": "Rock on Chicago",
+      "author": "Kevin MacLeod",
+      "artist_labelled_genre": "rock",
+      "isrc": "USUAN1100093",
+      "source_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100093",
+      "source_sha256": "6c8b7e4282d72764f62f3996fd2d441e5be2ca1d75529f81b8a49af6ca2f3a2c",
+      "excerpt_sha256": "d13bc23404e2adc4eef65acb9e09de6fbe296a1a8ffac2a28230a2cefffdcd43",
+      "changes": "First 12 seconds extracted, loudness normalized to -23 LUFS target and short end fade; re-encoded as MP3.",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "model_top_genre": "rock",
+      "model_jazz_vs_rock_choice": "rock",
+      "model_genre_cosines": {
+        "jazz": 0.4984792619943619,
+        "rock": 0.6636155843734741,
+        "classical": 0.36302612721920013,
+        "pop": 0.6267776489257812,
+        "blues": 0.4895119369029999,
+        "country": 0.5191077888011932,
+        "reggae": 0.4827752113342285,
+        "electronic": 0.4642725735902786,
+        "hip hop": 0.542779952287674,
+        "folk": 0.32241328060626984
+      }
+    }
+  ]
+}
