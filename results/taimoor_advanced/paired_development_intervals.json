@@ -1,0 +1,111 @@
+{
+  "scope": "Exploratory paired composition bootstrap on internal development examples",
+  "difference": "condition minus heuristic adaptive; smaller structural metrics are not necessarily better music",
+  "limitation": "Small development sample; selected-condition intervals do not correct for configuration selection",
+  "results": [
+    {
+      "condition": "learned",
+      "baseline": "adaptive",
+      "metric": "target_reference_distance",
+      "paired_compositions": 10,
+      "mean_difference": -0.011633518770178309,
+      "bootstrap_95_percent_interval": [
+        -0.05455983161160634,
+        0.01664604872800999
+      ],
+      "bootstrap_replicates": 2000,
+      "seed": 42
+    },
+    {
+      "condition": "learned",
+      "baseline": "adaptive",
+      "metric": "selection_proxy",
+      "paired_compositions": 10,
+      "mean_difference": -0.009133518770178317,
+      "bootstrap_95_percent_interval": [
+        -0.05452232625678457,
+        0.02421375454392134
+      ],
+      "bootstrap_replicates": 2000,
+      "seed": 42
+    },
+    {
+      "condition": "learned",
+      "baseline": "adaptive",
+      "metric": "boundary.mean_phrase_texture_change_notes_per_bar",
+      "paired_compositions": 10,
+      "mean_difference": 0.08833333333333337,
+      "bootstrap_95_percent_interval": [
+        -0.4666666666666666,
+        0.89
+      ],
+      "bootstrap_replicates": 2000,
+      "seed": 42
+    },
+    {
+      "condition": "learned",
+      "baseline": "adaptive",
+      "metric": "boundary.mean_boundary_bass_jump_semitones",
+      "paired_compositions": 10,
+      "mean_difference": 0.12000000000000002,
+      "bootstrap_95_percent_interval": [
+        -0.3,
+        0.66
+      ],
+      "bootstrap_replicates": 2000,
+      "seed": 42
+    },
+    {
+      "condition": "development_selected",
+      "baseline": "adaptive",
+      "metric": "target_reference_distance",
+      "paired_compositions": 10,
+      "mean_difference": -0.07068308678083425,
+      "bootstrap_95_percent_interval": [
+        -0.18502006601864576,
+        -0.002330524499353337
+      ],
+      "bootstrap_replicates": 2000,
+      "seed": 42
+    },
+    {
+      "condition": "development_selected",
+      "baseline": "adaptive",
+      "metric": "selection_proxy",
+      "paired_compositions": 10,
+      "mean_difference": -0.05721086455861205,
+      "bootstrap_95_percent_interval": [
+        -0.15929596154925318,
+        0.004595746104798781
+      ],
+      "bootstrap_replicates": 2000,
+      "seed": 42
+    },
+    {
+      "condition": "development_selected",
+      "baseline": "adaptive",
+      "metric": "boundary.mean_phrase_texture_change_notes_per_bar",
+      "paired_compositions": 10,
+      "mean_difference": 1.6183333333333334,
+      "bootstrap_95_percent_interval": [
+        0.4666666666666667,
+        2.8666666666666663
+      ],
+      "bootstrap_replicates": 2000,
+      "seed": 42
+    },
+    {
+      "condition": "development_selected",
+      "baseline": "adaptive",
+      "metric": "boundary.mean_boundary_bass_jump_semitones",
+      "paired_compositions": 10,
+      "mean_difference": 0.6466666666666667,
+      "bootstrap_95_percent_interval": [
+        0.0,
+        1.3533333333333333
+      ],
+      "bootstrap_replicates": 2000,
+      "seed": 42
+    }
+  ]
+}

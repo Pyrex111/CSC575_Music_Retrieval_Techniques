@@ -1,0 +1,70 @@
+{
+  "scope": "Internal development selection only; not an approved final configuration",
+  "selected_configuration": {
+    "continuity": 0.5,
+    "reranker_weight": 1,
+    "eligible": true,
+    "completed_conditions": 10,
+    "planned_conditions": 10,
+    "mean_selection_proxy": 1.4393128554341206
+  },
+  "model_manifest_sha256": "dd8a0390dc2e070f500aa65ddfec244ae4861a5709d08429fcfd0fee118f9091",
+  "grid_results_sha256": "cc73d1157e9b626f7c5985d504b137e78cdab183175c9025e48d7a6c83dc2f72",
+  "protocol_sha256": "56e37bef851b0dcac3896ee744be269768ba6ae503954b2ef1c8a4bf564f4bb1",
+  "code_sha256": {
+    "__init__.py": "76e80fd1150e358cbad578adffafcd7350d602e9b6e70e781b87a2375153c3aa",
+    "advanced_study.py": "40d355b407655556236ca70e8c1e9147ab1be9b93f8210dcc417b9773ac5e739",
+    "arranger.py": "46e67d61a5d1e0463cfdb452741b3bdc763a9b7dac66a5c0bd691ec899d4daed",
+    "checkpoint.py": "a57d2289302fd3b1513796f4a0d6ef310c0a0103536099937ea2c1e571fc9ad6",
+    "evaluate.py": "dd3dae67b4c36329529c82f761b0997e3ec62727eb8bbbc437f6bf34de3a30c3",
+    "fixtures.py": "bf9c5de5a1a7afcbbb0763dfbeee1d703d35d4f1b5a5d53073042a07f296a0f6",
+    "independent_audit.py": "c041b8643f2ee3545a9b1a321d06d36f4487f6d810d8822af84cd32e61aa494d",
+    "learned_ranking.py": "88251f680f9ee3b026ebd4647b2ded99f304c35bbbcb8ccedd97c09532bcafdc",
+    "model.py": "320ac2c5e2b2564bb3b2bec3f3a7ebe52f0012d91b4053c01e1fa95f76ed3384",
+    "run.py": "90015d37afe4cec43e5000ac52675a77a0ad473212b9585d15318594f46f7216",
+    "split_proposal.py": "2be0aae81cf278c0b49cc9fb78300a7eda69c14b594b4ddaa743fc592d6bcae5",
+    "team_handoff.py": "7dbba78707afecbd633dac863d76ba3858e0888097afda93d4ac293b8560e30b",
+    "advanced_protocol.json": "397baf312057a469afd94555388dc05135272bba4665f1235c336cf10da4385a"
+  },
+  "fitting_cases": [
+    "rock_002",
+    "rock_003",
+    "rock_005",
+    "rock_007",
+    "rock_008",
+    "rock_010",
+    "rock_012",
+    "rock_013",
+    "rock_014",
+    "rock_015",
+    "jazz_001",
+    "jazz_002",
+    "jazz_003",
+    "jazz_004",
+    "jazz_005",
+    "jazz_006",
+    "jazz_007",
+    "jazz_012",
+    "jazz_013",
+    "jazz_014"
+  ],
+  "selection_cases": [
+    "rock_001",
+    "rock_004",
+    "rock_006",
+    "rock_009",
+    "rock_011",
+    "jazz_008",
+    "jazz_009",
+    "jazz_010",
+    "jazz_011",
+    "jazz_015"
+  ],
+  "original_validation_test_cases_used": false,
+  "strata_thresholds": {
+    "melody_density": 1.1484375,
+    "harmony_complexity": 1.6437499999999998
+  },
+  "final_evaluation_ready": false,
+  "quality_claim": "Classifier scores guide selection; they are not independent evidence of musical improvement"
+}

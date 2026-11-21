@@ -1,5 +1,34 @@
 # Taimoor: constrained arrangement prototype
 
+## Learned extension and sensitivity workflow (21 November 2026)
+
+The optional learned scorer now integrates Vinay's pinned feature extraction,
+classifier constructors and probability scoring with the existing constrained
+DP. The [advanced handoff](../../docs/taimoor_advanced_handoff.md) and
+[development evidence](../../results/taimoor_advanced/README.md) describe the
+20-fitting/10-development-check model, 27-setting sensitivity grid, 60 matched
+comparisons, split proposal, review checklist and rendering manifest. This is
+development evidence, with final test and listening evaluation still pending.
+
+Install `advanced_requirements.txt` for this optional workflow. Keep unchanged
+teammate checkouts at the revisions named in the evidence README. Starting with
+an existing handoff run from `team_handoff prepare`, use fresh output directories:
+
+```bash
+python -m workstreams.taimoor.advanced_study fit-development --handoff results/local/team_handoff --output results/local/advanced --vinay-root ../csc575-vinay-inputs
+python -m workstreams.taimoor.advanced_study sensitivity --handoff results/local/team_handoff --output results/local/advanced --vinay-root ../csc575-vinay-inputs
+python -m workstreams.taimoor.advanced_study compare-development --handoff results/local/team_handoff --output results/local/advanced --vinay-root ../csc575-vinay-inputs
+python -m workstreams.taimoor.split_proposal propose --handoff results/local/team_handoff --output results/local/proposed_splits --source-root ../csc575-smit-inputs
+python -m workstreams.taimoor.split_proposal readiness --output results/local/proposed_splits
+```
+
+Every original validation/test record is excluded from these development model
+and arrangement commands. Code, inputs, model, feature order and protocol are
+hashed; changing a frozen artifact requires a fresh run. Zero learned weight
+preserves the default MIDI output. Negative/nonfinite external costs are
+rejected, and B0/B1 cannot receive a learned scorer. The independent raw audit
+can check explicitly named additional comparison conditions.
+
 ## Prepared team-corpus integration (20 November 2026)
 
 The new [handoff checkpoint](../../results/taimoor_handoff/README.md) consumes

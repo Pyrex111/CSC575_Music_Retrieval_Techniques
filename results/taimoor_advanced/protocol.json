@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "scope": "Training-pool development prototype; no final test evaluation",
+  "vinay_revision": "dcf7a4218243606e79055212830e08f4bfd9ff55",
+  "seed": 42,
+  "development_checks_per_genre": 5,
+  "cross_validation_folds": 3,
+  "model_selection": "Mean composition-grouped training CV macro-F1; ties prefer logistic regression",
+  "feature_policy": "Vinay's unchanged 21 descriptors with an explicit excerpt-duration text anchor",
+  "candidate_penalty": "beta * phrase_bars * (1 - target_probability)",
+  "style_weight": 1.0,
+  "continuity_grid": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    0.8,
+    1,
+    2,
+    4,
+    8
+  ],
+  "reranker_weight_grid": [
+    0,
+    0.25,
+    1
+  ],
+  "matched_comparison_continuity": 4,
+  "matched_comparison_reranker_weight": 1,
+  "descriptor_scale_floor": [
+    2,
+    2,
+    0.15,
+    0.25
+  ],
+  "selection_proxy": "Target-reference four-descriptor RMS distance + 0.25 * mean boundary bass jump / 12",
+  "selection_tie_break": [
+    "lower_reranker_weight",
+    "lower_continuity_weight"
+  ],
+  "strata": "Melody notes/beat and harmonic-change rate plus seventh-chord fraction; median thresholds from fitting compositions only",
+  "final_test_access": "Not implemented in this development command; final-readiness requires reviewed inputs and agreed splits",
+  "quality_claim": "Classifier scores guide selection; they are not independent evidence of musical improvement"
+}

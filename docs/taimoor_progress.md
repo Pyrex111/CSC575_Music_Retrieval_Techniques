@@ -1,5 +1,11 @@
 # Taimoor: progress evidence and remaining work
 
+Latest implementation: the [21 November advanced handoff](taimoor_advanced_handoff.md)
+adds a learned-scoring extension, 27-setting development sensitivity analysis,
+60 matched development comparisons, and 76 passing tests. Final data agreement,
+independent evaluation and actual listening remain pending. The November 12
+indicator table below is a historical progress-report snapshot.
+
 Later work: the [20 November handoff checkpoint](../results/taimoor_handoff/README.md)
 adds 60-input compatibility checks, 120 training-only comparisons, and 54
 passing tests. The [team inventory](team_progress_inventory.md) records current

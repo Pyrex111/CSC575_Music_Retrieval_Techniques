@@ -1,0 +1,197 @@
+{
+  "initial_grid": {
+    "completed_conditions": 234,
+    "planned_conditions": 270,
+    "failures": [
+      {
+        "case_id": "rock_006",
+        "configuration": "c0_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c0_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c0_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c0_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c0.1_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c0.1_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c0.1_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c0.1_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c0.25_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c0.25_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c0.25_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c0.25_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c0.5_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c0.5_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c0.5_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c0.5_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c0.8_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c0.8_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c0.8_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c0.8_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c1_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c1_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c1_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c1_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c2_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c2_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c2_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c2_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c4_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c4_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c4_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c4_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c8_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c8_b0.25",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_006",
+        "configuration": "c8_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      },
+      {
+        "case_id": "rock_011",
+        "configuration": "c8_b1",
+        "error": "ValueError: Candidate descriptor event is outside the phrase"
+      }
+    ],
+    "grid_sha256": "637a12a40a4e5068d9f554940d6b0cd196d63e0f0cfd8722bd79ad4e1d39ed20",
+    "model_manifest_sha256": "1ab0621c960ed51c6bc48a8d82f6fb73a6f0c9576213423c9ea8853450fa60dc"
+  },
+  "correction": "Phrase-local descriptor offsets could exceed an exact boundary by floating roundoff. A 1e-9-beat tolerance clamps the descriptor view only; generated MIDI is not altered. Incomplete grids now stop before selection is frozen.",
+  "portable_manifest_correction": "Proposed and renderer MIDI paths resolve from the CSV location. This metadata-only change was followed by a fresh run.",
+  "unchanged_protocol": true,
+  "corrected_run_reproducibility": {
+    "grid_output_hashes_matching": 270,
+    "comparison_output_hashes_matching": 60
+  }
+}

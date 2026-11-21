@@ -1,0 +1,159 @@
+{
+  "automated_tests": {
+    "passed": 76,
+    "failed": 0,
+    "files": [
+      "tests/test_taimoor_arranger.py",
+      "tests/test_taimoor_checkpoint.py",
+      "tests/test_taimoor_team_handoff.py",
+      "tests/test_taimoor_advanced.py",
+      "tests/test_taimoor_advanced_summary.py"
+    ]
+  },
+  "code_sha256": {
+    "__init__.py": "76e80fd1150e358cbad578adffafcd7350d602e9b6e70e781b87a2375153c3aa",
+    "advanced_study.py": "40d355b407655556236ca70e8c1e9147ab1be9b93f8210dcc417b9773ac5e739",
+    "arranger.py": "46e67d61a5d1e0463cfdb452741b3bdc763a9b7dac66a5c0bd691ec899d4daed",
+    "checkpoint.py": "a57d2289302fd3b1513796f4a0d6ef310c0a0103536099937ea2c1e571fc9ad6",
+    "evaluate.py": "dd3dae67b4c36329529c82f761b0997e3ec62727eb8bbbc437f6bf34de3a30c3",
+    "fixtures.py": "bf9c5de5a1a7afcbbb0763dfbeee1d703d35d4f1b5a5d53073042a07f296a0f6",
+    "independent_audit.py": "c041b8643f2ee3545a9b1a321d06d36f4487f6d810d8822af84cd32e61aa494d",
+    "learned_ranking.py": "88251f680f9ee3b026ebd4647b2ded99f304c35bbbcb8ccedd97c09532bcafdc",
+    "model.py": "320ac2c5e2b2564bb3b2bec3f3a7ebe52f0012d91b4053c01e1fa95f76ed3384",
+    "run.py": "90015d37afe4cec43e5000ac52675a77a0ad473212b9585d15318594f46f7216",
+    "split_proposal.py": "2be0aae81cf278c0b49cc9fb78300a7eda69c14b594b4ddaa743fc592d6bcae5",
+    "team_handoff.py": "7dbba78707afecbd633dac863d76ba3858e0888097afda93d4ac293b8560e30b",
+    "advanced_protocol.json": "397baf312057a469afd94555388dc05135272bba4665f1235c336cf10da4385a"
+  },
+  "fitting_compositions": 20,
+  "internal_development_compositions": 10,
+  "fitting_development_groups_disjoint": true,
+  "original_validation_test_inputs_used": false,
+  "grid_conditions": 270,
+  "grid_technical_passes": 270,
+  "grid_raw_audit_passes": 270,
+  "matched_conditions": 60,
+  "matched_technical_passes": 60,
+  "matched_raw_audit_passes": 60,
+  "renderer_handoff_rows": 70,
+  "renderer_files_and_hashes_verified": true,
+  "new_audio_rendered": false,
+  "human_ratings_collected": 0,
+  "proposed_classifier_manifest_schema_accepted": true,
+  "proposed_unique_compositions": 59,
+  "review_readiness": false,
+  "all_review_fields_unfilled": true,
+  "teammate_checkouts_unchanged": true,
+  "default_and_historical_regression": {
+    "unchanged_default_outputs": [
+      {
+        "case_id": "development_rock",
+        "method": "instrument_only",
+        "unchanged": true,
+        "output_sha256": "112f4fbcfdc8e0caae2bb23f1fa1c0ee757a4c885cd0953455f30e81544e08fc"
+      },
+      {
+        "case_id": "development_rock",
+        "method": "fixed",
+        "unchanged": true,
+        "output_sha256": "821af08cfd18ed4286fe027ba0025720a297ccb718067d24140f5d46ce4fbe87"
+      },
+      {
+        "case_id": "development_rock",
+        "method": "adaptive",
+        "unchanged": true,
+        "output_sha256": "5d053fd3c34beae14b3df365e1d6c67005064dc531538082eb964b2b726ed9ce"
+      },
+      {
+        "case_id": "development_rock",
+        "method": "no_continuity",
+        "unchanged": true,
+        "output_sha256": "cdd9c263b6cc9aa17460ea4f5150deb751df55f311936a84dda468a141b1a9a9"
+      },
+      {
+        "case_id": "development_jazz",
+        "method": "instrument_only",
+        "unchanged": true,
+        "output_sha256": "dd8f5bc18569ece9af3e29fc02032ef6f442ca596be2d64c9685e3c1a1127e3a"
+      },
+      {
+        "case_id": "development_jazz",
+        "method": "fixed",
+        "unchanged": true,
+        "output_sha256": "cad98206eabee760c57a9970ff8172ebb044c1c4a5b76ae992afec40124f70e2"
+      },
+      {
+        "case_id": "development_jazz",
+        "method": "adaptive",
+        "unchanged": true,
+        "output_sha256": "a7d19c4f668490bdbe9d5ee9f2762d715dd57e0186c0427defaebb882d7f1a60"
+      },
+      {
+        "case_id": "development_jazz",
+        "method": "no_continuity",
+        "unchanged": true,
+        "output_sha256": "06e0566acb3072c9c1ebcfb3bff83d6155156063a8784b30e681c34548589b9d"
+      },
+      {
+        "case_id": "verification_rock",
+        "method": "instrument_only",
+        "unchanged": true,
+        "output_sha256": "9a350b4dea352272dfd02ffda64d4ec1081d26b6f93f03ad642b1cd1b5aaac79"
+      },
+      {
+        "case_id": "verification_rock",
+        "method": "fixed",
+        "unchanged": true,
+        "output_sha256": "c0b0deff78e8bca12b585257734ec58d888d120bbe899274c603b7d9573158db"
+      },
+      {
+        "case_id": "verification_rock",
+        "method": "adaptive",
+        "unchanged": true,
+        "output_sha256": "14709a7b322a7a8601c4ea4b31fa14e248e07c6beaba1cbbb616b77a5d6820b3"
+      },
+      {
+        "case_id": "verification_rock",
+        "method": "no_continuity",
+        "unchanged": true,
+        "output_sha256": "43dc2cfe25c39a49754abce2ffeb7921ff2e7f2c9612c0f2a2fbb802b0080253"
+      },
+      {
+        "case_id": "verification_jazz",
+        "method": "instrument_only",
+        "unchanged": true,
+        "output_sha256": "21a6121ea906f3afb4139d932b855e53fd1204309f40f6b5c1947fc3a5ad00c8"
+      },
+      {
+        "case_id": "verification_jazz",
+        "method": "fixed",
+        "unchanged": true,
+        "output_sha256": "526671b97b05e1f869f8d319261a5bf502c503899878e10153502a804119867f"
+      },
+      {
+        "case_id": "verification_jazz",
+        "method": "adaptive",
+        "unchanged": true,
+        "output_sha256": "829a037b911b720259039fc72ed2a84e41cc55c37d7c2a93a864e4e6ec054fad"
+      },
+      {
+        "case_id": "verification_jazz",
+        "method": "no_continuity",
+        "unchanged": true,
+        "output_sha256": "e548be1a0e59737567af9b6809bd0993f57f02edeb258872faf5446707afa543"
+      }
+    ],
+    "historical_raw_audits": {
+      "synthetic": {
+        "passed": 16,
+        "conditions": 16
+      },
+      "pilot": {
+        "passed": 48,
+        "conditions": 48
+      }
+    }
+  },
+  "evidence_manifest_sha256": "396503031d94908771b6dd5730f9307b26510c434ea19f1d0e63912436158c55",
+  "export_script_sha256": "4582e0808a1b3cdcbd78098908f6a4d336c329c659472689ec25dbb4e7f457e7"
+}

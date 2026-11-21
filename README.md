@@ -224,6 +224,17 @@ test compositions, and missing annotation/provenance review remain blockers for
 final evaluation. No validation/test outputs or listener ratings are claimed
 by this new checkpoint. The approved objectives above are unchanged.
 
+### Advanced development checkpoint: 21 November 2026
+
+Taimoor's [learned extension and team handoff](docs/taimoor_advanced_handoff.md)
+integrates Vinay's pinned model/scoring code with constrained candidate
+selection. The [development evidence](results/taimoor_advanced/README.md) records
+a 20-fitting/10-development-check model drawn only from original training inputs,
+270/270 sensitivity conditions and 60/60 matched comparisons passing technical
+and raw-MIDI audits, and 76 passing tests. A proposed split and blank review/
+rendering handoffs support coordination. Final held-out and human-listening
+evaluation remain pending; the original approved indicators are retained.
+
 ## Vinay Kumar Devarakonda
 
 ### Objective 1: Develop and critically validate a symbolic style representation

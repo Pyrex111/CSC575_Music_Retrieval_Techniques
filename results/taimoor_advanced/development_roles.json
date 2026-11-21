@@ -1,0 +1,189 @@
+{
+  "fitting_cases": [
+    "rock_002",
+    "rock_003",
+    "rock_005",
+    "rock_007",
+    "rock_008",
+    "rock_010",
+    "rock_012",
+    "rock_013",
+    "rock_014",
+    "rock_015",
+    "jazz_001",
+    "jazz_002",
+    "jazz_003",
+    "jazz_004",
+    "jazz_005",
+    "jazz_006",
+    "jazz_007",
+    "jazz_012",
+    "jazz_013",
+    "jazz_014"
+  ],
+  "development_check_cases": [
+    "rock_001",
+    "rock_004",
+    "rock_006",
+    "rock_009",
+    "rock_011",
+    "jazz_008",
+    "jazz_009",
+    "jazz_010",
+    "jazz_011",
+    "jazz_015"
+  ],
+  "original_split_for_all_cases": "train",
+  "inputs": [
+    {
+      "case_id": "rock_002",
+      "midi_sha256": "cf421443392c932ffa40b7aa6703558167f9446be8a39bf41f44b57a7c0d61b6",
+      "annotation_sha256": "cc729ccb21af06e2d19642a9dfa67a489a8e2cd1a845337175bcfe65b21b6473"
+    },
+    {
+      "case_id": "rock_003",
+      "midi_sha256": "a84455c2633eef960934dc90ce3df74fe55270cb82411f49eb1945763bd17087",
+      "annotation_sha256": "936b18e44d397ff8cf3d19468a8dccb9a286b2dd2ba24d3240aff30a20ba2579"
+    },
+    {
+      "case_id": "rock_005",
+      "midi_sha256": "2100029be2fb358a6e78de378b401544c8751042f767a1782a09aae7dc8e088c",
+      "annotation_sha256": "016a4142a1e0190af2946928abf73c23a260ee22a0e386ac36bd290e62acf95b"
+    },
+    {
+      "case_id": "rock_007",
+      "midi_sha256": "659634b0f950011cd169b574b0232bfc7006a5089afc704206643b13511fbda3",
+      "annotation_sha256": "b19ffc822cd0730ea6f02a020ce9036bdb0fd450e852881609590fdb536db262"
+    },
+    {
+      "case_id": "rock_008",
+      "midi_sha256": "a8f9f2185ecf35a77414d902bce849db61818ae5511a388f43b246b3296952ff",
+      "annotation_sha256": "70e4b9b40e178f3b151e69de28a024864da8d74765522d45abb18c743256903c"
+    },
+    {
+      "case_id": "rock_010",
+      "midi_sha256": "c4c94f6250fd3e35ea2b64042a1e28fd982da2d9c0ee9a2ef8047a74acd0c1e6",
+      "annotation_sha256": "d5a17c547133327a6446d58f885c7078e1a62de92c17be52a3c442c0179cfa6f"
+    },
+    {
+      "case_id": "rock_012",
+      "midi_sha256": "c39d6b46dc0a884d60f92b6e84259eb4255e9abc3db1fd645587421f464be56d",
+      "annotation_sha256": "498d008ca87004d6ef76420aef6587787f162de3516eb102bb9600d16d5b3cef"
+    },
+    {
+      "case_id": "rock_013",
+      "midi_sha256": "d9003ccc9514e4106bf5c64bf6963864512f47c493a60731a794df9b29fa43db",
+      "annotation_sha256": "f5cf87a1f3a683eda777af2283e73d3978744c1b10c898d2912b33769a9388c2"
+    },
+    {
+      "case_id": "rock_014",
+      "midi_sha256": "f62da770453e11a9c1fd9ae0700c81b7332b9b72230ba1e79f9bb0a0bc788d7a",
+      "annotation_sha256": "5c880fe42a406c6115ed1411e496a10ee5b0ad805b63eea9bb922a9472c0c59f"
+    },
+    {
+      "case_id": "rock_015",
+      "midi_sha256": "f37b4ee2e81972eef3286d7ed9f011b71dfd10c6213adf83d23bc92e6969bc39",
+      "annotation_sha256": "d216f1dc7b2dbccde4222f1e09bf4589c293f01a446914538a0d2ac72d093ff2"
+    },
+    {
+      "case_id": "jazz_001",
+      "midi_sha256": "01c5259b8fe312ccb2bd69d45a2355ebe3d76e7f1ba670c99d7005d6e8d0f723",
+      "annotation_sha256": "8cdc5d5429558d693cd3003aa4249fe71a26cf0eb8fa58f334b843881eb7ffac"
+    },
+    {
+      "case_id": "jazz_002",
+      "midi_sha256": "71a4a0a6d32d1e5a15dfd9dbcc2147c85b493e8ffe55b9b584e05e318be06824",
+      "annotation_sha256": "321caff1a7b09d86e03ce547ed49663919f0f645c8addb88f224fe59e51beafc"
+    },
+    {
+      "case_id": "jazz_003",
+      "midi_sha256": "ed988b17a3628f828e8305de962eb4f207585e034c3e0852b4383ebb38619638",
+      "annotation_sha256": "51ebde30c9a216cb5b5ed08e157fe2e807b554b059e79e1204e34b302bf78187"
+    },
+    {
+      "case_id": "jazz_004",
+      "midi_sha256": "45a55272bba31a247f078277f7b196c167e7987b3d7da800ca06e73a13f76833",
+      "annotation_sha256": "a54a45ae394e2be16ad72e855632cb7ef6ee5eadb3c7e2f47196efa645459ac2"
+    },
+    {
+      "case_id": "jazz_005",
+      "midi_sha256": "307ec4fa16fd768f01510ae582497d05da3f0d992412e9cd002e02b84fb91831",
+      "annotation_sha256": "9d7764cd609a92f4f2af9175956bb1afe0dbb587492fff5393bc105eeadb07e3"
+    },
+    {
+      "case_id": "jazz_006",
+      "midi_sha256": "57d533e6f1fd8e72e365919a5d57e5948d40bbafe6de3da57b4e6bebb3bf4f68",
+      "annotation_sha256": "1860781dfa9e46c86d128c72e8552e34c5aaf5f288bf1cb0dfc1f319fd7a18dc"
+    },
+    {
+      "case_id": "jazz_007",
+      "midi_sha256": "8b7a980f34d9c8f6c602c97e1d41baeed978bffb37bd749b35b22c10d215534a",
+      "annotation_sha256": "048b48bd62cfcea7826a00b7e2a53c763efa652e18a7b45feb082520710f5189"
+    },
+    {
+      "case_id": "jazz_012",
+      "midi_sha256": "5302a019b36ab3e378b008b0987f707e6993ea03b76271d97410dd0225e58bec",
+      "annotation_sha256": "a83c0fd7eb80d6553d3db391574aa81edf5d28f63c16e42c3dd725692c9af6f5"
+    },
+    {
+      "case_id": "jazz_013",
+      "midi_sha256": "e61e17de6172aa69cdb79e7cf733bd3d5e571d144ca4fa4e8881d381a2a3861c",
+      "annotation_sha256": "9f1f8f8863f4af412e97d7270bf80669881bf3e1e05c3686cae3a9ed5f76f15e"
+    },
+    {
+      "case_id": "jazz_014",
+      "midi_sha256": "ea52d86adce53a4323fd379eb315b696a2557158438fa3977e394c1c2cd744f1",
+      "annotation_sha256": "3e96060885b9e54486bfda62a6adbb4512ff62a62b217200e7073c69b43eacf7"
+    },
+    {
+      "case_id": "rock_001",
+      "midi_sha256": "954c36e1e3291fc4eedddf5d320f5d06420780a8b4b49e4f4532610b3d79e6b7",
+      "annotation_sha256": "1589518b3312b601b721937b4baa6773a76b1e19e02b841a94f01b8d1edf14dc"
+    },
+    {
+      "case_id": "rock_004",
+      "midi_sha256": "0f33fd9c5908d0b5b9f4835839bc85d5595e89ded7a6238dae55aed9a70e6a00",
+      "annotation_sha256": "19eebe0716257daa4d494be88428ec1b98c8dd5e04b7ecf21c5fe2a54a0e48e3"
+    },
+    {
+      "case_id": "rock_006",
+      "midi_sha256": "70327c5023e0cbf3be29daf5b137b646864c5319a499f56dbd676325ca21d686",
+      "annotation_sha256": "2ba780be20397070122c96acb361a08cb8e680b04c69f516ec6c73ceb93c3a2b"
+    },
+    {
+      "case_id": "rock_009",
+      "midi_sha256": "f37777dd835b2c199626684e3c23e66e0b009ee8aed7043881bde091af60a7ce",
+      "annotation_sha256": "4b3f49efd8362220a4fc36688fc4d5064c6a8bd985ab37741535f4e6ec46dbfc"
+    },
+    {
+      "case_id": "rock_011",
+      "midi_sha256": "da5e9a14deeecb5f36491b117aa62cd9a94b1d553e9e50ac49398f3c475d98dd",
+      "annotation_sha256": "5ec77bdf0a52f267f88ffc50b533ee1b8605dc9bfacb1f8fb96277f792173045"
+    },
+    {
+      "case_id": "jazz_008",
+      "midi_sha256": "8b5c45ee24fec803d05d394271d926dd8ae4e580e3998e9f3d9a2d3e79305d90",
+      "annotation_sha256": "02637bf91fda078eb65bcf6b0284a47bfca57d486ddfbf47113192e51c54a4e3"
+    },
+    {
+      "case_id": "jazz_009",
+      "midi_sha256": "b270423039b689897d2275c727a4539e406017142d3c822bcfc73fbca9bd03d4",
+      "annotation_sha256": "fa1164073ab1338cf414a369afc6345d739569dac50fabb8cdd3fde573f3a8f2"
+    },
+    {
+      "case_id": "jazz_010",
+      "midi_sha256": "95529f6d1b4a46744d9faef6f9fc660343ad83c5ff2ab30d4b817379cf464f62",
+      "annotation_sha256": "326d76f62c98234fa69887ef0660049961a2d79eccacd0c4040979010b8ffec5"
+    },
+    {
+      "case_id": "jazz_011",
+      "midi_sha256": "d06ca4963bf6e34390b91e4bde25ae82a11bce20f2fa59a95e02679798c49589",
+      "annotation_sha256": "843af67c2889119c9488f9e2961e7714e993bc13de7f7c8f5a0f20f95fd5d651"
+    },
+    {
+      "case_id": "jazz_015",
+      "midi_sha256": "089aac30ce2c2fa8f93da9621239aab24488a870e20e80ecfbd6e2a94fad118f",
+      "annotation_sha256": "4273e7be86e1eb5b33b260ab28c6b934bda3513b71b63c55f04e32d34e46182c"
+    }
+  ]
+}

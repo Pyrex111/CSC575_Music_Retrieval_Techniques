@@ -1,0 +1,70 @@
+{
+  "scope": "Internal development diagnostics; not the project held-out test set",
+  "macro_f1": 0.898989898989899,
+  "confusion_matrix_labels": [
+    "jazz",
+    "rock"
+  ],
+  "confusion_matrix": [
+    [
+      4,
+      1
+    ],
+    [
+      0,
+      5
+    ]
+  ],
+  "predictions": [
+    {
+      "case_id": "rock_001",
+      "source_label": "rock",
+      "prediction": "rock"
+    },
+    {
+      "case_id": "rock_004",
+      "source_label": "rock",
+      "prediction": "rock"
+    },
+    {
+      "case_id": "rock_006",
+      "source_label": "rock",
+      "prediction": "rock"
+    },
+    {
+      "case_id": "rock_009",
+      "source_label": "rock",
+      "prediction": "rock"
+    },
+    {
+      "case_id": "rock_011",
+      "source_label": "rock",
+      "prediction": "rock"
+    },
+    {
+      "case_id": "jazz_008",
+      "source_label": "jazz",
+      "prediction": "jazz"
+    },
+    {
+      "case_id": "jazz_009",
+      "source_label": "jazz",
+      "prediction": "jazz"
+    },
+    {
+      "case_id": "jazz_010",
+      "source_label": "jazz",
+      "prediction": "jazz"
+    },
+    {
+      "case_id": "jazz_011",
+      "source_label": "jazz",
+      "prediction": "jazz"
+    },
+    {
+      "case_id": "jazz_015",
+      "source_label": "jazz",
+      "prediction": "rock"
+    }
+  ]
+}

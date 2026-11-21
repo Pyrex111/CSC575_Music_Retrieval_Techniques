@@ -132,16 +132,25 @@ class Candidate:
     names: tuple[str, ...]
     events: tuple[Event, ...]
     local: float
+    heuristic_local: float | None = None
+    reranker_penalty: float = 0.0
 
 
-def candidates(song: Song, phrase: Phrase, style: str) -> tuple[Candidate, ...]:
+def candidates(song: Song, phrase: Phrase, style: str, candidate_scorer=None) -> tuple[Candidate, ...]:
     bank = {p.name: p for p in patterns(style)}
     result = []
     for plan in ('sparse', 'regular', 'busy', 'build', 'release'):
         names = plan_names(phrase, plan)
         events = tuple(e for i, name in enumerate(names)
                        for e in adapt(bank[name], song.chords[phrase.start_bar+i], phrase.start_bar+i))
-        result.append(Candidate(plan, names, events, local_cost(song, phrase, names, bank, style)))
+        base = local_cost(song, phrase, names, bank, style)
+        candidate = Candidate(plan, names, events, base)
+        if candidate_scorer is not None:
+            penalty = float(candidate_scorer(song, phrase, candidate, style))
+            if not math.isfinite(penalty) or penalty < 0:
+                raise ValueError('External candidate penalty must be finite and nonnegative')
+            candidate = Candidate(plan, names, events, base + penalty, base, penalty)
+        result.append(candidate)
     return tuple(result)
 
 
@@ -157,8 +166,10 @@ def transition(previous: Candidate, current: Candidate) -> float:
 
 
 def select(song: Song, style: str, weights: Weights = Weights(),
-           fixed: bool = False) -> tuple[tuple[Candidate, ...], float]:
-    banks = [candidates(song, phrase, style) for phrase in song.phrases]
+           fixed: bool = False, *, candidate_scorer=None) -> tuple[tuple[Candidate, ...], float]:
+    if fixed and candidate_scorer is not None:
+        raise ValueError('The fixed comparator cannot use an external candidate scorer')
+    banks = [candidates(song, phrase, style, candidate_scorer) for phrase in song.phrases]
     if fixed:
         path = tuple(next(c for c in bank if c.plan == 'regular') for bank in banks)
         score = weights.style*sum(c.local for c in path)
@@ -194,11 +205,13 @@ def select(song: Song, style: str, weights: Weights = Weights(),
 
 
 def arrange(song: Song, target_style: str, method: str = 'adaptive',
-            weights: Weights = Weights()):
+            weights: Weights = Weights(), *, candidate_scorer=None):
     if target_style not in PALETTES:
         raise ValueError('target_style must be jazz or rock')
     if method not in ('instrument_only', 'fixed', 'adaptive', 'no_continuity'):
         raise ValueError('Unknown method')
+    if candidate_scorer is not None and method in ('instrument_only', 'fixed'):
+        raise ValueError('B0/B1 comparators cannot use an external candidate scorer')
     if method == 'instrument_only':
         result = copy.deepcopy(song.midi)
         for index, instrument in enumerate(result.instruments):
@@ -209,7 +222,8 @@ def arrange(song: Song, target_style: str, method: str = 'adaptive',
                         'weights': asdict(weights), 'selection_objective': None}
     effective = Weights(weights.style, 0 if method == 'no_continuity' else weights.continuity,
                         weights.max_states)
-    selected, objective = select(song, target_style, effective, fixed=method == 'fixed')
+    selected, objective = select(song, target_style, effective, fixed=method == 'fixed',
+                                 candidate_scorer=candidate_scorer)
     result = protected_output(song)
     tracks = {
         'bass': pretty_midi.Instrument(PALETTES[target_style][0], name='bass'),
@@ -231,6 +245,8 @@ def arrange(song: Song, target_style: str, method: str = 'adaptive',
         'selection_objective': objective,
         'selection': [{'phrase': p.label, 'start_bar': p.start_bar, 'bars': p.bars,
                        'plan': c.plan, 'patterns': list(c.names), 'local_cost': c.local,
+                       **({'heuristic_local_cost': c.heuristic_local,
+                           'reranker_penalty': c.reranker_penalty} if candidate_scorer is not None else {}),
                        'transition_from_previous': transition(selected[i-1], c) if i else 0}
                       for i, (p, c) in enumerate(zip(song.phrases, selected))],
     }

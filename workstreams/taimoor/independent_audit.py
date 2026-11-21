@@ -86,13 +86,13 @@ def melody(data, instrument_index=None):
                    for track, _, pitch, start, end, velocity in data['notes'] if track == track_id)
 
 
-def audit_case(annotation, root):
+def audit_case(annotation, root, methods=('instrument_only', 'fixed', 'adaptive', 'no_continuity')):
     info = json.loads(annotation.read_text(encoding='utf-8'))
     source = parse(annotation.parent/info['midi_path'])
     source_melody = melody(source, info.get('melody_track'))
     expected_markers = sorted((Fraction(p['start_bar']*4), p['label']) for p in info['phrases'])
     rows = []
-    for method in ('instrument_only', 'fixed', 'adaptive', 'no_continuity'):
+    for method in methods:
         path = root/info['case_id']/f'{method}.mid'
         output = parse(path)
         # B0 retains source order; generated arrangements put melody first.
