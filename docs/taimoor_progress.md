@@ -1,5 +1,11 @@
 # Taimoor: progress evidence and remaining work
 
+Later work: the [20 November handoff checkpoint](../results/taimoor_handoff/README.md)
+adds 60-input compatibility checks, 120 training-only comparisons, and 54
+passing tests. The [team inventory](team_progress_inventory.md) records current
+report availability and final-evaluation blockers. The November 12 evidence
+below and submitted progress PDF remain historical snapshots.
+
 Checkpoint: 12 November 2026. This file distinguishes Taimoor's contribution from
 team components and preserves the limits of the evidence.
 

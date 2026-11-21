@@ -19,9 +19,11 @@ import mido
 def parse(path):
     midi = mido.MidiFile(path)
     notes, names, tempos, signatures, markers = [], {}, [], [], []
+    instrument_tracks, ambiguous_tracks = [], []
     hanging = orphan_offs = 0
     for index, track in enumerate(midi.tracks):
         tick, active = 0, defaultdict(deque)
+        programs, note_instruments = defaultdict(int), set()
         for event in track:
             tick += event.time
             beat = Fraction(tick, midi.ticks_per_beat)
@@ -33,7 +35,10 @@ def parse(path):
                 signatures.append((beat, event.numerator, event.denominator))
             elif event.type == 'marker':
                 markers.append((beat, event.text))
+            elif event.type == 'program_change':
+                programs[event.channel] = event.program
             elif event.type == 'note_on' and event.velocity:
+                note_instruments.add((event.channel, programs[event.channel]))
                 active[(event.channel, event.note)].append((beat, event.velocity))
             elif event.type in ('note_on', 'note_off'):
                 key = (event.channel, event.note)
@@ -43,34 +48,58 @@ def parse(path):
                 start, velocity = active[key].popleft()
                 notes.append((index, event.channel, event.note, start, beat, velocity))
         hanging += sum(len(queue) for queue in active.values())
+        if note_instruments:
+            instrument_tracks.append(index)
+            if len(note_instruments) != 1:
+                ambiguous_tracks.append(index)
     return {'notes': notes, 'names': names, 'tempos': tempos or [(Fraction(0), 500000)],
             'signatures': signatures or [(Fraction(0), 4, 4)], 'markers': sorted(markers),
             'hanging_notes': hanging, 'orphan_note_offs': orphan_offs,
             'duration_seconds': midi.length, 'ticks_per_beat': midi.ticks_per_beat,
+            'instrument_tracks': instrument_tracks, 'ambiguous_instrument_tracks': ambiguous_tracks,
             'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
 
 
-def melody(data):
+def selected_track(data, instrument_index=None):
+    """Map an explicit index for single-instrument MIDI tracks, using raw events.
+
+    PrettyMIDI serializes the team's crops as one channel/program per track.
+    Reject a mixed track instead of guessing how a library would split it.
+    Named synthetic fixtures remain supported when no index is supplied.
+    """
+    if instrument_index is not None:
+        if data['ambiguous_instrument_tracks']:
+            raise ValueError('Explicit melody-index audit requires one channel/program per note-bearing track')
+        if type(instrument_index) is not int or not 0 <= instrument_index < len(data['instrument_tracks']):
+            raise ValueError('Melody instrument index is outside the raw MIDI track mapping')
+        return data['instrument_tracks'][instrument_index]
     ids = [index for index, name in data['names'].items() if name == 'selected_melody']
     if len(ids) != 1:
         raise ValueError('Fixture audit requires one track named selected_melody')
+    return ids[0]
+
+
+def melody(data, instrument_index=None):
+    track_id = selected_track(data, instrument_index)
     # Ignore channel reassignment, but compare exact beat positions and velocities.
     return Counter((pitch, start, end, velocity)
-                   for track, _, pitch, start, end, velocity in data['notes'] if track == ids[0])
+                   for track, _, pitch, start, end, velocity in data['notes'] if track == track_id)
 
 
 def audit_case(annotation, root):
     info = json.loads(annotation.read_text(encoding='utf-8'))
     source = parse(annotation.parent/info['midi_path'])
-    source_melody = melody(source)
+    source_melody = melody(source, info.get('melody_track'))
     expected_markers = sorted((Fraction(p['start_bar']*4), p['label']) for p in info['phrases'])
     rows = []
     for method in ('instrument_only', 'fixed', 'adaptive', 'no_continuity'):
         path = root/info['case_id']/f'{method}.mid'
         output = parse(path)
-        output_melody = melody(output)
+        # B0 retains source order; generated arrangements put melody first.
+        output_index = info.get('melody_track', 0) if method == 'instrument_only' else 0
+        output_melody = melody(output, output_index)
         changes = sum((source_melody-output_melody).values()) + sum((output_melody-source_melody).values())
-        melody_id = next(i for i, name in output['names'].items() if name == 'selected_melody')
+        melody_id = selected_track(output, output_index)
         chord_violations = range_violations = bounds_violations = 0
         note_counts = [0 for _ in info['phrases']]
         for track, channel, pitch, start, end, _ in output['notes']:

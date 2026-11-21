@@ -1,5 +1,21 @@
 # Taimoor: constrained arrangement prototype
 
+## Prepared team-corpus integration (20 November 2026)
+
+The new [handoff checkpoint](../../results/taimoor_handoff/README.md) consumes
+Smit's pinned 60-excerpt corpus and annotations without replacing their melody,
+chord, or phrase decisions. It normalizes terminal length metadata in copies
+and verifies that every other absolute MIDI event stays identical. The raw
+audit supports unnamed/non-first melody instruments.
+
+All 60 excerpts load; training-only B0/B1/M and continuity-ablation outputs pass
+120/120 technical checks and raw audits. The suite passes 54 tests. No
+validation/test arrangements or trained models were produced in this checkpoint.
+The [team inventory](../../docs/team_progress_inventory.md) identifies a
+cross-split composition variant, earlier-pilot exposure, and missing reviews
+that must be resolved before final evaluation. Follow the checkpoint's commands
+to reproduce the input audit and optional training-only integration check.
+
 ## Source-derived evaluation checkpoint (12 November 2026)
 
 The workstream now also has a 12-composition pilot using Smit's pinned MIDI

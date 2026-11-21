@@ -212,6 +212,18 @@ Initial verification used four original synthetic excerpts lasting 32 or 48 seco
 
 The [detailed progress record](docs/taimoor_progress.md) maps evidence to each indicator and proposes stronger advanced indicators for review. Real-music integration, validation-based parameter selection, listening evaluation, learned ranking, and the advanced robustness study remain pending. The existing design objectives above remain the approved specification.
 
+### Integration checkpoint: 20 November 2026
+
+The [team report inventory](docs/team_progress_inventory.md) records available
+reports and current handoffs. Taimoor's [prepared-corpus adapter](results/taimoor_handoff/README.md)
+loads all 60 of Smit's annotated excerpts after lossless end-of-track metadata
+normalization. Thirty training compositions produce 120/120 technically valid
+comparison outputs and raw-event audit passes; the automated suite passes 54
+tests. A cross-split composition variant, prior pilot exposure in five proposed
+test compositions, and missing annotation/provenance review remain blockers for
+final evaluation. No validation/test outputs or listener ratings are claimed
+by this new checkpoint. The approved objectives above are unchanged.
+
 ## Vinay Kumar Devarakonda
 
 ### Objective 1: Develop and critically validate a symbolic style representation

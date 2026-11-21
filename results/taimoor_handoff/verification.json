@@ -1,0 +1,42 @@
+{
+  "scope": "Engineering verification only; no final quality or listening claim",
+  "automated_tests": {
+    "passed": 54,
+    "failed": 0,
+    "command": "python -m pytest tests/test_taimoor_arranger.py tests/test_taimoor_checkpoint.py tests/test_taimoor_team_handoff.py -q"
+  },
+  "training_conditions": 120,
+  "training_technical_passes": 120,
+  "training_raw_audit_passes": 120,
+  "validation_test_outputs_generated": false,
+  "historical_audit_regressions": {
+    "synthetic": {
+      "conditions": 16,
+      "raw_audit_passes": 16
+    },
+    "pilot": {
+      "conditions": 48,
+      "raw_audit_passes": 48
+    }
+  },
+  "source_checkout_unchanged": true,
+  "prepared_inputs_checked_against_recorded_hashes": true,
+  "final_data_guard": "Handoff audit has unresolved cross-split conflicts",
+  "vinay_classifier_guard": "The same composition appears in multiple splits.",
+  "code_sha256": {
+    "__init__.py": "76e80fd1150e358cbad578adffafcd7350d602e9b6e70e781b87a2375153c3aa",
+    "arranger.py": "ab4e98473365bf4ffe46c65e47ea76b849eaeee2fb7ccbce56b2e9c68eb3ed09",
+    "checkpoint.py": "a57d2289302fd3b1513796f4a0d6ef310c0a0103536099937ea2c1e571fc9ad6",
+    "evaluate.py": "dd3dae67b4c36329529c82f761b0997e3ec62727eb8bbbc437f6bf34de3a30c3",
+    "fixtures.py": "bf9c5de5a1a7afcbbb0763dfbeee1d703d35d4f1b5a5d53073042a07f296a0f6",
+    "independent_audit.py": "8276dfdea56c793f5b914005581e3f8b502baa8fa5b071e4cd58e463241b836c",
+    "model.py": "320ac2c5e2b2564bb3b2bec3f3a7ebe52f0012d91b4053c01e1fa95f76ed3384",
+    "run.py": "90015d37afe4cec43e5000ac52675a77a0ad473212b9585d15318594f46f7216",
+    "team_handoff.py": "7dbba78707afecbd633dac863d76ba3858e0888097afda93d4ac293b8560e30b"
+  },
+  "records_sha256": {
+    "handoff_audit.json": "4abfd2aeed31b2c6a55a71a5102b21ea75836f67288343f9e49a79cb9c262f52",
+    "smoke_results.json": "a7f90c1cb9d7ab8699b73308db19b281f98f82aca6ac8023f34edf196ff5c37b",
+    "style_dataset.csv": "3561edd9c389baa5e30e8d05e8d45742ab6ce1ab5f58dc29f227327bc982299a"
+  }
+}
