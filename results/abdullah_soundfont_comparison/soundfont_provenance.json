@@ -1,0 +1,24 @@
+{
+  "baseline": {
+    "filename": "TimGM6mb.sf2",
+    "file_size_bytes": 5969788,
+    "sha256": "c5378b62028c920cb11e4803327983fee2f2cdff5dc89c708e39da417e51c854",
+    "package": "timgm6mb-soundfont",
+    "package_version": "1.3-5",
+    "soundfont_license": "GPL-2.0-only",
+    "package_sha256": "7b50bc473c771767883099ddd53c3ef868fb9595f53ef1d4fcafba0a3185c25e",
+    "download_url": "https://snapshot.ubuntu.com/ubuntu/20260828T000000Z/pool/universe/t/timgm6mb-soundfont/timgm6mb-soundfont_1.3-5_all.deb",
+    "copyright_notice": "notices/TimGM6mb_copyright.txt"
+  },
+  "comparison": {
+    "filename": "FluidR3_GM.sf2",
+    "file_size_bytes": 148398306,
+    "sha256": "74594e8f4250680adf590507a306655a299935343583256f3b722c48a1bc1cb0",
+    "package": "fluid-soundfont-gm",
+    "package_version": "3.1-5.3",
+    "soundfont_license": "MIT",
+    "package_sha256": "eadee8a07697a15789c16c542b355cdf5bc01f97f7c19d1ac8ae237c7d73fce4",
+    "download_url": "https://snapshot.ubuntu.com/ubuntu/20260828T000000Z/pool/universe/f/fluid-soundfont/fluid-soundfont-gm_3.1-5.3_all.deb",
+    "copyright_notice": "notices/FluidR3_GM_copyright.txt"
+  }
+}

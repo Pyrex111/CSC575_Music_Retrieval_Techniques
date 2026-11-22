@@ -1,6 +1,6 @@
 # Abdullah’s MIDI-to-WAV rendering workstream
 
-This workstream implements Objective 1 through PI4. It renders MIDI exports with FluidSynth, applies the same loudness procedure to each file, and records WAV validation and timing. The [progress record](../../docs/abdullah_progress.md) describes the inputs and measured results.
+This workstream implements Objective 1 through PI5 on the documented synthetic demonstration set. It renders MIDI exports with FluidSynth, applies the same loudness procedure to each file, and records WAV validation and timing. The PI5 runner compares two SoundFonts on matched inputs. The [progress record](../../docs/abdullah_progress.md) describes the inputs and measured results.
 
 ## Setup
 
@@ -65,6 +65,35 @@ The output directory contains playable WAVs under `audio/`, a generated referenc
 2. Align each WAV to the MIDI endpoint plus **0.5 seconds** of release tail. Trim or pad the tail to that frame count and fade its final **0.1 seconds**. The batch checks that all WAVs within a matched case have equal lengths.
 3. Measure the aligned WAV's integrated loudness and true peak using FFmpeg's `loudnorm` analysis. Target **−23 LUFS** with a **−2 dBTP** ceiling and a **0.1 dB** allowance for measurement rounding and PCM conversion.
 4. Apply a constant gain in dB. The gain is the smaller of `−23 − measured LUFS` and `−2.1 − measured dBTP`. This preserves the waveform's dynamics and lets peak-constrained files remain quieter. The report identifies any such file.
-5. Decode the result again and remeasure loudness and true peak. Check that the final frame count matches the aligned duration and that true peak is at or below the ceiling. Record whether measured loudness is within **0.25 LU** of the target.
+5. Decode the result again and remeasure loudness and true peak. If loudness is outside **0.25 LU** of the target, correct the constant gain using the remaining peak headroom and remeasure, with at most three passes. Each pass starts from the aligned audio. Record the pass count and any peak limitation. A failure to reach the target without a peak limitation returns an error before replacing the destination. Check the final frame count and true-peak ceiling.
 
 Synthesis time measures the FluidSynth command. Total rendering time also includes length alignment, loudness analysis, gain adjustment, and validation. These are separate from the arrangers’ transformation times. [FFmpeg audio filters](https://ffmpeg.org/ffmpeg-filters.html#Audio-Filters)
+
+## Compare a second SoundFont for PI5
+
+Install the dependencies above and the FluidR3 General MIDI bank. The recorded comparison uses `fluid-soundfont-gm` version `3.1-5.3`, whose SoundFont has an MIT notice. The package versions, file hashes, source URLs, and notices are retained in the [SoundFont provenance record](../../results/abdullah_soundfont_comparison/soundfont_provenance.json).
+
+```bash
+sudo apt install fluid-soundfont-gm
+python -m workstreams.abdullah.compare_soundfonts \
+  --taimoor-results ../csc575-arranger-fixtures/results/taimoor_progress/results.json \
+  --arranger-revision 387769d6ebdc44770535b0b6b42cf6d4e2bf85a3 \
+  --case-ids development_jazz development_rock \
+  --baseline-soundfont /usr/share/sounds/sf2/TimGM6mb.sf2 \
+  --comparison-soundfont /usr/share/sounds/sf2/FluidR3_GM.sf2 \
+  --output results/local/abdullah_soundfonts
+```
+
+Use the pinned arranger worktree from the preceding instructions. The runner reuses `render_midi` and the original batch procedure, selects the requested cases, and renders source/B0/B1/M under both banks. The extra fifth reference belongs to the original PI1-PI4 run and is excluded from this matched subset. The comparison rejects repeated or unknown case IDs and identical SoundFont contents. The default batch command above retains its original full-set behavior.
+
+Each bank's output folder contains eight WAVs, a `results.json` render log, and a `listening_manifest.csv` compatible with the existing evaluation loader. Manifest audio paths are relative to that bank's folder. The comparison root contains `comparison.json`, `paired_metrics.csv`, and `summary.md`. Failed renders remain in the logs and denominator. A nonzero exit status indicates a failed pair or an unmet loudness control.
+
+The acoustic measures use normalized aggregate power spectra with 4096-sample Hann windows over the MIDI interval. The summary defines the centroid and spectral distance. The measurements and [interpretation](../../results/abdullah_soundfont_comparison/README.md) cover two synthetic examples, one per transfer direction. Listener judgments of style, recognizability, and coherence remain to be collected.
+
+Run the tests with the setup dependencies installed. The real-render tests require a SoundFont and the synthesis tools. They skip when those resources are unavailable.
+
+```bash
+python -m unittest discover -s tests -v
+CSC575_TEST_SOUNDFONT=/usr/share/sounds/sf2/FluidR3_GM.sf2 \
+  python -m unittest discover -s tests -p 'test_abdullah_rendering.py' -v
+```

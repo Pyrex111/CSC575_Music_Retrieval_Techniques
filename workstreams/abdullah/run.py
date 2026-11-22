@@ -20,6 +20,7 @@ from .fixtures import write_reference
 from .render import (
     FADE_SECONDS,
     LOUDNESS_TOLERANCE_LU,
+    MAX_NORMALIZATION_PASSES,
     PEAK_MARGIN_DB,
     SAMPLE_RATE,
     SYNTH_GAIN,
@@ -54,7 +55,7 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def load_jobs(report_path: Path) -> tuple[list[RenderJob], str]:
+def load_jobs(report_path: Path, case_ids: list[str] | None = None) -> tuple[list[RenderJob], str]:
     root = report_path.parent
     report = json.loads(report_path.read_text(encoding="utf-8"))
     cases: dict[str, dict[str, RenderJob]] = {}
@@ -92,6 +93,13 @@ def load_jobs(report_path: Path) -> tuple[list[RenderJob], str]:
         )
     if not cases:
         raise ValueError("Arranger report contains no comparison cases")
+    if case_ids is not None:
+        if not case_ids or len(case_ids) != len(set(case_ids)):
+            raise ValueError("Select at least one case, with no duplicate case IDs")
+        unknown = set(case_ids) - cases.keys()
+        if unknown:
+            raise ValueError(f"Unknown comparison cases: {', '.join(sorted(unknown))}")
+        cases = {case_id: cases[case_id] for case_id in case_ids}
     order = ("source", *METHODS.values())
     for case_id, case in cases.items():
         missing = set(order) - case.keys()
@@ -153,9 +161,14 @@ def write_summary(output: Path, report: dict) -> None:
     (output / "summary.md").write_text("\n".join(lines), encoding="utf-8")
 
 
-def render_batch(args: argparse.Namespace) -> dict:
+def render_batch(
+    args: argparse.Namespace,
+    *,
+    case_ids: list[str] | None = None,
+    include_reference: bool = True,
+) -> dict:
     input_report = args.taimoor_results.resolve()
-    jobs, evidence_type = load_jobs(input_report)
+    jobs, evidence_type = load_jobs(input_report, case_ids)
     output = args.output.resolve()
     soundfont = args.soundfont.resolve()
     environment = {
@@ -170,8 +183,9 @@ def render_batch(args: argparse.Namespace) -> dict:
     if output.exists():
         raise ValueError(f"Use a new output directory for each validation run: {output}")
     output.mkdir(parents=True)
-    reference = write_reference(output / "fixtures" / f"{REFERENCE_ID}.mid")
-    jobs.append(RenderJob(REFERENCE_ID, "", "", "source", reference, sha256(reference)))
+    if include_reference:
+        reference = write_reference(output / "fixtures" / f"{REFERENCE_ID}.mid")
+        jobs.append(RenderJob(REFERENCE_ID, "", "", "source", reference, sha256(reference)))
     rows = []
     source_frames = {}
     for job in jobs:
@@ -229,6 +243,7 @@ def render_batch(args: argparse.Namespace) -> dict:
             "true_peak_ceiling_dbtp": TRUE_PEAK_CEILING_DBTP,
             "peak_margin_db": PEAK_MARGIN_DB,
             "loudness_tolerance_lu": LOUDNESS_TOLERANCE_LU,
+            "max_normalization_passes": MAX_NORMALIZATION_PASSES,
         },
         "totals": {
             "attempted": len(rows), "passed": len(passed), "failed": len(rows) - len(passed),

@@ -1,0 +1,13 @@
+test_presets_with_different_release_tails_produce_matched_lengths (test_abdullah_rendering.RenderingIntegrationTests.test_presets_with_different_release_tails_produce_matched_lengths) ... ok
+test_processing_failure_preserves_existing_output (test_abdullah_rendering.RenderingIntegrationTests.test_processing_failure_preserves_existing_output) ... ok
+test_unconverged_loudness_preserves_existing_output (test_abdullah_rendering.RenderingIntegrationTests.test_unconverged_loudness_preserves_existing_output) ... ok
+test_centroid_tracks_tone_frequency_and_normalization (test_abdullah_soundfonts.SoundFontComparisonTests.test_centroid_tracks_tone_frequency_and_normalization) ... ok
+test_pair_checks_hashes_duration_and_loudness_controls (test_abdullah_soundfonts.SoundFontComparisonTests.test_pair_checks_hashes_duration_and_loudness_controls) ... ok
+test_same_soundfont_content_is_rejected_before_creating_output (test_abdullah_soundfonts.SoundFontComparisonTests.test_same_soundfont_content_is_rejected_before_creating_output) ... ok
+test_silent_audio_is_rejected (test_abdullah_soundfonts.SoundFontComparisonTests.test_silent_audio_is_rejected) ... ok
+test_subset_contains_all_four_conditions_and_rejects_invalid_selection (test_abdullah_soundfonts.SoundFontComparisonTests.test_subset_contains_all_four_conditions_and_rejects_invalid_selection) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.578s
+
+OK

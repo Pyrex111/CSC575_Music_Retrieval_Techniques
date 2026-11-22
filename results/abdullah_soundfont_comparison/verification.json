@@ -1,0 +1,173 @@
+{
+  "ffprobe_and_sha256_verified": 16,
+  "loudness_and_true_peak_remeasured": 16,
+  "clipping_checks_passed": 16,
+  "independently_recomputed_spectrum_pairs": 8,
+  "different_wav_hash_pairs": 8,
+  "code_hashes_match_rendered_run": true,
+  "vinay_listening_loader_revision": "dcf7a4218243606e79055212830e08f4bfd9ff55",
+  "vinay_manifest_rows_accepted_per_bank": {
+    "baseline": 6,
+    "comparison": 6
+  },
+  "tests": {
+    "timgm6mb": {
+      "passed": 8,
+      "skipped": 0,
+      "log": "tests_timgm6mb.log",
+      "sha256": "c37640d90c4c1ce2326227794ec1ed03e3e3d16ceef54d50335d41c3befbc25f"
+    },
+    "fluidr3": {
+      "passed": 8,
+      "skipped": 0,
+      "log": "tests_fluidr3.log",
+      "sha256": "cb383d5283ff3ec24a87e991c2aa4e7afcfa3677b420044009d6dbefb6637001"
+    }
+  },
+  "checks": [
+    {
+      "bank": "baseline",
+      "case_id": "development_jazz",
+      "method": "source",
+      "wav_sha256": "4740092755eb219d033ac3e2d407524863a814a44ded4ad50c33b821e2061778",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -12.13
+    },
+    {
+      "bank": "baseline",
+      "case_id": "development_jazz",
+      "method": "B0",
+      "wav_sha256": "38fcf0c533d30a4b4e46060026f74155ae8de573bf303eee1880bd41c1a37ed7",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -12.52
+    },
+    {
+      "bank": "baseline",
+      "case_id": "development_jazz",
+      "method": "B1",
+      "wav_sha256": "326a43774393c67afe268b498e520ba9551711370c388309b9b06ecf8f29c95a",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -12.81
+    },
+    {
+      "bank": "baseline",
+      "case_id": "development_jazz",
+      "method": "M",
+      "wav_sha256": "dfe3451d1de0e88ca07dbd98287f2df347268d1838f5d4d585d82b11213b3153",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -12.64
+    },
+    {
+      "bank": "baseline",
+      "case_id": "development_rock",
+      "method": "source",
+      "wav_sha256": "51564a9b64c87166b6e546705343bad6758e93e3ad3e4aa6a408e5f4bab8fb07",
+      "frames": 1433250,
+      "lufs": -22.99,
+      "true_peak_dbtp": -12.17
+    },
+    {
+      "bank": "baseline",
+      "case_id": "development_rock",
+      "method": "B0",
+      "wav_sha256": "29b662d4fa387faa252c6dcb4b1e98f33489f13e9daeccc91cdab2f18e8dc070",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -11.45
+    },
+    {
+      "bank": "baseline",
+      "case_id": "development_rock",
+      "method": "B1",
+      "wav_sha256": "1a52eb82b3e200b265fc972e62c9fbad9b5c624de35eb9f612ed0d48e4dabf10",
+      "frames": 1433250,
+      "lufs": -23.01,
+      "true_peak_dbtp": -12.53
+    },
+    {
+      "bank": "baseline",
+      "case_id": "development_rock",
+      "method": "M",
+      "wav_sha256": "d796d17c7dc66e8df4fbc43fc12a9e7d81ccc0cebd2fba5423f08a34dffc2598",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -12.25
+    },
+    {
+      "bank": "comparison",
+      "case_id": "development_jazz",
+      "method": "source",
+      "wav_sha256": "9bf8c74f17af5d48ef1c621f3ec1d2816df66dc9c3534da5f45682a41f396f8f",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -13.43
+    },
+    {
+      "bank": "comparison",
+      "case_id": "development_jazz",
+      "method": "B0",
+      "wav_sha256": "d21e2c6684d60acacf65abc3c0a19c2d44bbb660b56b6b80d8e7a0e1eb644522",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -12.28
+    },
+    {
+      "bank": "comparison",
+      "case_id": "development_jazz",
+      "method": "B1",
+      "wav_sha256": "293ee94119774ea49e4c1c4e5cf5fcf3cef5f24d68c19faab7b9795dae448a64",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -13.24
+    },
+    {
+      "bank": "comparison",
+      "case_id": "development_jazz",
+      "method": "M",
+      "wav_sha256": "26e2d77e5ba5adcad9645c35b02c63645819229d28a803072d84803806632e88",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -13.1
+    },
+    {
+      "bank": "comparison",
+      "case_id": "development_rock",
+      "method": "source",
+      "wav_sha256": "9ffd016d29300415fc1a5c5fab95a0262ce7531e45764b0c5fd8eb0ec6b38a35",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -12.32
+    },
+    {
+      "bank": "comparison",
+      "case_id": "development_rock",
+      "method": "B0",
+      "wav_sha256": "aa48e11da4072736064bb9366958fe1eeadebafe92be6103684e7812d70e4a59",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -12.82
+    },
+    {
+      "bank": "comparison",
+      "case_id": "development_rock",
+      "method": "B1",
+      "wav_sha256": "faf89c7cfca923cf261651f2f4f6a02c6f44b48125c7071ff592d94b54330708",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -13.41
+    },
+    {
+      "bank": "comparison",
+      "case_id": "development_rock",
+      "method": "M",
+      "wav_sha256": "814778f59d2993c6f5dc2829d27d2e0343f1a25ebc96d6c3331713120e0bf685",
+      "frames": 1433250,
+      "lufs": -23.0,
+      "true_peak_dbtp": -12.15
+    }
+  ]
+}

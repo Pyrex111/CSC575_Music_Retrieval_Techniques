@@ -242,7 +242,7 @@ Each member has two objectives and five indicators per objective: two basic, two
 
 ### Rendering progress checkpoint
 
-The [audio rendering workstream](workstreams/abdullah/README.md) implements Objective 1 through PI4 on the current demonstration fixtures. The recorded run produced five reference WAVs and 12 matched B0/B1/M WAVs across both transfer directions. All 17 passed audio validation. See the [progress record](docs/abdullah_progress.md) for the measurements, setup, and reproducible commands.
+The [audio rendering workstream](workstreams/abdullah/README.md) implements Objective 1 through PI5 on the documented synthetic demonstration fixtures. The original PI1-PI4 run produced five reference WAVs and 12 matched B0/B1/M WAVs across both transfer directions. All 17 passed audio validation. The [PI5 SoundFont comparison](results/abdullah_soundfont_comparison/README.md) adds 16 renders under TimGM6mb and FluidR3, with eight matched pairs and measured acoustic differences. See the [progress record](docs/abdullah_progress.md) for the measurements, setup, and reproducible commands.
 
 ## Risks and contingencies
 

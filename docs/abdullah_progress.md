@@ -1,6 +1,6 @@
 # Abdullah Shah’s rendering progress
 
-The rendering workstream completes Objective 1 through PI4 for the repository’s current demonstration fixtures. It provides a single-file renderer, a batch that consumes the existing arrangement exports, and reproducible validation records. [Setup and rendering procedure](../workstreams/abdullah/README.md)
+The rendering workstream completes Objective 1 through PI5 for the documented synthetic demonstration fixtures. It provides a single-file renderer, a batch that consumes the existing arrangement exports, and a matched two-SoundFont comparison with reproducible validation records. The original PI1-PI4 measurements below are retained as the progress-report checkpoint. [Setup and rendering procedure](../workstreams/abdullah/README.md)
 
 | Indicator | Evidence |
 | --- | --- |
@@ -8,6 +8,7 @@ The rendering workstream completes Objective 1 through PI4 for the repository’
 | **PI2** | Implemented `render_midi` with an explicit output path and sample rate, captured process errors, and decoded WAV checks for complete, finite, nonzero PCM. The destination is replaced after validation. Two integration tests verify matched lengths at 22,050 Hz and preservation of an existing WAV after a processing failure. [Renderer](../workstreams/abdullah/render.py) · [Integration tests](../tests/test_abdullah_rendering.py) |
 | **PI3** | Rendered the source, B0, B1, and M for four matched cases covering both transfer directions. All used one SoundFont, synthesis configuration, duration policy, and loudness procedure. Vinay’s listening loader accepted the 12 comparison rows and their source references. [Batch runner](../workstreams/abdullah/run.py) · [Listening manifest](../results/abdullah_progress/listening_manifest.csv) |
 | **PI4** | All 17 WAVs passed validation with zero rendering failures. The results include per-file synthesis and processing times, checksums, and measured audio properties. The setup notes identify the versions and distribution terms of FluidSynth and the SoundFont. [Timing table](../results/abdullah_progress/summary.md) · [Independent checks](../results/abdullah_progress/verification.json) |
+| **PI5** | Compared TimGM6mb and FluidR3 on two matched synthetic examples covering both directions. All 16 renders and eight paired controls passed. Power-spectrum measurements changed with the SoundFont, including the B0/B1 centroid ordering in both examples. [Comparison and interpretation](../results/abdullah_soundfont_comparison/README.md) · [Paired measurements](../results/abdullah_soundfont_comparison/paired_metrics.csv) |
 
 ## Validation results
 
@@ -28,3 +29,11 @@ python -m unittest discover -s tests -p 'test_abdullah_rendering.py' -v
 ## Evidence scope
 
 The four published comparison cases are the current demonstration set for this validation. Taimoor’s fixtures and MIDI exports come from his [arranger snapshot](https://github.com/Pyrex111/CSC575_Music_Retrieval_Techniques/tree/387769d6ebdc44770535b0b6b42cf6d4e2bf85a3/results/taimoor_progress). The fifth reference is documented in [`fixtures.py`](../workstreams/abdullah/fixtures.py). These synthetic engineering results establish rendering and the evaluation handoff on those inputs. The team can repeat the batch on its later reviewed corpus. The next milestone is playback and export integration under Objective 2.
+
+## PI5 SoundFont comparison
+
+The comparison re-rendered `development_jazz` and `development_rock`, with source/B0/B1/M under TimGM6mb and FluidR3. Both banks used FluidSynth executable and runtime 2.3.4, FFmpeg 7.1.5, 44,100 Hz stereo PCM16, gain 0.2, disabled effects, the same half-second tail, and the existing loudness policy. TimGM6mb and FluidR3 passed the duration, loudness, and clipping checks on all eight input MIDIs. Both banks were rendered in the same environment for this comparison. [Recorded environment and settings](../results/abdullah_soundfont_comparison/baseline/results.json) · [Second-bank log](../results/abdullah_soundfont_comparison/comparison/results.json)
+
+The power-weighted centroid increased by 47.9-143.1 Hz under FluidR3. B0's centroid exceeded B1's under TimGM6mb and fell below B1's under FluidR3 in both examples. The technical rendering conclusions held for this subset under both banks. The descriptor ordering depends on the instrument bank, so future comparisons need a common bank and separate listening evidence for musical judgments. [Measurement definitions and per-pair table](../results/abdullah_soundfont_comparison/summary.md)
+
+An isolated FluidR3 bass-note probe exposed a one-pass loudness mismatch at 22,050 Hz. Bounded gain correction now brings that probe within tolerance while preserving the peak limit and the destination on failure. The eight-test suite passed under both banks. [Probe and verification evidence](../results/abdullah_soundfont_comparison/README.md)

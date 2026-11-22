@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-22T23:08:48.986475+00:00",
+  "evidence_type": "synthetic_engineering_checks",
+  "case_ids": [
+    "development_jazz",
+    "development_rock"
+  ],
+  "numpy_version": "2.2.6",
+  "soundfonts": {
+    "baseline": {
+      "filename": "TimGM6mb.sf2",
+      "sha256": "c5378b62028c920cb11e4803327983fee2f2cdff5dc89c708e39da417e51c854"
+    },
+    "comparison": {
+      "filename": "FluidR3_GM.sf2",
+      "sha256": "74594e8f4250680adf590507a306655a299935343583256f3b722c48a1bc1cb0"
+    }
+  },
+  "render_reports": {
+    "baseline": {
+      "path": "baseline/results.json",
+      "sha256": "a4a7890ea36b29b5cf69377f0a29b1ed2faf35628ecf4039924a41e2feb6df85"
+    },
+    "comparison": {
+      "path": "comparison/results.json",
+      "sha256": "5f8f66eedfd3be737f5532a4804e8cbb1b1a92d4cee8a401b5e9fc59b2fadaaf"
+    }
+  },
+  "spectrum": {
+    "fft_size": 4096,
+    "window": "Hann",
+    "overlap": 0,
+    "weighting": "squared magnitude",
+    "include_release_tail": false
+  },
+  "totals": {
+    "renders_attempted": 16,
+    "renders_passed": 16,
+    "pairs_attempted": 8,
+    "pairs_measured": 8,
+    "pairs_with_matched_controls": 8
+  },
+  "pairs": [
+    {
+      "case_id": "development_jazz",
+      "direction": "jazz to rock",
+      "method": "source",
+      "midi_sha256": "0186320f3b99452eb7de9e7f92deaca016ed09a19c62a913c23a5913d23ac011",
+      "baseline_wav": "baseline/audio/development_jazz/source.wav",
+      "baseline_wav_sha256": "4740092755eb219d033ac3e2d407524863a814a44ded4ad50c33b821e2061778",
+      "comparison_wav": "comparison/audio/development_jazz/source.wav",
+      "comparison_wav_sha256": "9bf8c74f17af5d48ef1c621f3ec1d2816df66dc9c3534da5f45682a41f396f8f",
+      "baseline_centroid_hz": 744.7812548572882,
+      "comparison_centroid_hz": 838.3576010591921,
+      "centroid_change_hz": 93.5763462019039,
+      "normalized_spectrum_distance": 0.2575067629841274,
+      "loudness_change_lu": 0.0,
+      "true_peak_change_db": -1.299999999999999,
+      "controls_passed": true,
+      "status": "pass"
+    },
+    {
+      "case_id": "development_jazz",
+      "direction": "jazz to rock",
+      "method": "B0",
+      "midi_sha256": "dd8f5bc18569ece9af3e29fc02032ef6f442ca596be2d64c9685e3c1a1127e3a",
+      "baseline_wav": "baseline/audio/development_jazz/B0.wav",
+      "baseline_wav_sha256": "38fcf0c533d30a4b4e46060026f74155ae8de573bf303eee1880bd41c1a37ed7",
+      "comparison_wav": "comparison/audio/development_jazz/B0.wav",
+      "comparison_wav_sha256": "d21e2c6684d60acacf65abc3c0a19c2d44bbb660b56b6b80d8e7a0e1eb644522",
+      "baseline_centroid_hz": 841.2562726630529,
+      "comparison_centroid_hz": 955.0948681178629,
+      "centroid_change_hz": 113.83859545481005,
+      "normalized_spectrum_distance": 0.2636601234678411,
+      "loudness_change_lu": 0.0,
+      "true_peak_change_db": 0.2400000000000002,
+      "controls_passed": true,
+      "status": "pass"
+    },
+    {
+      "case_id": "development_jazz",
+      "direction": "jazz to rock",
+      "method": "B1",
+      "midi_sha256": "cad98206eabee760c57a9970ff8172ebb044c1c4a5b76ae992afec40124f70e2",
+      "baseline_wav": "baseline/audio/development_jazz/B1.wav",
+      "baseline_wav_sha256": "326a43774393c67afe268b498e520ba9551711370c388309b9b06ecf8f29c95a",
+      "comparison_wav": "comparison/audio/development_jazz/B1.wav",
+      "comparison_wav_sha256": "293ee94119774ea49e4c1c4e5cf5fcf3cef5f24d68c19faab7b9795dae448a64",
+      "baseline_centroid_hz": 835.7851826856311,
+      "comparison_centroid_hz": 973.3807558372328,
+      "centroid_change_hz": 137.59557315160168,
+      "normalized_spectrum_distance": 0.27546598166389324,
+      "loudness_change_lu": 0.0,
+      "true_peak_change_db": -0.4299999999999997,
+      "controls_passed": true,
+      "status": "pass"
+    },
+    {
+      "case_id": "development_jazz",
+      "direction": "jazz to rock",
+      "method": "M",
+      "midi_sha256": "a7d19c4f668490bdbe9d5ee9f2762d715dd57e0186c0427defaebb882d7f1a60",
+      "baseline_wav": "baseline/audio/development_jazz/M.wav",
+      "baseline_wav_sha256": "dfe3451d1de0e88ca07dbd98287f2df347268d1838f5d4d585d82b11213b3153",
+      "comparison_wav": "comparison/audio/development_jazz/M.wav",
+      "comparison_wav_sha256": "26e2d77e5ba5adcad9645c35b02c63645819229d28a803072d84803806632e88",
+      "baseline_centroid_hz": 848.5020764727999,
+      "comparison_centroid_hz": 991.6428282032634,
+      "centroid_change_hz": 143.14075173046353,
+      "normalized_spectrum_distance": 0.2736182544294087,
+      "loudness_change_lu": 0.0,
+      "true_peak_change_db": -0.4599999999999991,
+      "controls_passed": true,
+      "status": "pass"
+    },
+    {
+      "case_id": "development_rock",
+      "direction": "rock to jazz",
+      "method": "source",
+      "midi_sha256": "34ab1c5c081a219b859624b2a0dab80badf4e5bddacce8b620bb4784d5b7dd19",
+      "baseline_wav": "baseline/audio/development_rock/source.wav",
+      "baseline_wav_sha256": "51564a9b64c87166b6e546705343bad6758e93e3ad3e4aa6a408e5f4bab8fb07",
+      "comparison_wav": "comparison/audio/development_rock/source.wav",
+      "comparison_wav_sha256": "9ffd016d29300415fc1a5c5fab95a0262ce7531e45764b0c5fd8eb0ec6b38a35",
+      "baseline_centroid_hz": 788.9736454008255,
+      "comparison_centroid_hz": 841.4767222288517,
+      "centroid_change_hz": 52.503076828026224,
+      "normalized_spectrum_distance": 0.2776851990499574,
+      "loudness_change_lu": -0.010000000000001563,
+      "true_peak_change_db": -0.15000000000000036,
+      "controls_passed": true,
+      "status": "pass"
+    },
+    {
+      "case_id": "development_rock",
+      "direction": "rock to jazz",
+      "method": "B0",
+      "midi_sha256": "112f4fbcfdc8e0caae2bb23f1fa1c0ee757a4c885cd0953455f30e81544e08fc",
+      "baseline_wav": "baseline/audio/development_rock/B0.wav",
+      "baseline_wav_sha256": "29b662d4fa387faa252c6dcb4b1e98f33489f13e9daeccc91cdab2f18e8dc070",
+      "comparison_wav": "comparison/audio/development_rock/B0.wav",
+      "comparison_wav_sha256": "aa48e11da4072736064bb9366958fe1eeadebafe92be6103684e7812d70e4a59",
+      "baseline_centroid_hz": 698.7172715708023,
+      "comparison_centroid_hz": 746.6106097066572,
+      "centroid_change_hz": 47.89333813585495,
+      "normalized_spectrum_distance": 0.26971513874610553,
+      "loudness_change_lu": 0.0,
+      "true_peak_change_db": -1.370000000000001,
+      "controls_passed": true,
+      "status": "pass"
+    },
+    {
+      "case_id": "development_rock",
+      "direction": "rock to jazz",
+      "method": "B1",
+      "midi_sha256": "821af08cfd18ed4286fe027ba0025720a297ccb718067d24140f5d46ce4fbe87",
+      "baseline_wav": "baseline/audio/development_rock/B1.wav",
+      "baseline_wav_sha256": "1a52eb82b3e200b265fc972e62c9fbad9b5c624de35eb9f612ed0d48e4dabf10",
+      "comparison_wav": "comparison/audio/development_rock/B1.wav",
+      "comparison_wav_sha256": "faf89c7cfca923cf261651f2f4f6a02c6f44b48125c7071ff592d94b54330708",
+      "baseline_centroid_hz": 683.4619419117051,
+      "comparison_centroid_hz": 763.1914096468624,
+      "centroid_change_hz": 79.7294677351573,
+      "normalized_spectrum_distance": 0.2782833040221905,
+      "loudness_change_lu": 0.010000000000001563,
+      "true_peak_change_db": -0.8800000000000008,
+      "controls_passed": true,
+      "status": "pass"
+    },
+    {
+      "case_id": "development_rock",
+      "direction": "rock to jazz",
+      "method": "M",
+      "midi_sha256": "5d053fd3c34beae14b3df365e1d6c67005064dc531538082eb964b2b726ed9ce",
+      "baseline_wav": "baseline/audio/development_rock/M.wav",
+      "baseline_wav_sha256": "d796d17c7dc66e8df4fbc43fc12a9e7d81ccc0cebd2fba5423f08a34dffc2598",
+      "comparison_wav": "comparison/audio/development_rock/M.wav",
+      "comparison_wav_sha256": "814778f59d2993c6f5dc2829d27d2e0343f1a25ebc96d6c3331713120e0bf685",
+      "baseline_centroid_hz": 667.410944519433,
+      "comparison_centroid_hz": 729.2348897872273,
+      "centroid_change_hz": 61.82394526779433,
+      "normalized_spectrum_distance": 0.2628392646492518,
+      "loudness_change_lu": 0.0,
+      "true_peak_change_db": 0.09999999999999964,
+      "controls_passed": true,
+      "status": "pass"
+    }
+  ]
+}

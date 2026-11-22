@@ -26,6 +26,7 @@ TARGET_LUFS = -23.0
 TRUE_PEAK_CEILING_DBTP = -2.0
 PEAK_MARGIN_DB = 0.1
 LOUDNESS_TOLERANCE_LU = 0.25
+MAX_NORMALIZATION_PASSES = 3
 
 
 class RenderError(RuntimeError):
@@ -58,6 +59,7 @@ class RenderResult:
     output_true_peak_dbtp: float
     peak_limited: bool
     loudness_matched: bool
+    normalization_passes: int = 1
 
 
 def run_command(arguments: list[str], timeout: float = 120) -> subprocess.CompletedProcess[str]:
@@ -161,7 +163,6 @@ def render_midi(
     with TemporaryDirectory(prefix=".render-", dir=output.parent) as folder:
         raw = Path(folder) / "synth.wav"
         aligned = Path(folder) / "aligned.wav"
-        staged = Path(folder) / "normalized.wav"
         config = Path(folder) / "empty.cfg"
         config.touch()
         synth_start = perf_counter()
@@ -184,19 +185,35 @@ def render_midi(
         desired_gain = TARGET_LUFS - input_lufs
         peak_safe_gain = TRUE_PEAK_CEILING_DBTP - PEAK_MARGIN_DB - input_peak
         gain = min(desired_gain, peak_safe_gain)
-        filter_pcm(aligned, staged, f"volume={gain:.8f}dB:precision=double", sample_rate, ffmpeg)
-        audio = inspect_wav(staged, sample_rate)
-        output_lufs, output_peak = measure_loudness(staged, ffmpeg)
+        peak_limited = peak_safe_gain < desired_gain
+        for normalization_passes in range(1, MAX_NORMALIZATION_PASSES + 1):
+            staged = Path(folder) / f"normalized-{normalization_passes}.wav"
+            filter_pcm(aligned, staged, f"volume={gain:.8f}dB:precision=double", sample_rate, ffmpeg)
+            audio = inspect_wav(staged, sample_rate)
+            output_lufs, output_peak = measure_loudness(staged, ffmpeg)
+            loudness_matched = abs(output_lufs - TARGET_LUFS) <= LOUDNESS_TOLERANCE_LU
+            if loudness_matched or normalization_passes == MAX_NORMALIZATION_PASSES:
+                break
+            # The loudness gate can change after gain is applied to a short clip.
+            desired_correction = TARGET_LUFS - output_lufs
+            safe_correction = TRUE_PEAK_CEILING_DBTP - PEAK_MARGIN_DB - output_peak
+            peak_limited = safe_correction < desired_correction
+            correction = min(desired_correction, safe_correction)
+            if desired_correction > 0 and correction <= 0:
+                break
+            gain += correction
         if audio.frames != frames:
             raise RenderError(f"Expected {frames} aligned WAV frames, got {audio.frames}")
         if output_peak > TRUE_PEAK_CEILING_DBTP:
             raise RenderError(f"Normalized true peak exceeds {TRUE_PEAK_CEILING_DBTP:g} dBTP")
+        if not loudness_matched and not peak_limited:
+            raise RenderError(f"Cannot reach the loudness target after {normalization_passes} passes")
         os.replace(staged, output)
 
     return RenderResult(
         output, midi_duration, raw_stats.duration_seconds, synthesis_seconds, perf_counter() - started, audio,
         input_lufs, input_peak, gain, output_lufs, output_peak,
-        gain < desired_gain, abs(output_lufs - TARGET_LUFS) <= LOUDNESS_TOLERANCE_LU,
+        peak_limited, loudness_matched, normalization_passes,
     )
 
 

@@ -5,11 +5,12 @@ from pathlib import Path
 import shutil
 from tempfile import TemporaryDirectory
 import unittest
+from unittest.mock import patch
 import wave
 
 from mido import Message, MidiFile, MidiTrack
 
-from workstreams.abdullah.render import RenderError, render_midi
+from workstreams.abdullah.render import TARGET_LUFS, RenderError, render_midi
 
 
 FLUIDSYNTH = os.environ.get("CSC575_TEST_FLUIDSYNTH", "fluidsynth")
@@ -41,7 +42,9 @@ class RenderingIntegrationTests(unittest.TestCase):
                 with wave.open(str(output), "rb") as wav:
                     self.assertEqual(wav.getframerate(), 22050)
                     self.assertEqual(wav.getnframes(), 55125)
-                self.assertTrue(rendered.loudness_matched)
+                if not rendered.loudness_matched:
+                    self.assertTrue(rendered.peak_limited)
+                    self.assertLess(rendered.output_lufs, TARGET_LUFS)
                 self.assertLessEqual(rendered.output_true_peak_dbtp, -2)
 
     def test_processing_failure_preserves_existing_output(self):
@@ -56,3 +59,14 @@ class RenderingIntegrationTests(unittest.TestCase):
             with self.assertRaisesRegex(RenderError, "Executable not found"):
                 render_midi(midi, output, SOUNDFONT, fluidsynth=FLUIDSYNTH, ffmpeg=str(root / "absent"))
             self.assertEqual(output.read_bytes(), original)
+
+    def test_unconverged_loudness_preserves_existing_output(self):
+        with TemporaryDirectory() as folder:
+            root = Path(folder)
+            midi, output = root / "input.mid", root / "existing.wav"
+            write_note(midi, 0)
+            output.write_bytes(b"previous output")
+            with patch("workstreams.abdullah.render.measure_loudness", return_value=(-24.0, -10.0)):
+                with self.assertRaisesRegex(RenderError, "Cannot reach the loudness target"):
+                    render_midi(midi, output, SOUNDFONT, fluidsynth=FLUIDSYNTH)
+            self.assertEqual(output.read_bytes(), b"previous output")
