@@ -244,6 +244,10 @@ Each member has two objectives and five indicators per objective: two basic, two
 
 The [audio rendering workstream](workstreams/abdullah/README.md) implements Objective 1 through PI5 on the documented synthetic demonstration fixtures. The original PI1-PI4 run produced five reference WAVs and 12 matched B0/B1/M WAVs across both transfer directions. All 17 passed audio validation. The [PI5 SoundFont comparison](results/abdullah_soundfont_comparison/README.md) adds 16 renders under TimGM6mb and FluidR3, with eight matched pairs and measured acoustic differences. See the [progress record](docs/abdullah_progress.md) for the measurements, setup, and reproducible commands.
 
+### Demonstration interface checkpoint
+
+Objective 2 PI1 and PI2 have a local [Streamlit interface](workstreams/abdullah/app.py) for supported MIDI uploads, melody-track and target-style selection, source/transformed audio playback, and MIDI/WAV downloads. The interface accepts a prepared transformed MIDI exported by the arrangement backend and uses the existing renderer for both previews. [Setup and use](workstreams/abdullah/README.md#demonstration-interface-for-objective-2-pi1-and-pi2) · [Verification](results/abdullah_interface/verification.json)
+
 ## Risks and contingencies
 
 | Risk | Response |

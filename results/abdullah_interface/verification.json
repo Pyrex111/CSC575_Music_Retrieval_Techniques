@@ -1,0 +1,61 @@
+{
+  "scope": "Objective 2 PI1 and PI2, prepared backend MIDI exports",
+  "interface_branch": "abdullah/demo-integration",
+  "base_revision": "62eb74451347b2bc40c51c4d6621ec1b66654ac9",
+  "arranger_revision": "387769d6ebdc44770535b0b6b42cf6d4e2bf85a3",
+  "checks_use": "Streamlit AppTest through the normal app entry point with real FluidSynth rendering",
+  "streamlit": "1.67.0",
+  "pretty_midi": "0.2.11",
+  "code_sha256": {
+    "app.py": "d9c9806c274edb2b1ec7c51bde6ddc7cfe8a4e82ce15a0f868c5b216ece986ae",
+    "demo_backend.py": "1cde335bee9399e0bd2279b510b58267f88f736c880b60778fb1bfa1790d12b1",
+    "demo_requirements.txt": "a87afc80234fd640a20079536d2b72aa32a73c56052071120a6f639b9004d3eb"
+  },
+  "unit_and_widget_suite": {
+    "tests_passed": 20,
+    "skipped": 0,
+    "runtime_seconds": 8.392,
+    "test_source_sha256": {
+      "test_abdullah_demo.py": "fe6aef2df684f1a4d50e7c4ec147616dc37ed6c2a931df8366edbb4a3882d1a9",
+      "test_abdullah_interface.py": "27d48f8f9038e26acc0dd49a726de7378bc256a318f55c59149a9dae776ab6dd",
+      "test_abdullah_rendering.py": "d75951594acd2e5d8b4742261b6415486d4dc4b9bec1b1fbbe764b38c4358cfc",
+      "test_abdullah_soundfonts.py": "621c0c1b7f41bc5ea79d48b1a6a1b800293f178f67ae60f6bb563baf1021da33"
+    },
+    "log": "tests.log",
+    "log_sha256": "58737ccad470e7d842a45dc742ad2ef50e5136261489e33d23de43a5494193bf"
+  },
+  "live_browser_visual_check": "Not completed. The cloud browser could not reach the local preview server. No browser workaround was attempted.",
+  "cases": [
+    {
+      "case_id": "development_rock",
+      "target_style": "jazz",
+      "melody_track_index": 0,
+      "source_midi_sha256": "34ab1c5c081a219b859624b2a0dab80badf4e5bddacce8b620bb4784d5b7dd19",
+      "transformed_midi_sha256": "5d053fd3c34beae14b3df365e1d6c67005064dc531538082eb964b2b726ed9ce",
+      "source_wav_sha256": "51564a9b64c87166b6e546705343bad6758e93e3ad3e4aa6a408e5f4bab8fb07",
+      "transformed_wav_sha256": "d796d17c7dc66e8df4fbc43fc12a9e7d81ccc0cebd2fba5423f08a34dffc2598",
+      "audio_players": 2,
+      "enabled_download_controls": 4,
+      "download_payloads_match_uploads_and_rendered_wavs": true,
+      "sample_rate_hz": 44100,
+      "channels": 2,
+      "frames_per_wav": 1433250
+    },
+    {
+      "case_id": "development_jazz",
+      "target_style": "rock",
+      "melody_track_index": 0,
+      "source_midi_sha256": "0186320f3b99452eb7de9e7f92deaca016ed09a19c62a913c23a5913d23ac011",
+      "transformed_midi_sha256": "a7d19c4f668490bdbe9d5ee9f2762d715dd57e0186c0427defaebb882d7f1a60",
+      "source_wav_sha256": "4740092755eb219d033ac3e2d407524863a814a44ded4ad50c33b821e2061778",
+      "transformed_wav_sha256": "dfe3451d1de0e88ca07dbd98287f2df347268d1838f5d4d585d82b11213b3153",
+      "audio_players": 2,
+      "enabled_download_controls": 4,
+      "download_payloads_match_uploads_and_rendered_wavs": true,
+      "sample_rate_hz": 44100,
+      "channels": 2,
+      "frames_per_wav": 1433250
+    }
+  ],
+  "type_0_midi_upload_verified": true
+}

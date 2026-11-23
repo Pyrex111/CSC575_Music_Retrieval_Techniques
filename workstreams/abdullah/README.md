@@ -2,6 +2,8 @@
 
 This workstream implements Objective 1 through PI5 on the documented synthetic demonstration set. It renders MIDI exports with FluidSynth, applies the same loudness procedure to each file, and records WAV validation and timing. The PI5 runner compares two SoundFonts on matched inputs. The [progress record](../../docs/abdullah_progress.md) describes the inputs and measured results.
 
+The [demonstration interface](app.py) also implements Objective 2 PI1 and PI2 using uploaded source MIDI and a prepared transformed MIDI export.
+
 ## Setup
 
 Use Python 3.10 or newer, FluidSynth with WAV output support, FFmpeg, and a General MIDI `.sf2` SoundFont. The workstream uses `mido` to read the MIDI duration and generate its fifth reference MIDI.
@@ -96,4 +98,38 @@ Run the tests with the setup dependencies installed. The real-render tests requi
 python -m unittest discover -s tests -v
 CSC575_TEST_SOUNDFONT=/usr/share/sounds/sf2/FluidR3_GM.sf2 \
   python -m unittest discover -s tests -p 'test_abdullah_rendering.py' -v
+```
+
+## Demonstration interface for Objective 2 PI1 and PI2
+
+Use Python 3.11 or newer for the interface. Install the existing FluidSynth, FFmpeg, and SoundFont dependencies above, activate the virtual environment, and run these commands from the repository root.
+
+```bash
+python -m pip install -r workstreams/abdullah/demo_requirements.txt
+python -m streamlit run workstreams/abdullah/app.py
+```
+
+Open the local URL printed by Streamlit. Set the SoundFont file in the sidebar. The renderer paths can also be supplied there when the executables are outside `PATH`. Optional startup defaults are `CSC575_SOUNDFONT`, `CSC575_FLUIDSYNTH`, and `CSC575_FFMPEG`.
+
+1. Upload a source `.mid` or `.midi` file. Supported excerpts use synchronous type-0 or type-1 MIDI, beat-based timing, constant tempo, 4/4 metre, and at least one nonempty pitched instrument.
+2. Choose the melody track and Jazz or Rock target style. Melody values are zero-based indices into `pretty_midi.PrettyMIDI(...).instruments`, matching the arranger's contract. The track table also displays drums, which are excluded from the melody choices.
+3. Upload the prepared transformed MIDI exported by the arrangement backend for that source, melody selection, and target style. The interface checks the excerpt duration and tempo. The chosen melody and target identify which backend export to provide.
+4. Click **Prepare playback**. The existing `render_midi` API renders both clips with one SoundFont, 44.1-kHz stereo PCM16, and the established duration/loudness procedure. Source-only preview is available before a transformed output is loaded.
+5. Use the two audio players and four download controls. MIDI downloads retain the exact uploaded bytes. WAV downloads contain the rendered audio. MIDI remains downloadable when synthesis tools are unavailable.
+
+Changing the source, melody selection, target style, transformed upload, SoundFont file, or renderer settings invalidates earlier playback assets. The transformed upload also resets when the source or selections change. A failed preparation clears the preview, and temporary rendering files are cleaned up. The app holds current playback bytes in the Streamlit session.
+
+The original synthetic examples can be loaded from the pinned arranger worktree used above. Paths in this table are relative to its `results/taimoor_progress/` folder.
+
+| Case | Source MIDI | Prepared transformed MIDI | Melody index | Target |
+| --- | --- | --- | ---: | --- |
+| Rock to Jazz | `fixtures/development_rock.mid` | `development_rock/adaptive.mid` | 0 | Jazz |
+| Jazz to Rock | `fixtures/development_jazz.mid` | `development_jazz/adaptive.mid` | 0 | Rock |
+
+The interface checkpoint covers PI1 and PI2. The next workflow stage connects the selections to automatic input analysis, arrangement execution, and configuration logging under PI3. The [verification record](../../results/abdullah_interface/verification.json) describes widget-harness checks on the normal app entry point and real FluidSynth renders. A live visual browser check was unavailable because the cloud browser could not reach the local server.
+
+With the demonstration dependencies installed, run the full suite. Set the existing `CSC575_TEST_SOUNDFONT` and `CSC575_TEST_FLUIDSYNTH` variables when using custom install paths.
+
+```bash
+python -m unittest discover -s tests -v
 ```

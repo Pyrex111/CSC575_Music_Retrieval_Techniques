@@ -1,0 +1,30 @@
+test_drum_instruments_are_visible_and_excluded_from_melody_choices (test_abdullah_demo.MidiInterfaceTests.test_drum_instruments_are_visible_and_excluded_from_melody_choices) ... ok
+test_malformed_and_unsupported_uploads_raise_clear_errors (test_abdullah_demo.MidiInterfaceTests.test_malformed_and_unsupported_uploads_raise_clear_errors) ... ok
+test_pairing_rejects_different_excerpt_lengths_and_tempos (test_abdullah_demo.MidiInterfaceTests.test_pairing_rejects_different_excerpt_lengths_and_tempos) ... ok
+test_raw_download_bytes_and_backend_instrument_indices_are_preserved (test_abdullah_demo.MidiInterfaceTests.test_raw_download_bytes_and_backend_instrument_indices_are_preserved) ... ok
+test_selection_requires_an_existing_pitched_track_and_supported_style (test_abdullah_demo.MidiInterfaceTests.test_selection_requires_an_existing_pitched_track_and_supported_style) ... ok
+test_source_and_transformed_assets_are_complete_matched_wavs (test_abdullah_demo.PlaybackIntegrationTests.test_source_and_transformed_assets_are_complete_matched_wavs) ... ok
+test_source_only_preview_and_missing_renderer (test_abdullah_demo.PlaybackIntegrationTests.test_source_only_preview_and_missing_renderer) ... ok
+test_invalid_transformed_excerpt_disables_playback (test_abdullah_interface.InterfaceWidgetTests.test_invalid_transformed_excerpt_disables_playback) ... 2026-11-23 02:41:08.954 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_real_playback_and_download_controls_for_both_target_styles (test_abdullah_interface.InterfaceWidgetTests.test_real_playback_and_download_controls_for_both_target_styles) ... 2026-11-23 02:41:09.439 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_renderer_errors_are_shown_without_stale_audio (test_abdullah_interface.InterfaceWidgetTests.test_renderer_errors_are_shown_without_stale_audio) ... 2026-11-23 02:41:12.001 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_source_and_renderer_changes_clear_old_preview_assets (test_abdullah_interface.InterfaceWidgetTests.test_source_and_renderer_changes_clear_old_preview_assets) ... 2026-11-23 02:41:12.227 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_upload_validation_and_melody_and_style_choices (test_abdullah_interface.InterfaceWidgetTests.test_upload_validation_and_melody_and_style_choices) ... 2026-11-23 02:41:13.612 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_presets_with_different_release_tails_produce_matched_lengths (test_abdullah_rendering.RenderingIntegrationTests.test_presets_with_different_release_tails_produce_matched_lengths) ... ok
+test_processing_failure_preserves_existing_output (test_abdullah_rendering.RenderingIntegrationTests.test_processing_failure_preserves_existing_output) ... ok
+test_unconverged_loudness_preserves_existing_output (test_abdullah_rendering.RenderingIntegrationTests.test_unconverged_loudness_preserves_existing_output) ... ok
+test_centroid_tracks_tone_frequency_and_normalization (test_abdullah_soundfonts.SoundFontComparisonTests.test_centroid_tracks_tone_frequency_and_normalization) ... ok
+test_pair_checks_hashes_duration_and_loudness_controls (test_abdullah_soundfonts.SoundFontComparisonTests.test_pair_checks_hashes_duration_and_loudness_controls) ... ok
+test_same_soundfont_content_is_rejected_before_creating_output (test_abdullah_soundfonts.SoundFontComparisonTests.test_same_soundfont_content_is_rejected_before_creating_output) ... ok
+test_silent_audio_is_rejected (test_abdullah_soundfonts.SoundFontComparisonTests.test_silent_audio_is_rejected) ... ok
+test_subset_contains_all_four_conditions_and_rejects_invalid_selection (test_abdullah_soundfonts.SoundFontComparisonTests.test_subset_contains_all_four_conditions_and_rejects_invalid_selection) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 8.392s
+
+OK

@@ -37,3 +37,14 @@ The comparison re-rendered `development_jazz` and `development_rock`, with sourc
 The power-weighted centroid increased by 47.9-143.1 Hz under FluidR3. B0's centroid exceeded B1's under TimGM6mb and fell below B1's under FluidR3 in both examples. The technical rendering conclusions held for this subset under both banks. The descriptor ordering depends on the instrument bank, so future comparisons need a common bank and separate listening evidence for musical judgments. [Measurement definitions and per-pair table](../results/abdullah_soundfont_comparison/summary.md)
 
 An isolated FluidR3 bass-note probe exposed a one-pass loudness mismatch at 22,050 Hz. Bounded gain correction now brings that probe within tolerance while preserving the peak limit and the destination on failure. The eight-test suite passed under both banks. [Probe and verification evidence](../results/abdullah_soundfont_comparison/README.md)
+
+## Objective 2 interface checkpoint
+
+The local `abdullah/demo-integration` branch adds the PI1/PI2 interface, built from the completed rendering branch. [Application](../workstreams/abdullah/app.py) · [Playback adapter](../workstreams/abdullah/demo_backend.py)
+
+| Indicator | Status and evidence |
+| --- | --- |
+| **PI1 basic** | Implemented supported MIDI loading, file/tempo/metre validation, track inspection, pitched melody-track selection, and Jazz/Rock target selection. The melody indices use the same PrettyMIDI instrument list as the arranger. |
+| **PI2 basic** | Implemented source and prepared-transformed playback with the existing renderer and four MIDI/WAV download controls. Playback assets are invalidated when the relevant inputs or settings change. Transformed input is supplied as an exported MIDI from the arrangement backend. |
+
+All 20 tests passed with synthesis enabled and no skipped tests. The Streamlit widget harness exercised valid and malformed uploads, selection changes, missing/failed renderers, stale-preview invalidation, both players, and download control state. Two original backend example pairs also exercised the actual download payloads and produced stereo PCM16 WAVs with 1,433,250 frames at 44,100 Hz. The cloud browser could not reach the local preview server, so live browser visual inspection remains unverified. [Recorded checks](../results/abdullah_interface/verification.json)
