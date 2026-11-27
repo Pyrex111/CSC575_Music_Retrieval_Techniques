@@ -2,8 +2,9 @@
   "seed": 42,
   "n_total": 60,
   "per_genre_split": "{('jazz', 'test'): 10, ('jazz', 'train'): 15, ('jazz', 'val'): 5, ('rock', 'test'): 10, ('rock', 'train'): 15, ('rock', 'val'): 5}",
-  "manifest_sha256": "b9e0ebeda188520accfc3d0e1497783fdd84f2c07cc4c6c534b5c2357df4d0f6",
+  "manifest_sha256": "ab1b302b2cd5c3103aba5feb902f4ab9826b9918e483ddf6f0a905a86c3b0fbe",
   "amendments": [
-    "2026-11-27: jazz_020: replaced The_Girl_From_Ipanema_Garota_de_Ipanema_.mid (duplicate version) with Comin_Home_Baby.mid; split val unchanged"
+    "2026-11-27: jazz_020: replaced The_Girl_From_Ipanema_Garota_de_Ipanema_.mid (duplicate version) with Comin_Home_Baby.mid; split val unchanged",
+    "2026-11-27: jazz_020: replaced Comin_Home_Baby.mid (duplicate version) with Comin_Home_Baby.mid; split val unchanged"
   ]
 }
