@@ -17,7 +17,7 @@ NOTE = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 
 # {chord suffix : steps up from the root}
 TYPES = {"": [0, 4, 7], "m": [0, 3, 7], "7": [0, 4, 7, 10], "maj7": [0, 4, 7, 11],
-         "m7": [0, 3, 7, 10], "dim": [0, 3, 6]}
+         "m7": [0, 3, 7, 10], "dim": [0, 3, 6], "m7b5": [0,3,6,10]}
 # every chord other than plain major / minor pays this small penalty, so simple chords win unless the extra note is clearly there
 EXTRA_NOTE_PENALTY = 0.05
 
@@ -150,9 +150,10 @@ def annotate(r):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--manifest", default="data/excerpt_manifest.csv")
+    ap.add_argument("--cases", nargs="*")  
     a = ap.parse_args()
     m = pd.read_csv(a.manifest).set_index("case_id", drop=False)
-    todo = list(m.index)
+    todo = a.cases or list(m.index)            
     failed = []
     for c in todo:
         try:

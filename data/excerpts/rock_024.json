@@ -106,7 +106,7 @@
       "intervals": [
         0,
         3,
-        7,
+        6,
         10
       ]
     },
@@ -124,7 +124,7 @@
       "intervals": [
         0,
         3,
-        7,
+        6,
         10
       ]
     },
@@ -234,7 +234,7 @@
       "bars": 4
     },
     {
-      "label": "A",
+      "label": "B",
       "start_bar": 8,
       "bars": 4
     },
@@ -244,12 +244,12 @@
       "bars": 4
     },
     {
-      "label": "B",
+      "label": "C",
       "start_bar": 16,
       "bars": 4
     },
     {
-      "label": "C",
+      "label": "D",
       "start_bar": 20,
       "bars": 4
     }
