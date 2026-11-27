@@ -2,5 +2,8 @@
   "seed": 42,
   "n_total": 60,
   "per_genre_split": "{('jazz', 'test'): 10, ('jazz', 'train'): 15, ('jazz', 'val'): 5, ('rock', 'test'): 10, ('rock', 'train'): 15, ('rock', 'val'): 5}",
-  "manifest_sha256": "551c635382588b76dad18e01dd2a484b745c2975e9cdc99043b8e0226f16dc20"
+  "manifest_sha256": "b9e0ebeda188520accfc3d0e1497783fdd84f2c07cc4c6c534b5c2357df4d0f6",
+  "amendments": [
+    "2026-11-27: jazz_020: replaced The_Girl_From_Ipanema_Garota_de_Ipanema_.mid (duplicate version) with Comin_Home_Baby.mid; split val unchanged"
+  ]
 }
