@@ -1,0 +1,41 @@
+case_id,split,source_style,target_style,status,problems,warning,tracks,roles,seconds,output_file
+rock_001,train,rock,jazz,OK,,,8,chords melody drums bass bass chords chords chords,0.038,b0/rock_001_B0_to_jazz.mid
+rock_002,train,rock,jazz,OK,,,6,melody chords chords chords chords chords,0.038,b0/rock_002_B0_to_jazz.mid
+rock_003,train,rock,jazz,OK,,,7,bass melody chords chords drums chords chords,0.027,b0/rock_003_B0_to_jazz.mid
+rock_004,train,rock,jazz,OK,,,4,chords drums bass melody,0.042,b0/rock_004_B0_to_jazz.mid
+rock_005,train,rock,jazz,OK,,,7,melody bass chords chords chords chords drums,0.045,b0/rock_005_B0_to_jazz.mid
+rock_006,train,rock,jazz,OK,,,14,chords bass bass chords chords melody chords chords chords chords chords chords chords bass,0.042,b0/rock_006_B0_to_jazz.mid
+rock_007,train,rock,jazz,OK,,,3,chords melody drums,0.047,b0/rock_007_B0_to_jazz.mid
+rock_008,train,rock,jazz,OK,,,7,bass melody chords chords chords chords drums,0.04,b0/rock_008_B0_to_jazz.mid
+rock_009,train,rock,jazz,OK,,,8,chords chords chords melody bass drums drums chords,0.025,b0/rock_009_B0_to_jazz.mid
+rock_010,train,rock,jazz,OK,,,8,chords chords bass chords melody chords drums chords,0.092,b0/rock_010_B0_to_jazz.mid
+rock_011,train,rock,jazz,OK,,,6,drums chords chords melody bass chords,0.072,b0/rock_011_B0_to_jazz.mid
+rock_012,train,rock,jazz,OK,,,5,melody chords bass chords drums,0.029,b0/rock_012_B0_to_jazz.mid
+rock_013,train,rock,jazz,OK,,,5,drums chords chords melody chords,0.036,b0/rock_013_B0_to_jazz.mid
+rock_014,train,rock,jazz,OK,,,5,chords chords bass drums melody,0.032,b0/rock_014_B0_to_jazz.mid
+rock_015,train,rock,jazz,OK,,,5,chords melody bass bass drums,0.027,b0/rock_015_B0_to_jazz.mid
+rock_016,val,rock,jazz,OK,,,4,melody bass bass drums,0.051,b0/rock_016_B0_to_jazz.mid
+rock_017,val,rock,jazz,OK,,,6,bass bass drums chords melody bass,0.038,b0/rock_017_B0_to_jazz.mid
+rock_018,val,rock,jazz,OK,,,5,melody chords chords chords drums,0.029,b0/rock_018_B0_to_jazz.mid
+rock_019,val,rock,jazz,OK,,,10,melody chords chords chords bass bass chords drums drums drums,0.044,b0/rock_019_B0_to_jazz.mid
+rock_020,val,rock,jazz,OK,,,8,drums bass chords melody chords chords chords chords,0.044,b0/rock_020_B0_to_jazz.mid
+jazz_001,train,jazz,rock,OK,,,6,chords bass chords melody chords drums,0.051,b0/jazz_001_B0_to_rock.mid
+jazz_002,train,jazz,rock,OK,,,8,melody chords chords bass drums drums drums drums,0.056,b0/jazz_002_B0_to_rock.mid
+jazz_003,train,jazz,rock,OK,,,9,drums chords bass bass chords chords chords melody chords,0.061,b0/jazz_003_B0_to_rock.mid
+jazz_004,train,jazz,rock,OK,,,9,bass chords melody chords chords chords chords drums chords,0.031,b0/jazz_004_B0_to_rock.mid
+jazz_005,train,jazz,rock,OK,,,5,chords bass chords melody chords,0.022,b0/jazz_005_B0_to_rock.mid
+jazz_006,train,jazz,rock,OK,,,16,drums bass chords chords chords chords chords bass chords chords chords chords chords chords chords melody,0.039,b0/jazz_006_B0_to_rock.mid
+jazz_007,train,jazz,rock,OK,,,5,chords bass chords melody drums,0.023,b0/jazz_007_B0_to_rock.mid
+jazz_008,train,jazz,rock,OK,,,6,bass chords chords chords melody drums,0.029,b0/jazz_008_B0_to_rock.mid
+jazz_009,train,jazz,rock,OK,,,7,chords chords melody bass chords bass drums,0.037,b0/jazz_009_B0_to_rock.mid
+jazz_010,train,jazz,rock,OK,,,7,drums melody bass chords chords chords chords,0.087,b0/jazz_010_B0_to_rock.mid
+jazz_011,train,jazz,rock,OK,,,8,chords drums bass bass chords melody chords bass,0.074,b0/jazz_011_B0_to_rock.mid
+jazz_012,train,jazz,rock,OK,,,3,chords melody drums,0.033,b0/jazz_012_B0_to_rock.mid
+jazz_013,train,jazz,rock,OK,,,10,chords melody chords chords chords chords chords chords drums chords,0.054,b0/jazz_013_B0_to_rock.mid
+jazz_014,train,jazz,rock,OK,,,5,melody chords bass chords drums,0.053,b0/jazz_014_B0_to_rock.mid
+jazz_015,train,jazz,rock,OK,,,13,drums drums drums drums drums melody chords bass chords chords chords chords chords,0.052,b0/jazz_015_B0_to_rock.mid
+jazz_016,val,jazz,rock,OK,,,11,chords chords drums chords chords chords bass chords melody chords chords,0.063,b0/jazz_016_B0_to_rock.mid
+jazz_017,val,jazz,rock,OK,,,9,chords chords bass chords chords melody chords chords drums,0.054,b0/jazz_017_B0_to_rock.mid
+jazz_018,val,jazz,rock,OK,,,8,chords bass chords chords chords chords melody bass,0.028,b0/jazz_018_B0_to_rock.mid
+jazz_019,val,jazz,rock,OK,,,10,chords bass chords melody chords bass chords chords drums chords,0.031,b0/jazz_019_B0_to_rock.mid
+jazz_020,val,jazz,rock,OK,,,8,bass chords melody chords chords chords chords drums,0.032,b0/jazz_020_B0_to_rock.mid
